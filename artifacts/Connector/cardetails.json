@@ -1,0 +1,17 @@
+{
+	"id": "08dac57f-0486-ef11-bdfd-000d3ab84645",
+	"createdAt": "2024-10-09T06:05:43.366Z",
+	"createdBy": "emmanuella.ndukwe@neptune-software.com",
+	"settings": {
+		"hasDocumentation": false,
+		"tableid": "138a8793-5985-ef11-bdfd-000d3ab84645"
+	},
+	"documentation": {},
+	"name": "cardetails",
+	"description": null,
+	"group": null,
+	"type": "T",
+	"ver": "24.10.09.0605",
+	"disabled": false,
+	"package": "eb775512-7082-ef11-bdfd-000d3ab84645"
+}

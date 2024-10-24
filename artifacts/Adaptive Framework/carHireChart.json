@@ -1,0 +1,188 @@
+{
+	"id": "2d7878ab-0486-ef11-bdfd-000d3ab84645",
+	"createdAt": "2024-10-09T06:06:49.690Z",
+	"createdBy": "emmanuella.ndukwe@neptune-software.com",
+	"settings": {
+		"properties": {
+			"report": {
+				"paginationRows": 10,
+				"updateTime": 0
+			},
+			"form": {
+				"enableCompact": false,
+				"showFilter": false
+			},
+			"table": {
+				"titleAlign": "center",
+				"chartHeight": "350",
+				"chartType": "column",
+				"enableSorting": false,
+				"enableMonochrome": false,
+				"pieInnerSize": 0,
+				"enable3D": false,
+				"alpha3D": 0,
+				"beta3D": 0,
+				"depth3D": 100,
+				"legendEnable": true,
+				"legendAlign": "center",
+				"legendVerticalAlign": "bottom",
+				"legendLayout": "horizontal",
+				"xAxisTitleEnable": true,
+				"xAxisReversed": false,
+				"xAxisStartOnTick": true,
+				"xAxisGridLineWidth": 0,
+				"yAxisTitleEnable": true,
+				"yAxisReversed": false,
+				"yAxisStartOnTick": true,
+				"yAxisGridLineWidth": 1,
+				"title": "Car Availability Chart"
+			}
+		},
+		"fieldCatalog": [
+			{
+				"name": "name",
+				"label": "name",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "make",
+				"label": "make",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "model",
+				"label": "model",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "vehicle_transmission",
+				"label": "vehicle_transmission",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "image_url",
+				"label": "image_url",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "features",
+				"label": "features",
+				"type": "json",
+				"usage": "BOTH"
+			},
+			{
+				"name": "doors",
+				"label": "doors",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "seats",
+				"label": "seats",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "currency",
+				"label": "currency",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "vehicle_total",
+				"label": "vehicle_total",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "reservation_total",
+				"label": "reservation_total",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "pickup_location",
+				"label": "pickup_location",
+				"type": "json",
+				"usage": "BOTH"
+			},
+			{
+				"name": "dropoff_location",
+				"label": "dropoff_location",
+				"type": "json",
+				"usage": "BOTH"
+			},
+			{
+				"name": "status",
+				"label": "RENTED, AVAILABLE",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "updatedAt",
+				"label": "Updated At",
+				"type": "timestamp",
+				"usage": "BOTH"
+			},
+			{
+				"name": "createdAt",
+				"label": "Created At",
+				"type": "timestamp",
+				"usage": "BOTH"
+			},
+			{
+				"name": "updatedBy",
+				"label": "Updated By",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "createdBy",
+				"label": "Created By",
+				"type": "text",
+				"usage": "BOTH"
+			}
+		],
+		"fieldsSel": [],
+		"fieldsRun": [
+			{
+				"visible": true,
+				"name": "status",
+				"text": "RENTED, AVAILABLE",
+				"fieldPos": 1
+			}
+		],
+		"defaultVariant": {
+			"id": "add7690f-e6b2-4d86-f216-721364ef1011",
+			"colOrder": "key_a_to_z",
+			"rowOrder": "key_a_to_z",
+			"row": [],
+			"column": [],
+			"val": [],
+			"inclusions": {},
+			"exclusions": {}
+		}
+	},
+	"name": "carHireChart",
+	"description": "",
+	"group": "",
+	"type": "C",
+	"connectorid": "08dac57f-0486-ef11-bdfd-000d3ab84645",
+	"scriptSel": null,
+	"scriptRun": null,
+	"tableid": null,
+	"ver": "24.10.09.0608",
+	"disabled": false,
+	"appType": "A",
+	"application": "planet9_adaptive_tile_chart",
+	"package": "eb775512-7082-ef11-bdfd-000d3ab84645",
+	"roles": [],
+	"scriptSelObj": null,
+	"scriptRunObj": null,
+	"tableObj": null
+}

@@ -1,0 +1,48 @@
+
+
+var vehicles = [];
+var options = {
+    parameters: {
+        "where": "", // Optional 
+        "select": "", // Optional 
+        "take": "", // Optional 
+        "skip": "", // Optional 
+        "order": "" // Optional 
+    }
+};
+
+apiGet_Vehicles(options).then((carData)=>{
+for (i = 0; i < carData.length; i++) {
+    var obj = {};
+    obj.id = carData[i].id,
+    obj.imageUrl = carData[i].image_url,
+    obj.name = carData[i].name,
+    obj.doors = carData[i].doors,
+    obj.seats = carData[i].seats,
+    obj.transmission = carData[i].vehicle_transmission,
+    obj.reservation = carData[i].reservation_total,
+    obj.vehicleTotal = carData[i].vehicle_total,
+    obj.currency = carData[i].currency,
+    
+    obj.airConditioned = carData[i].features.air_conditioned,
+    obj.bluetoothEquipped = carData[i].features.bluetooth_equipped,
+    obj.connectedCar = carData[i].features.connected_car,
+    
+    obj.pickup_location = carData[i].pickup_location,
+    obj.dropoff_location = carData[i].dropoff_location,
+    obj.status = carData[i].status,
+    obj.model = carData[i].model,
+    obj.make = carData[i].make,
+
+    vehicles.push(obj);
+    //console.log("obj =",obj);
+}
+
+modeloListVehicleResults.setData(vehicles);
+
+
+oApp.to(oPageVehicleResults);
+
+resize(window.matchMedia("(max-width: 580px)"));
+
+})

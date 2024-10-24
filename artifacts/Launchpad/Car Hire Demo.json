@@ -1,0 +1,72 @@
+{
+	"id": "7c15b151-7082-ef11-bdfd-000d3ab84645",
+	"createdAt": "2024-10-04T16:47:20.090Z",
+	"createdBy": "emmanuella.ndukwe@neptune-software.com",
+	"extUserRoles": [],
+	"extUserDepartments": [],
+	"catOrder": [
+		"7baaac6e-7082-ef11-bdfd-000d3ab84645"
+	],
+	"layout": [],
+	"config": {
+		"showAccessibilityFocusIndicator": true,
+		"enhancement": ""
+	},
+	"enhancement": [],
+	"name": "Car Hire Demo",
+	"title": null,
+	"description": null,
+	"startApp": null,
+	"startWebApp": null,
+	"customLogo": null,
+	"launchpadApp": "planet9_launchpad_standard",
+	"hideSidemenu": false,
+	"ui5Version": "1.108",
+	"ui5Url": null,
+	"ui5Theme": "sap_horizon",
+	"header": [
+		"==OBJECT STRING==",
+		"<!-- Signature Pad -->",
+		"<script src=\"https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js\"></script>"
+	],
+	"customTheme": null,
+	"isExternal": false,
+	"emailPattern": null,
+	"loginApp": null,
+	"enableNotifications": false,
+	"firebaseProjectId": null,
+	"firebaseAppId": null,
+	"defaultLoginIDP": null,
+	"publicAccess": false,
+	"css": null,
+	"clientRequestTimeout": 120,
+	"limitWidth": false,
+	"searchBackgroundType": null,
+	"searchBackgroundColor": null,
+	"searchBackgroundShade": null,
+	"usedBackgroundType": null,
+	"usedBackgroundColor": null,
+	"usedBackgroundShade": null,
+	"searchEnableShadeCalc": null,
+	"usedEnableShadeCalc": null,
+	"enableTrace": false,
+	"ver": "24.10.24.1416",
+	"pwa_enable": false,
+	"pwa_customImageIos": null,
+	"pwa_customImageAndroidOld": null,
+	"pwa_customImageAndroidNew": null,
+	"pwa_displayMode": null,
+	"pwa_themeColor": null,
+	"pwa_backgroundColor": null,
+	"passwordResetEmail": null,
+	"activationCodeEmail": null,
+	"package": "eb775512-7082-ef11-bdfd-000d3ab84645",
+	"cat": [
+		{
+			"id": "7baaac6e-7082-ef11-bdfd-000d3ab84645",
+			"name": "Car Hire Main",
+			"title": "Car Hire Demo",
+			"ver": "24.10.14.0713"
+		}
+	]
+}

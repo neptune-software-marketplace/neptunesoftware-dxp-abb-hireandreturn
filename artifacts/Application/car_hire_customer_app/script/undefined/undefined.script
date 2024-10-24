@@ -1,0 +1,14 @@
+.searchPage {
+  background-image: url("https://dxpdemo.neptune-software.cloud/media/root/CarDamageSelectorApp/car.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sapFGridListDefault {
+  grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  grid-gap: 1.5rem 1.5rem;
+}
+
+.flexStyle {
+  flex-direction: column !important;
+}

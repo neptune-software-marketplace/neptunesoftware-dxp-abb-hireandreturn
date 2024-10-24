@@ -1,0 +1,401 @@
+{
+	"id": "226a03bf-5d85-ef11-bdfd-000d3ab84645",
+	"createdAt": "2024-10-08T10:11:56.550Z",
+	"createdBy": "emmanuella.ndukwe@neptune-software.com",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "32077e05-82e1-4c16-861d-8d5e76b4dde1",
+			"path": "/cardetails",
+			"method": "GET",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				},
+				{
+					"name": "select",
+					"description": "fieldName1, fieldname2, fieldName3"
+				},
+				{
+					"name": "take",
+					"description": "Limit (paginated) - max number of entities that should be taken"
+				},
+				{
+					"name": "skip",
+					"description": "Offset (paginated) from where entities should be taken"
+				},
+				{
+					"name": "order",
+					"description": "{\"fieldName1\": \"ASC\", \"fieldName2\": \"DESC\"}"
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "cardetails"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ce58aba7-3dbb-4204-8d32-dcbaf3a8a13a",
+			"path": "/cardetails",
+			"method": "PUT",
+			"headers": [],
+			"parameters": [],
+			"content": [
+				{
+					"objectTyoe": "array",
+					"name": "cardetails"
+				}
+			],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "cardetails"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "9f990696-8382-471d-bced-756916d15d29",
+			"path": "/cardetails",
+			"method": "POST",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [
+				{
+					"objectTyoe": "array",
+					"name": "cardetails"
+				}
+			],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "cardetails"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "14409b03-3ede-4b39-bcef-c5d017596c58",
+			"path": "/cardetails",
+			"method": "DELETE",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "cardetails"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "11ffe050-6e4d-47a3-956b-23aa4ee6f8e1",
+			"path": "/cardetails/count",
+			"method": "GET",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "count"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "5a368f00-2259-4522-aa5a-2d0152180712",
+			"name": "cardetails",
+			"properties": [
+				{
+					"id": "1329ca3b-f210-49f2-9ab2-f6888ca00784",
+					"parent": "",
+					"name": "id",
+					"description": "Unique record ID",
+					"objectType": "string"
+				},
+				{
+					"id": "33cc77c6-6d67-4331-8d6c-d661e8bf40f1",
+					"parent": "",
+					"name": "name",
+					"objectType": "string"
+				},
+				{
+					"id": "b7712d96-354b-47b4-8c57-eb46f4ac18d6",
+					"parent": "",
+					"name": "make",
+					"objectType": "string"
+				},
+				{
+					"id": "92d3ef1f-1ba4-4380-a6e0-f669565b5898",
+					"parent": "",
+					"name": "model",
+					"objectType": "string"
+				},
+				{
+					"id": "0ede3ce4-8153-4cab-81d8-837ba20e6fb0",
+					"parent": "",
+					"name": "vehicle_transmission",
+					"objectType": "string"
+				},
+				{
+					"id": "7caae3da-5e7c-4d69-bbc2-0bb7eca6488d",
+					"parent": "",
+					"name": "image_url",
+					"objectType": "string"
+				},
+				{
+					"id": "c73633bc-fc4c-496a-8526-c91be2b0a7cf",
+					"parent": "",
+					"name": "features",
+					"objectType": "object"
+				},
+				{
+					"id": "ad722433-681d-4deb-9bf9-90dac1685438",
+					"parent": "",
+					"name": "doors",
+					"objectType": "string"
+				},
+				{
+					"id": "67f34b17-d064-4e0d-977e-6f590d7ee8d1",
+					"parent": "",
+					"name": "seats",
+					"objectType": "string"
+				},
+				{
+					"id": "8e45c83f-3754-4410-ada6-b1325a30ea86",
+					"parent": "",
+					"name": "currency",
+					"objectType": "string"
+				},
+				{
+					"id": "0e769ae7-9d3a-4551-8dc9-fb7a0584c61e",
+					"parent": "",
+					"name": "vehicle_total",
+					"objectType": "string"
+				},
+				{
+					"id": "58a9d1b2-d516-49f8-8ee0-ef83fc4efdb2",
+					"parent": "",
+					"name": "reservation_total",
+					"objectType": "string"
+				},
+				{
+					"id": "9142b418-9c61-4a99-b223-b4b6f23412fc",
+					"parent": "",
+					"name": "pickup_location",
+					"objectType": "object"
+				},
+				{
+					"id": "e0c79e2d-6ead-4c6e-b625-00604a75f800",
+					"parent": "",
+					"name": "dropoff_location",
+					"objectType": "object"
+				},
+				{
+					"id": "9fc369de-8753-442e-a710-96452cda0ecb",
+					"parent": "",
+					"name": "createdAt",
+					"description": "Date when record was created",
+					"objectType": "number"
+				},
+				{
+					"id": "daa1acc0-a1dc-453c-a2ec-d9b50d0ff3b3",
+					"parent": "",
+					"name": "createdBy",
+					"description": "Created by",
+					"objectType": "string"
+				},
+				{
+					"id": "1b6f1cde-8e51-4c31-aa6c-5488e7b1df6a",
+					"parent": "",
+					"name": "updatedAt",
+					"description": "Date when record was updated",
+					"objectType": "number"
+				},
+				{
+					"id": "c2f2e034-359e-4658-92b8-d86f2a7c7b45",
+					"parent": "",
+					"name": "updatedBy",
+					"description": "Updated by",
+					"objectType": "string"
+				}
+			]
+		},
+		{
+			"id": "3949c85e-22d2-42a2-b310-b606cbc41927",
+			"name": "Error",
+			"properties": [
+				{
+					"id": "9103f1a8-4d51-40d2-945c-d1679bdaf81d",
+					"parent": "",
+					"name": "status",
+					"objectType": "string"
+				},
+				{
+					"id": "b31b0d6d-d900-4c11-b0b0-c15d14539974",
+					"parent": "",
+					"name": "message",
+					"objectType": "string"
+				}
+			]
+		},
+		{
+			"id": "47c23d7e-415f-4cb1-8718-fd6dec5b0bf9",
+			"name": "count",
+			"properties": [
+				{
+					"id": "651f77d3-187d-4c17-8373-b08b1017dde8",
+					"parent": "",
+					"name": "count",
+					"objectType": "number"
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "cardetails",
+	"endpoint": "/api/entity",
+	"ver": "24.10.08.1011",
+	"version": null,
+	"description": null,
+	"mediaType": "application/json",
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "table",
+	"about": null,
+	"enableProxy": false,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "eb775512-7082-ef11-bdfd-000d3ab84645",
+	"apiGroup": null,
+	"apiFormat": 0,
+	"roles": []
+}

@@ -1,0 +1,117 @@
+{
+	"id": "138a8793-5985-ef11-bdfd-000d3ab84645",
+	"createdAt": "2024-10-08T09:42:13.106Z",
+	"createdBy": "emmanuella.ndukwe@neptune-software.com",
+	"fields": [
+		{
+			"id": "20f70fae-d187-4373-c3e4-19c2b7a62534",
+			"fieldName": "name",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "82a55492-eec8-4597-cb00-f7b4468174eb",
+			"fieldName": "make",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "e2f17103-2966-448b-e758-d25133c5f13b",
+			"fieldName": "model",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "8df51ac8-60e0-45fa-a3f8-2f1dca9cd782",
+			"fieldName": "vehicle_transmission",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "b452fc3d-be6a-42ac-969b-66d36c9e904f",
+			"fieldName": "image_url",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "b34d8530-2bff-4538-f47c-3c0a1bbcaedc",
+			"fieldName": "features",
+			"fieldType": "json",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "cacf3e17-7e4e-48fe-f577-b5228cccca7d",
+			"fieldName": "doors",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "41c020c5-9635-475d-e690-48033955623d",
+			"fieldName": "seats",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "88b305c5-d9fa-4932-a172-844c64ef25b3",
+			"fieldName": "currency",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "4ffea23c-03cb-451c-bcda-3830b6448e0e",
+			"fieldName": "vehicle_total",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "b3322887-b398-4ba9-aa6a-3ac2f0c44d53",
+			"fieldName": "reservation_total",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "7f44b566-0a3c-40ba-e49d-87b3ca4cd713",
+			"fieldName": "pickup_location",
+			"fieldType": "json",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "cfa1e370-348c-4d11-f35d-a77814f649aa",
+			"fieldName": "dropoff_location",
+			"fieldType": "json",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "469b264e-2eff-45d3-dfd9-337c667a6af3",
+			"fieldName": "status",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "RENTED, AVAILABLE",
+			"default": "AVAILABLE",
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "cardetails",
+	"description": null,
+	"ver": "24.10.08.1013",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "eb775512-7082-ef11-bdfd-000d3ab84645",
+	"rolesRead": [],
+	"rolesWrite": []
+}

@@ -1,0 +1,15 @@
+const context = oEvent.oSource.getBindingContext();
+
+// Get Entire Model
+const data = context.getObject();
+selectedCar = data;
+DialogReturn.open();
+
+// oIconTabBarSignatureReturn.setVisible(true);
+var canvas = document.getElementById('signature-pad-return');
+signaturePadReturn = new SignaturePad(canvas);
+canvas.style.width = '500px';
+canvas.style.height = '250px';
+canvas.style.backgroundColor = 'white';
+canvas.width = 500;
+canvas.height = 250;

@@ -1,0 +1,38 @@
+{
+	"id": "b9d35976-5585-ef11-bdfd-000d3ab84645",
+	"createdAt": "2024-10-08T09:12:43.136Z",
+	"createdBy": "emmanuella.ndukwe@neptune-software.com",
+	"fields": [
+		{
+			"id": "b10c7b08-5a46-4c29-9f87-5bd999faec95",
+			"fieldName": "username",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "110890e5-f77d-4396-c51a-7b69b7389a07",
+			"fieldName": "formData",
+			"fieldType": "json",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "da9cd4e2-32ef-4e92-ca8e-86d33fb408b5",
+			"fieldName": "feedbackDetails",
+			"fieldType": "json",
+			"isUnique": false,
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "carhire_feedback",
+	"description": null,
+	"ver": "24.10.08.1412",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "eb775512-7082-ef11-bdfd-000d3ab84645",
+	"rolesRead": [],
+	"rolesWrite": []
+}

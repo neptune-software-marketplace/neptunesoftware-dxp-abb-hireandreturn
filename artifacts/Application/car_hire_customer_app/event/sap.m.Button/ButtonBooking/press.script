@@ -1,0 +1,4 @@
+DialogCarDetails.close();
+
+oApp.to(PageBooking)
+modeloSimpleFormVehicleBookingPrice.setData(modeloSimpleFormVehiclePriceDetails.getData());

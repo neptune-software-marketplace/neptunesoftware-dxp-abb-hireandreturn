@@ -1,0 +1,9 @@
+if (typeof booking_status === "undefined" || booking_status === null || booking_status === "") { return; }  
+var formattedText;
+
+if(booking_status == "RENTED"){
+    formattedText = true
+}else{
+    formattedText = false
+}
+return formattedText;

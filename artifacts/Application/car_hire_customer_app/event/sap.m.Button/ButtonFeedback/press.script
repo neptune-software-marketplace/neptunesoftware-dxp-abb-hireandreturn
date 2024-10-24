@@ -1,0 +1,6 @@
+
+sap.ui.getCore().attachInit(function(startParams) {
+    FORMS.build(DialogFeedback, "81BE7386-9084-EF11-BDFD-000D3AB84645" ); //parentName: Name of parent component, ID:string
+})
+
+DialogFeedback.open();

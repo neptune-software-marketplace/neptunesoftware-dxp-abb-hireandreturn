@@ -1,0 +1,27 @@
+{
+	"id": "1eca9c78-4182-ef11-bdfd-000d3ab84645",
+	"createdAt": "2024-10-04T11:11:58.983Z",
+	"createdBy": "emmanuella.ndukwe@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "C005E7C4-DD7F-EF11-BDFD-000D3AB84645",
+			"name": "car_booking",
+			"contextname": "car_booking"
+		}
+	],
+	"apis": [],
+	"name": "getAllBookings",
+	"ver": "24.10.04.1113",
+	"description": null,
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": true,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "facc407b-ff7f-ef11-bdfd-000d3ab84645",
+	"package": "eb775512-7082-ef11-bdfd-000d3ab84645"
+}

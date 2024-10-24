@@ -1,0 +1,18 @@
+var returnDate = new Date();
+
+var options = {
+    data: {
+        "id": selectedCar.id,
+        "car_id": selectedCar.car_id,
+        "return_sign": signaturePadReturn.toDataURL(),
+        "booking_status": "RETURNED",
+        "return_date": returnDate,
+       
+    }
+};
+
+//console.log(options)
+apiReturn_car_API(options);
+
+
+DialogReturn.close();

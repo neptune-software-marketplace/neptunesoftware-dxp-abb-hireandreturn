@@ -1,0 +1,190 @@
+{
+	"id": "eb775512-7082-ef11-bdfd-000d3ab84645",
+	"createdAt": "2024-10-04T16:45:33.730Z",
+	"createdBy": "emmanuella.ndukwe@neptune-software.com",
+	"git": {
+		"remote": "https://github.com/neptune-software-marketplace/neptunesoftware-dxp-abb-hireandreturn"
+	},
+	"name": "Car Hire Demo",
+	"description": null,
+	"ver": "24.10.24.1413",
+	"enableCICD": true,
+	"apps": [
+		{
+			"id": "0a4fab87-dc7b-ef11-bdfd-000d3ab84645",
+			"application": "car_hire_customer_app",
+			"title": "",
+			"description": "",
+			"package": {
+				"id": "EB775512-7082-EF11-BDFD-000D3AB84645"
+			}
+		},
+		{
+			"id": "02ae60ba-3582-ef11-bdfd-000d3ab84645",
+			"application": "car_hire_employee",
+			"title": "",
+			"description": "",
+			"package": {
+				"id": "EB775512-7082-EF11-BDFD-000D3AB84645"
+			}
+		}
+	],
+	"api": [
+		{
+			"id": "dc11215d-7f85-ef11-bdfd-000d3ab84645",
+			"name": "carhire_feedback",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "ba532f85-4aca-ee11-85f9-0022489e2e3e",
+			"name": "car_damage_parts_pictures",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "88cdd496-4982-ef11-bdfd-000d3ab84645",
+			"name": "car_booking",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "410a2f7e-9980-ef11-bdfd-000d3ab84645",
+			"name": "car_hire_script API",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "226a03bf-5d85-ef11-bdfd-000d3ab84645",
+			"name": "cardetails",
+			"description": null,
+			"apiGroup": null
+		}
+	],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [
+		{
+			"id": "c005e7c4-dd7f-ef11-bdfd-000d3ab84645",
+			"name": "car_booking",
+			"description": null
+		},
+		{
+			"id": "b9d35976-5585-ef11-bdfd-000d3ab84645",
+			"name": "carhire_feedback",
+			"description": null
+		},
+		{
+			"id": "91c15b0f-42ca-ee11-85f9-0022489e2e3e",
+			"name": "car_damage_parts_pictures",
+			"description": null
+		},
+		{
+			"id": "138a8793-5985-ef11-bdfd-000d3ab84645",
+			"name": "cardetails",
+			"description": null
+		}
+	],
+	"jsclass": [
+		{
+			"id": "c6606f1b-5585-ef11-bdfd-000d3ab84645",
+			"name": "test",
+			"description": null
+		},
+		{
+			"id": "81c51ccb-4e91-ef11-8473-000d3ab844b2",
+			"name": "deleteBooking",
+			"description": ""
+		},
+		{
+			"id": "7614c5ef-9a80-ef11-bdfd-000d3ab84645",
+			"name": "getAllUserBookings",
+			"description": null
+		},
+		{
+			"id": "2cfe8997-af80-ef11-bdfd-000d3ab84645",
+			"name": "return_car",
+			"description": null
+		},
+		{
+			"id": "1eca9c78-4182-ef11-bdfd-000d3ab84645",
+			"name": "getAllBookings",
+			"description": null
+		},
+		{
+			"id": "0ad195a4-ff7f-ef11-bdfd-000d3ab84645",
+			"name": "saveBooking",
+			"description": null
+		}
+	],
+	"jsscript_group": [
+		{
+			"id": "facc407b-ff7f-ef11-bdfd-000d3ab84645",
+			"name": "CarRental",
+			"description": ""
+		}
+	],
+	"theme": [],
+	"pdf": [
+		{
+			"id": "4665f2b9-4685-ef11-bdfd-000d3ab84645",
+			"application": "car_handover_protocol",
+			"description": ""
+		}
+	],
+	"rulesengine": [],
+	"reports": [
+		{
+			"id": "2d7878ab-0486-ef11-bdfd-000d3ab84645",
+			"name": "carHireChart",
+			"description": "",
+			"application": "planet9_adaptive_tile_chart"
+		}
+	],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [
+		{
+			"id": "e1e20ecc-7082-ef11-bdfd-000d3ab84645",
+			"description": null,
+			"name": "Car Hire Customer"
+		},
+		{
+			"id": "6a7822a6-7082-ef11-bdfd-000d3ab84645",
+			"description": null,
+			"name": "Car Hire Employee"
+		},
+		{
+			"id": "1b562a18-0586-ef11-bdfd-000d3ab84645",
+			"description": null,
+			"name": "Car Availability Chart"
+		}
+	],
+	"category": [],
+	"launchpad": [
+		{
+			"id": "7c15b151-7082-ef11-bdfd-000d3ab84645",
+			"name": "Car Hire Demo",
+			"description": null
+		}
+	],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [],
+	"connector": [
+		{
+			"id": "08dac57f-0486-ef11-bdfd-000d3ab84645",
+			"name": "cardetails",
+			"description": null
+		}
+	],
+	"events": [],
+	"code_snippets": [],
+	"wf_determination": [],
+	"wf_taskaction": []
+}

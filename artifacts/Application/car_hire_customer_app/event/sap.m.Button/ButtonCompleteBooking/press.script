@@ -1,0 +1,72 @@
+var selectedVechicle = modelDialogCarDetails.getData();
+ // ------ FORM INPUT VALIDATION --------
+if(InputCustomerFirstName.getValue() == ""){
+    InputCustomerFirstName.setValueState("Error");
+    sap.m.MessageToast.show("Please enter your first name");    
+    return;
+}
+if(InputCustomerLastName.getValue() == ""){
+    InputCustomerLastName.setValueState("Error");
+    sap.m.MessageToast.show("Please enter your Last name");   
+    return;
+}
+if(InputCustomerPhoneNo.getValue() == ""){
+    InputCustomerPhoneNo.setValueState("Error");
+    sap.m.MessageToast.show("Please enter your phone number");   
+    return;
+}
+if(InputCustomerMail.getValue() == ""){
+    InputCustomerMail.setValueState("Error");
+    sap.m.MessageToast.show("Please enter your email address");   
+    return;
+}
+if(InputCustomerAddress.getValue() == ""){
+    InputCustomerAddress.setValueState("Error");
+    sap.m.MessageToast.show("Please enter your house address");   
+    return;
+}
+
+
+var bookingDetails = {
+    first_name: InputCustomerFirstName.getValue(),
+    last_name: InputCustomerLastName.getValue(),
+    phone_no: InputCustomerPhoneNo.getValue(),
+    email: InputCustomerMail.getValue(),
+    address: InputCustomerAddress.getValue(),
+    booking_no: getRandomBookingNumber(),
+    car_details: selectedVechicle,
+    //booking_sign: signaturePad.toDataURL(),
+    car_svg: "https://dxpdemo.neptune-software.cloud/media/root/CarDamageSelectorApp/carNew.svg",
+    car_image: selectedVechicle.imageSrc,
+    total_cost: selectedVechicle.totalReservation,
+    booked_days: selectedVechicle.rateDays,
+    car_id: selectedVechicle.id
+
+}
+//console.log(bookingDetails);
+
+
+var options = {
+    data: bookingDetails
+};
+
+apisaveBooking(options);
+
+
+// Use MessageToast with all Options
+sap.m.MessageToast.show("Booking Completed! Visit the pickup location for formal handover of the vehicle.", {
+    duration: 3000,                  // default
+    width: "15em",                   // default
+    my: "center center",             // default
+    at: "center center",             // default
+    of: document,                    // default
+    offset: "0 0",                   // default
+    collision: "fit fit",            // default
+    onClose: null,                   // default
+    autoClose: true,                 // default
+    animationTimingFunction: "ease", // default
+    animationDuration: 1000          // default
+});
+apiGet_User_Bookings();
+oApp.to(oPageManageBookings);
+modelSimpleFormBookingDetails.setData({});

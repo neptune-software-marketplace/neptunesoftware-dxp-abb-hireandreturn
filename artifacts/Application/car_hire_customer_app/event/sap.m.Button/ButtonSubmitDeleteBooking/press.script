@@ -1,0 +1,13 @@
+var options = {
+    data: {
+        id: modeloPageManageBookingDetails.oData.id,
+        car_id: modeloPageManageBookingDetails.oData.car_id
+    }
+};
+
+apiDelete_Booking(options);
+
+
+DialogDeleteBooking.close();
+
+oApp.to(oPageManageBookings);

@@ -1,0 +1,157 @@
+{
+	"id": "c005e7c4-dd7f-ef11-bdfd-000d3ab84645",
+	"createdAt": "2024-10-01T10:13:18.746Z",
+	"createdBy": "emmanuella.ndukwe@neptune-software.com",
+	"fields": [
+		{
+			"id": "dcae365f-1906-4f6f-c108-9bd19c46ed44",
+			"fieldName": "user_id",
+			"fieldType": "uuid",
+			"isUnique": false
+		},
+		{
+			"id": "b3c0e07b-b0af-431b-f2e2-8b4fb12049a1",
+			"fieldName": "booking_no",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "6471f9b7-9315-4d98-a817-c76d4a4d2358",
+			"fieldName": "car_details",
+			"fieldType": "json",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Contains details of the booked car"
+		},
+		{
+			"id": "6d8b1019-4f10-45a1-bf09-7bb55b1e1f9b",
+			"fieldName": "first_name",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "25f91da4-2196-4e5d-a44b-80d20ba8b6fc",
+			"fieldName": "last_name",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "0d4f687f-875d-488c-f7fa-2b3bcbbd9797",
+			"fieldName": "email",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "752585a6-678c-4bc6-9ec1-2b7af1cf6977",
+			"fieldName": "booking_sign",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "signature when car was booked",
+			"isNullable": true
+		},
+		{
+			"id": "e64fecb3-567f-4fda-eae5-5c9e603f464d",
+			"fieldName": "return_sign",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "signature on return of the car",
+			"isNullable": true
+		},
+		{
+			"id": "eca5577b-e9d8-4d6a-8172-419e34389013",
+			"fieldName": "clearance_status",
+			"fieldType": "mediumtext",
+			"isUnique": false,
+			"description": "status of the car after return",
+			"default": "NOT CLEARED",
+			"isNullable": true
+		},
+		{
+			"id": "02c2c777-4eea-4dd1-aadd-d3d69ee30b34",
+			"fieldName": "damage_images",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "damage car images",
+			"isNullable": true
+		},
+		{
+			"id": "637c59cc-7c57-4e41-877e-4217efb7c0cb",
+			"fieldName": "booked_days",
+			"fieldType": "integer",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "493417b7-cc20-4753-b32b-1fdf02cab28a",
+			"fieldName": "total_cost",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "e0b629c6-a508-4e24-ba3a-95d8fd6c3d53",
+			"fieldName": "car_image",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "1bf46953-9f71-4c12-f067-850079f1028e",
+			"fieldName": "car_svg",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "dc9dc515-0d3b-4649-af59-ed78b2461bd2",
+			"fieldName": "booking_status",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true,
+			"default": "BOOKED"
+		},
+		{
+			"id": "069194ac-abbf-4140-824d-b67e98ef6257",
+			"fieldName": "return_date",
+			"fieldType": "timestamp",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "68976aef-d867-4cff-ac30-901170828aba",
+			"fieldName": "parts",
+			"fieldType": "json",
+			"isUnique": false,
+			"isNullable": true,
+			"default": ""
+		},
+		{
+			"id": "e9c6fb5e-cbc7-484d-c1f8-2078e37a6932",
+			"fieldName": "comment",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "aadb801a-266a-4969-90ae-6842d70734b7",
+			"fieldName": "car_id",
+			"fieldType": "uuid",
+			"isUnique": false,
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "car_booking",
+	"description": null,
+	"ver": "24.10.08.1239",
+	"enableAudit": false,
+	"includeDataInPackage": true,
+	"package": "eb775512-7082-ef11-bdfd-000d3ab84645",
+	"rolesRead": [],
+	"rolesWrite": []
+}

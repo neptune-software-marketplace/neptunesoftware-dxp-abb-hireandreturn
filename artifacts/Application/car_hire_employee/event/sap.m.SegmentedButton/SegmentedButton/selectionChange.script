@@ -1,0 +1,7 @@
+const binding = oListCarsBooked.getBinding("items");
+const filter = new sap.ui.model.Filter("booking_status", "EQ", this.getSelectedKey());
+if(this.getSelectedKey() == "ALL"){
+    binding.filter([]);
+}else{
+    binding.filter([filter]);
+}

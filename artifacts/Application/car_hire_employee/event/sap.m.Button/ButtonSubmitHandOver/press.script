@@ -1,0 +1,28 @@
+
+
+
+
+var options = {
+    parameters: {
+        "where": JSON.stringify({"id": modelDialogHandOver.oData.id}) // Optional 
+    },
+    data: {
+        "booking_sign": signaturePadPickup.toDataURL(),
+        "booking_status": "RENTED",
+       
+    }
+};
+
+apiUpdateCarDetails(options);
+
+
+DialogHandOver.close();
+sap.m.MessageToast.show("Hand over Completed! See handover document at the top.", {
+    duration: 3000,                  // default
+    width: "15em",                   // default
+    my: "center center",             // default
+    at: "center center",             // default
+
+});
+ButtonPDFHandOver.setVisible(true);
+ButtonHandOver.setVisible(false);

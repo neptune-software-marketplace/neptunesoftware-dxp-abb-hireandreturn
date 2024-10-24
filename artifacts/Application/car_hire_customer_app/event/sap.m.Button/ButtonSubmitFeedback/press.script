@@ -1,0 +1,10 @@
+let formData = FORMS.getData(true);
+if (formData.valid === true) {
+let questionaire = parseFormsResponse(formData);
+saveRequest(questionaire, formData);
+DialogFeedback.close()
+}
+else{
+// Use MessageToast
+sap.m.MessageToast.show("Please fill out all mandatory fields!");    
+}

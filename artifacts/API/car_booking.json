@@ -1,0 +1,439 @@
+{
+	"id": "88cdd496-4982-ef11-bdfd-000d3ab84645",
+	"createdAt": "2024-10-04T12:10:11.883Z",
+	"createdBy": "emmanuella.ndukwe@neptune-software.com",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "61637628-4fa1-4633-9138-6d375c7f6097",
+			"path": "/car_booking",
+			"method": "GET",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				},
+				{
+					"name": "select",
+					"description": "fieldName1, fieldname2, fieldName3"
+				},
+				{
+					"name": "take",
+					"description": "Limit (paginated) - max number of entities that should be taken"
+				},
+				{
+					"name": "skip",
+					"description": "Offset (paginated) from where entities should be taken"
+				},
+				{
+					"name": "order",
+					"description": "{\"fieldName1\": \"ASC\", \"fieldName2\": \"DESC\"}"
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "car_booking"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "7cb44b1e-c193-4f2a-88eb-cae3ea432c91",
+			"path": "/car_booking",
+			"method": "PUT",
+			"headers": [],
+			"parameters": [],
+			"content": [
+				{
+					"objectTyoe": "array",
+					"name": "car_booking"
+				}
+			],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "car_booking"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "0e554c69-0389-4c5b-8ff8-59e85a23ff18",
+			"path": "/car_booking",
+			"method": "POST",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [
+				{
+					"objectTyoe": "array",
+					"name": "car_booking"
+				}
+			],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "car_booking"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ca0ae899-896b-4d04-9f2c-10430b4838af",
+			"path": "/car_booking",
+			"method": "DELETE",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "car_booking"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "460f428b-db94-4925-ae69-86e4bbb66aca",
+			"path": "/car_booking/count",
+			"method": "GET",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "count"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "56c5d312-2117-48ef-b3e4-a15d59ab8a30",
+			"name": "car_booking",
+			"properties": [
+				{
+					"id": "59c82688-2d2b-484d-86cb-144dba3c4134",
+					"parent": "",
+					"name": "id",
+					"description": "Unique record ID",
+					"objectType": "string"
+				},
+				{
+					"id": "627d7393-137b-4fb7-ba8e-98a229628ba1",
+					"parent": "",
+					"name": "user_id",
+					"objectType": "uuid"
+				},
+				{
+					"id": "7fc514b7-8914-402b-bb25-d98437d229ff",
+					"parent": "",
+					"name": "booking_no",
+					"objectType": "string"
+				},
+				{
+					"id": "2654e8a4-17eb-4931-9e68-b4d502cbc3ca",
+					"parent": "",
+					"name": "car_details",
+					"description": "Contains details of the booked car",
+					"objectType": "object"
+				},
+				{
+					"id": "ba391637-656b-4944-a164-8087f2427c12",
+					"parent": "",
+					"name": "first_name",
+					"objectType": "string"
+				},
+				{
+					"id": "04f85824-f3dd-42ea-990d-4184ad129648",
+					"parent": "",
+					"name": "last_name",
+					"objectType": "string"
+				},
+				{
+					"id": "e61a00f3-1f9a-4a64-a262-fa31a3380f46",
+					"parent": "",
+					"name": "email",
+					"objectType": "string"
+				},
+				{
+					"id": "6ab4fb53-09cc-45d8-a724-76ae690fa94d",
+					"parent": "",
+					"name": "booking_sign",
+					"description": "signature when car was booked",
+					"objectType": "string"
+				},
+				{
+					"id": "f0cac4d8-00fe-4b17-ac48-7210b966bd88",
+					"parent": "",
+					"name": "return_sign",
+					"description": "signature on return of the car",
+					"objectType": "string"
+				},
+				{
+					"id": "4b629f8b-6b1a-4a15-aa29-bb2adcf53697",
+					"parent": "",
+					"name": "clearance_status",
+					"description": "status of the car after return",
+					"default": "NOT CLEARED",
+					"objectType": "string"
+				},
+				{
+					"id": "e018c488-0693-4a88-b81a-89c10a1c2040",
+					"parent": "",
+					"name": "damage_images",
+					"description": "damage car images",
+					"objectType": "string"
+				},
+				{
+					"id": "ea2667e2-b029-4f56-85d0-148c4211ddd2",
+					"parent": "",
+					"name": "booked_days",
+					"objectType": "integer"
+				},
+				{
+					"id": "805db811-b623-4c0d-b397-9f3bb627286a",
+					"parent": "",
+					"name": "total_cost",
+					"objectType": "string"
+				},
+				{
+					"id": "7514f927-38c2-48a5-8406-3a3b5117d6a4",
+					"parent": "",
+					"name": "car_image",
+					"objectType": "string"
+				},
+				{
+					"id": "4c3f070d-f750-4b92-8f82-4e22ca3a3b82",
+					"parent": "",
+					"name": "car_svg",
+					"objectType": "string"
+				},
+				{
+					"id": "7fdd59a2-f755-411d-b79e-9301f6d88366",
+					"parent": "",
+					"name": "booking_status",
+					"default": "BOOKED",
+					"objectType": "string"
+				},
+				{
+					"id": "efcd9150-093b-4eed-a967-4be596612cb2",
+					"parent": "",
+					"name": "return_date",
+					"objectType": "string"
+				},
+				{
+					"id": "1177203b-fea1-411a-870d-9c0eb9f06fca",
+					"parent": "",
+					"name": "parts",
+					"default": "",
+					"objectType": "object"
+				},
+				{
+					"id": "085c5151-1480-4415-aeea-7ecb6bdd544f",
+					"parent": "",
+					"name": "comment",
+					"objectType": "string"
+				},
+				{
+					"id": "8a8d9828-99ac-4670-89eb-c2e6aef6b7ad",
+					"parent": "",
+					"name": "createdAt",
+					"description": "Date when record was created",
+					"objectType": "number"
+				},
+				{
+					"id": "bc290c76-6e51-4907-b876-25b84b5f4a8a",
+					"parent": "",
+					"name": "createdBy",
+					"description": "Created by",
+					"objectType": "string"
+				},
+				{
+					"id": "d03d9e39-7525-4b4e-a957-72babdfcd25e",
+					"parent": "",
+					"name": "updatedAt",
+					"description": "Date when record was updated",
+					"objectType": "number"
+				},
+				{
+					"id": "1aafa091-7e28-4a93-bbc8-b590c5718741",
+					"parent": "",
+					"name": "updatedBy",
+					"description": "Updated by",
+					"objectType": "string"
+				}
+			]
+		},
+		{
+			"id": "1ea3a4f2-9ca9-45a8-afec-025779c71f59",
+			"name": "Error",
+			"properties": [
+				{
+					"id": "abb70880-acc1-4bf5-a420-05a31a7018c0",
+					"parent": "",
+					"name": "status",
+					"objectType": "string"
+				},
+				{
+					"id": "233740cc-a849-4a8b-a690-355030c896f4",
+					"parent": "",
+					"name": "message",
+					"objectType": "string"
+				}
+			]
+		},
+		{
+			"id": "bee2c6b5-1bea-4871-9819-3dc49fc4de8d",
+			"name": "count",
+			"properties": [
+				{
+					"id": "e8945daa-b41b-498b-ac02-160513e2179d",
+					"parent": "",
+					"name": "count",
+					"objectType": "number"
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "car_booking",
+	"endpoint": "/api/entity",
+	"ver": "24.10.24.1410",
+	"version": null,
+	"description": null,
+	"mediaType": "application/json",
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "table",
+	"about": null,
+	"enableProxy": false,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "eb775512-7082-ef11-bdfd-000d3ab84645",
+	"apiGroup": null,
+	"apiFormat": 0,
+	"roles": []
+}
