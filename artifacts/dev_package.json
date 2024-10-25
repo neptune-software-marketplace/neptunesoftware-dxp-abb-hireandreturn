@@ -7,7 +7,7 @@
 	},
 	"name": "Car Hire Demo",
 	"description": null,
-	"ver": "24.10.25.0942",
+	"ver": "24.10.25.1032",
 	"enableCICD": true,
 	"apps": [
 		{
@@ -86,11 +86,6 @@
 		}
 	],
 	"jsclass": [
-		{
-			"id": "c6606f1b-5585-ef11-bdfd-000d3ab84645",
-			"name": "test",
-			"description": null
-		},
 		{
 			"id": "81c51ccb-4e91-ef11-8473-000d3ab844b2",
 			"name": "deleteBooking",

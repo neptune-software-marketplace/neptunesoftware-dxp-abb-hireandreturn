@@ -13,7 +13,7 @@ var options = {
     }
 };
 
-apiUpdateCarDetails(options);
+apiUpdateCarBookingDetails(options);
 
 
 DialogHandOver.close();

@@ -4182,7 +4182,15 @@
 									"customComponent": false,
 									"request": [],
 									"response": [],
-									"attributes": [],
+									"attributes": [
+										{
+											"attribute": "headerText",
+											"grouping": "Properties",
+											"value": "Damaged Pictures",
+											"script": "",
+											"translation": []
+										}
+									],
 									"data": [
 										{
 											"fieldNo": "7eb79173-d228-4f6a-c545-c122e54c149e",
@@ -4219,9 +4227,17 @@
 											"fieldType": "sap.m.Button",
 											"script": "",
 											"customComponent": false,
+											"bindingType": "h",
 											"request": [],
 											"response": [],
 											"attributes": [
+												{
+													"attribute": "visible",
+													"grouping": "Properties",
+													"value": "{/booking_status}",
+													"script": "",
+													"translation": []
+												},
 												{
 													"attribute": "text",
 													"grouping": "Properties",
@@ -4243,9 +4259,97 @@
 													"script": "file://event/sap.m.Button/ButtonAddDamagePictures/press.js",
 													"language": "javascript",
 													"translation": []
+												},
+												{
+													"attribute": "visible",
+													"grouping": "Formatter",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.m.Button/ButtonAddDamagePictures/visible.script",
+													"translation": []
 												}
 											],
 											"data": []
+										},
+										{
+											"fieldNo": "8a1417e7-5af9-482a-a060-21a27ca201fc",
+											"fieldName": "GridListCarPictures",
+											"fieldParent": "2fd5db1d-7000-4d96-9465-7e8836195d2b",
+											"fieldType": "sap.f.GridList",
+											"script": "",
+											"customComponent": false,
+											"bindingValue": "car_damage_parts_pictures>car_damage_parts_pictures",
+											"bindingType": "h",
+											"bindingSource": "API",
+											"bindingParentID": "BA532F85-4ACA-EE11-85F9-0022489E2E3E",
+											"bindingPathID": "db3061e4-7fe6-4ab1-8a30-5a90f2e67877",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "width",
+													"grouping": "Properties",
+													"value": "10%",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "cfa8e6d5-74b0-41eb-9923-fb8206194576",
+													"fieldName": "GridListItemCarPictures",
+													"fieldParent": "8a1417e7-5af9-482a-a060-21a27ca201fc",
+													"fieldType": "sap.f.GridListItem",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": [
+														{
+															"fieldNo": "a3255e73-d1aa-4079-ad22-c79522ed3c10",
+															"fieldName": "ImageCarDamage",
+															"fieldParent": "cfa8e6d5-74b0-41eb-9923-fb8206194576",
+															"fieldType": "sap.m.Image",
+															"script": "",
+															"customComponent": false,
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "width",
+																	"grouping": "Properties",
+																	"value": "100px",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "src",
+																	"grouping": "Properties",
+																	"value": "{picture}",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "height",
+																	"grouping": "Properties",
+																	"value": "100px",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "press",
+																	"grouping": "Events",
+																	"value": "Anonymous Function",
+																	"script": "file://event/sap.m.Image/ImageCarDamage/press.js",
+																	"language": "javascript",
+																	"translation": []
+																}
+															],
+															"data": []
+														}
+													]
+												}
+											]
 										},
 										{
 											"fieldNo": "bc080c6c-6f1b-47cf-e130-0636019e528c",
@@ -4254,6 +4358,7 @@
 											"fieldType": "sap.m.Table",
 											"script": "",
 											"customComponent": false,
+											"disabled": true,
 											"bindingValue": "car_damage_parts_pictures>car_damage_parts_pictures",
 											"bindingType": "h",
 											"bindingSource": "API",
@@ -4285,6 +4390,7 @@
 													"fieldType": "sap.m.Column",
 													"script": "",
 													"customComponent": false,
+													"disabled": true,
 													"request": [],
 													"response": [],
 													"attributes": [],
@@ -4296,6 +4402,7 @@
 															"fieldType": "sap.m.Text",
 															"script": "",
 															"customComponent": false,
+															"disabled": true,
 															"request": [],
 															"response": [],
 															"attributes": [
@@ -4312,12 +4419,40 @@
 													]
 												},
 												{
+													"fieldNo": "a21ba98b-2739-43b0-ff64-283073095a42",
+													"fieldName": "colTableEmpty1",
+													"fieldParent": "bc080c6c-6f1b-47cf-e130-0636019e528c",
+													"fieldType": "sap.m.Column",
+													"script": "",
+													"customComponent": false,
+													"disabled": true,
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": [
+														{
+															"fieldNo": "3e036862-84a9-46b4-8561-d77832740b68",
+															"fieldName": "colHTableEmpty1",
+															"fieldParent": "a21ba98b-2739-43b0-ff64-283073095a42",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"customComponent": false,
+															"disabled": true,
+															"request": [],
+															"response": [],
+															"attributes": [],
+															"data": []
+														}
+													]
+												},
+												{
 													"fieldNo": "7a9bfc0c-8af2-474e-af15-8c0447446e73",
 													"fieldName": "colTablepicture",
 													"fieldParent": "bc080c6c-6f1b-47cf-e130-0636019e528c",
 													"fieldType": "sap.m.Column",
 													"script": "",
 													"customComponent": false,
+													"disabled": true,
 													"request": [],
 													"response": [],
 													"attributes": [],
@@ -4329,6 +4464,7 @@
 															"fieldType": "sap.m.Text",
 															"script": "",
 															"customComponent": false,
+															"disabled": true,
 															"request": [],
 															"response": [],
 															"attributes": [
@@ -4345,12 +4481,40 @@
 													]
 												},
 												{
+													"fieldNo": "db4b24ee-cf06-4df5-8b22-39eea1c73f7c",
+													"fieldName": "colTableEmpty",
+													"fieldParent": "bc080c6c-6f1b-47cf-e130-0636019e528c",
+													"fieldType": "sap.m.Column",
+													"script": "",
+													"customComponent": false,
+													"disabled": true,
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": [
+														{
+															"fieldNo": "025ac506-58a6-4a3d-e330-2e8710e1de2d",
+															"fieldName": "colHTableEmpty",
+															"fieldParent": "db4b24ee-cf06-4df5-8b22-39eea1c73f7c",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"customComponent": false,
+															"disabled": true,
+															"request": [],
+															"response": [],
+															"attributes": [],
+															"data": []
+														}
+													]
+												},
+												{
 													"fieldNo": "e38a645a-f19e-48a0-b3c3-1460007e2331",
 													"fieldName": "colItemTable",
 													"fieldParent": "bc080c6c-6f1b-47cf-e130-0636019e528c",
 													"fieldType": "sap.m.ColumnListItem",
 													"script": "",
 													"customComponent": false,
+													"disabled": true,
 													"request": [],
 													"response": [],
 													"attributes": [],
@@ -4362,6 +4526,7 @@
 															"fieldType": "sap.m.Text",
 															"script": "",
 															"customComponent": false,
+															"disabled": true,
 															"bindingType": "h",
 															"request": [],
 															"response": [],
@@ -4377,45 +4542,31 @@
 															"data": []
 														},
 														{
-															"fieldNo": "a3255e73-d1aa-4079-ad22-c79522ed3c10",
-															"fieldName": "ImageCarDamage",
+															"fieldNo": "acecd2e0-c179-4fbb-fed9-0cc7b1dbd535",
+															"fieldName": "txtTableEmpty1",
 															"fieldParent": "e38a645a-f19e-48a0-b3c3-1460007e2331",
-															"fieldType": "sap.m.Image",
+															"fieldType": "sap.m.Text",
 															"script": "",
 															"customComponent": false,
+															"disabled": true,
+															"bindingType": "h",
 															"request": [],
 															"response": [],
-															"attributes": [
-																{
-																	"attribute": "width",
-																	"grouping": "Properties",
-																	"value": "50px",
-																	"script": "",
-																	"translation": []
-																},
-																{
-																	"attribute": "src",
-																	"grouping": "Properties",
-																	"value": "{picture}",
-																	"script": "",
-																	"translation": []
-																},
-																{
-																	"attribute": "height",
-																	"grouping": "Properties",
-																	"value": "50px",
-																	"script": "",
-																	"translation": []
-																},
-																{
-																	"attribute": "press",
-																	"grouping": "Events",
-																	"value": "Anonymous Function",
-																	"script": "file://event/sap.m.Image/ImageCarDamage/press.js",
-																	"language": "javascript",
-																	"translation": []
-																}
-															],
+															"attributes": [],
+															"data": []
+														},
+														{
+															"fieldNo": "4b536a4c-8106-4c8d-8aa5-9536a91d1b26",
+															"fieldName": "txtTableEmpty",
+															"fieldParent": "e38a645a-f19e-48a0-b3c3-1460007e2331",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"customComponent": false,
+															"disabled": true,
+															"bindingType": "h",
+															"request": [],
+															"response": [],
+															"attributes": [],
 															"data": []
 														}
 													]
@@ -6321,7 +6472,7 @@
 								{
 									"status": 200,
 									"dataId": "db3061e4-7fe6-4ab1-8a30-5a90f2e67877",
-									"modelFieldNo": "bc080c6c-6f1b-47cf-e130-0636019e528c"
+									"modelFieldNo": "8a1417e7-5af9-482a-a060-21a27ca201fc"
 								}
 							],
 							"attributes": [],
@@ -6493,7 +6644,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.10.25.1029",
+	"ver": "24.10.25.1229",
 	"application": "car_hire_customer_app",
 	"title": "",
 	"description": "",

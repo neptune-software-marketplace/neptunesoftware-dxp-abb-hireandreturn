@@ -102,13 +102,20 @@
 			"description": "RENTED, AVAILABLE",
 			"default": "AVAILABLE",
 			"isNullable": true
+		},
+		{
+			"id": "fc75fb78-8892-4a1f-fb33-2420e857c35a",
+			"fieldName": "parts",
+			"fieldType": "json",
+			"isUnique": false,
+			"isNullable": true
 		}
 	],
 	"indices": [],
 	"foreignKeys": [],
 	"name": "cardetails",
 	"description": null,
-	"ver": "24.10.25.0941",
+	"ver": "24.10.25.1137",
 	"enableAudit": false,
 	"includeDataInPackage": true,
 	"package": "eb775512-7082-ef11-bdfd-000d3ab84645",

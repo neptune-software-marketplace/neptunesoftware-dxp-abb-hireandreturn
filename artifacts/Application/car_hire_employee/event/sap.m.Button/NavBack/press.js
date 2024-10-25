@@ -1,3 +1,4 @@
+
 NavBackWithChangesDialog.close();
 App.to(MainListPage);
 // resetSvgClasses();

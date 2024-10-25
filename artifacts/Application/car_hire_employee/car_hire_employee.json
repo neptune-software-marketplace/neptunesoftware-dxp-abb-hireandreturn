@@ -957,8 +957,8 @@
 														{
 															"attribute": "press",
 															"grouping": "Events",
-															"value": "Anonymous Function",
-															"script": "file://event/sap.m.Button/SaveChangesButton/press.script",
+															"value": "saveDamageDetails();",
+															"script": "saveDamageDetails();",
 															"translation": []
 														}
 													],
@@ -5334,6 +5334,7 @@
 							"fieldType": "neptune.restapi",
 							"script": "",
 							"customComponent": false,
+							"disabled": true,
 							"restSource": "b29abc4d-43f3-ee11-aaf0-000d3ab82dc5",
 							"restOperation": "e80070ef-d432-48d5-8285-41f0510d8727",
 							"request": [],
@@ -5541,41 +5542,69 @@
 							"response": [],
 							"attributes": [],
 							"data": []
-						}
-					]
-				},
-				{
-					"fieldNo": "06f1cecd-5b40-4614-f400-73f40b2a171f",
-					"fieldName": "GetRentedCars",
-					"fieldParent": 99999,
-					"fieldType": "neptune.restapi",
-					"script": "",
-					"customComponent": false,
-					"restSource": "410a2f7e-9980-ef11-bdfd-000d3ab84645",
-					"restOperation": "92d1037c-2f1f-438b-e8e2-68019b9ab33b",
-					"request": [],
-					"response": [
-						{
-							"status": "200",
-							"dataId": "",
-							"modelFieldNo": "14748001-c644-404a-c4da-29a562c76ad9"
 						},
 						{
-							"status": "200",
-							"dataId": "",
-							"modelFieldNo": "14748001-c644-404a-c4da-29a562c76ad9"
-						}
-					],
-					"attributes": [
-						{
-							"attribute": "setInitLoad",
-							"grouping": "Model",
-							"value": "online",
+							"fieldNo": "f1d6b15d-dfda-4cbd-9e98-28a8ad83c346",
+							"fieldName": "UpdateCarBookingDetails",
+							"fieldParent": "d6dd9d70-427e-45e2-9008-10a14b8f93c5",
+							"fieldType": "neptune.restapi",
 							"script": "",
-							"translation": []
+							"customComponent": false,
+							"restSource": "88cdd496-4982-ef11-bdfd-000d3ab84645",
+							"restOperation": "0e554c69-0389-4c5b-8ff8-59e85a23ff18",
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "aa4c0c80-e2d1-4398-e2f5-e37586c57312",
+							"fieldName": "UpdateCarDetails",
+							"fieldParent": "d6dd9d70-427e-45e2-9008-10a14b8f93c5",
+							"fieldType": "neptune.restapi",
+							"script": "",
+							"customComponent": false,
+							"restSource": "226a03bf-5d85-ef11-bdfd-000d3ab84645",
+							"restOperation": "9f990696-8382-471d-bced-756916d15d29",
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "06f1cecd-5b40-4614-f400-73f40b2a171f",
+							"fieldName": "GetRentedCars",
+							"fieldParent": "d6dd9d70-427e-45e2-9008-10a14b8f93c5",
+							"fieldType": "neptune.restapi",
+							"script": "",
+							"customComponent": false,
+							"restSource": "410a2f7e-9980-ef11-bdfd-000d3ab84645",
+							"restOperation": "92d1037c-2f1f-438b-e8e2-68019b9ab33b",
+							"request": [],
+							"response": [
+								{
+									"status": "200",
+									"dataId": "",
+									"modelFieldNo": "14748001-c644-404a-c4da-29a562c76ad9"
+								},
+								{
+									"status": "200",
+									"dataId": "",
+									"modelFieldNo": "14748001-c644-404a-c4da-29a562c76ad9"
+								}
+							],
+							"attributes": [
+								{
+									"attribute": "setInitLoad",
+									"grouping": "Model",
+									"value": "online",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": []
 						}
-					],
-					"data": []
+					]
 				},
 				{
 					"fieldNo": "85eea526-5b03-4e0c-a742-6ef3e35dc03f",
@@ -5649,20 +5678,6 @@
 							"data": []
 						}
 					]
-				},
-				{
-					"fieldNo": "f1d6b15d-dfda-4cbd-9e98-28a8ad83c346",
-					"fieldName": "UpdateCarDetails",
-					"fieldParent": 99999,
-					"fieldType": "neptune.restapi",
-					"script": "",
-					"customComponent": false,
-					"restSource": "88cdd496-4982-ef11-bdfd-000d3ab84645",
-					"restOperation": "0e554c69-0389-4c5b-8ff8-59e85a23ff18",
-					"request": [],
-					"response": [],
-					"attributes": [],
-					"data": []
 				},
 				{
 					"fieldNo": "3b147061-59e9-478b-9c7a-2d1c2dcf63a5",
@@ -6260,7 +6275,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.10.25.1030",
+	"ver": "24.10.25.1200",
 	"application": "car_hire_employee",
 	"title": "",
 	"description": "",
@@ -6311,11 +6326,6 @@
 			"id": "ba532f85-4aca-ee11-85f9-0022489e2e3e",
 			"name": "car_damage_parts_pictures",
 			"ver": "24.10.24.1411"
-		},
-		{
-			"id": "b29abc4d-43f3-ee11-aaf0-000d3ab82dc5",
-			"name": "carRentalSendMail",
-			"ver": "24.4.5.1155"
 		},
 		{
 			"id": "88cdd496-4982-ef11-bdfd-000d3ab84645",

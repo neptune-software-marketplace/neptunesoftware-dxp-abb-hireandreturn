@@ -54,7 +54,8 @@
 				"country_code": "FR"
 			}
 		},
-		"status": "RENTED"
+		"status": "RENTED",
+		"parts": null
 	},
 	{
 		"id": "91ab0891-5d85-ef11-bdfd-000d3ab84645",
@@ -111,7 +112,8 @@
 				"country_code": "FR"
 			}
 		},
-		"status": "AVAILABLE"
+		"status": "AVAILABLE",
+		"parts": null
 	},
 	{
 		"id": "90ab0891-5d85-ef11-bdfd-000d3ab84645",
@@ -168,7 +170,8 @@
 				"country_code": "FR"
 			}
 		},
-		"status": "AVAILABLE"
+		"status": "AVAILABLE",
+		"parts": null
 	},
 	{
 		"id": "8fab0891-5d85-ef11-bdfd-000d3ab84645",
@@ -225,7 +228,8 @@
 				"country_code": "FR"
 			}
 		},
-		"status": "AVAILABLE"
+		"status": "AVAILABLE",
+		"parts": null
 	},
 	{
 		"id": "8eab0891-5d85-ef11-bdfd-000d3ab84645",
@@ -282,7 +286,8 @@
 				"country_code": "FR"
 			}
 		},
-		"status": "AVAILABLE"
+		"status": "AVAILABLE",
+		"parts": null
 	},
 	{
 		"id": "8dab0891-5d85-ef11-bdfd-000d3ab84645",
@@ -339,7 +344,8 @@
 				"country_code": "FR"
 			}
 		},
-		"status": "RENTED"
+		"status": "RENTED",
+		"parts": null
 	},
 	{
 		"id": "8cab0891-5d85-ef11-bdfd-000d3ab84645",
@@ -396,12 +402,13 @@
 				"country_code": "FR"
 			}
 		},
-		"status": "AVAILABLE"
+		"status": "AVAILABLE",
+		"parts": null
 	},
 	{
 		"id": "8bab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248363",
-		"updatedAt": "1729841672991",
+		"updatedAt": "1729856311744",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Jaguar-f-type-coupe-2d-gold",
@@ -453,7 +460,61 @@
 				"country_code": "FR"
 			}
 		},
-		"status": "AVAILABLE"
+		"status": "AVAILABLE",
+		"parts": {
+			"path1": {
+				"type": "",
+				"severity": 0
+			},
+			"path2": {
+				"type": "",
+				"severity": 0
+			},
+			"path3": {
+				"type": "dent",
+				"severity": 0.88
+			},
+			"path4": {
+				"type": "",
+				"severity": 0
+			},
+			"path5": {
+				"type": "",
+				"severity": 0
+			},
+			"path6": {
+				"type": "",
+				"severity": 0
+			},
+			"path7": {
+				"type": "",
+				"severity": 0
+			},
+			"path8": {
+				"type": "",
+				"severity": 0
+			},
+			"path9": {
+				"type": "",
+				"severity": 0
+			},
+			"path10": {
+				"type": "scratch",
+				"severity": 0.22
+			},
+			"path11": {
+				"type": "",
+				"severity": 0
+			},
+			"path12": {
+				"type": "",
+				"severity": 0
+			},
+			"path13": {
+				"type": "",
+				"severity": 0
+			}
+		}
 	},
 	{
 		"id": "8aab0891-5d85-ef11-bdfd-000d3ab84645",
@@ -510,7 +571,8 @@
 				"country_code": "FR"
 			}
 		},
-		"status": "RENTED"
+		"status": "RENTED",
+		"parts": null
 	},
 	{
 		"id": "89ab0891-5d85-ef11-bdfd-000d3ab84645",
@@ -567,7 +629,8 @@
 				"country_code": "FR"
 			}
 		},
-		"status": "AVAILABLE"
+		"status": "AVAILABLE",
+		"parts": null
 	},
 	{
 		"id": "88ab0891-5d85-ef11-bdfd-000d3ab84645",
@@ -624,7 +687,8 @@
 				"country_code": "FR"
 			}
 		},
-		"status": "AVAILABLE"
+		"status": "AVAILABLE",
+		"parts": null
 	},
 	{
 		"id": "87ab0891-5d85-ef11-bdfd-000d3ab84645",
@@ -681,7 +745,8 @@
 				"country_code": "FR"
 			}
 		},
-		"status": "AVIALABLE"
+		"status": "AVIALABLE",
+		"parts": null
 	},
 	{
 		"id": "86ab0891-5d85-ef11-bdfd-000d3ab84645",
@@ -738,7 +803,8 @@
 				"country_code": "FR"
 			}
 		},
-		"status": "RENTED"
+		"status": "RENTED",
+		"parts": null
 	},
 	{
 		"id": "85ab0891-5d85-ef11-bdfd-000d3ab84645",
@@ -795,7 +861,8 @@
 				"country_code": "FR"
 			}
 		},
-		"status": "RENTED"
+		"status": "RENTED",
+		"parts": null
 	},
 	{
 		"id": "84ab0891-5d85-ef11-bdfd-000d3ab84645",
@@ -852,6 +919,7 @@
 				"country_code": "FR"
 			}
 		},
-		"status": "AVAILABLE"
+		"status": "RENTED",
+		"parts": null
 	}
 ]

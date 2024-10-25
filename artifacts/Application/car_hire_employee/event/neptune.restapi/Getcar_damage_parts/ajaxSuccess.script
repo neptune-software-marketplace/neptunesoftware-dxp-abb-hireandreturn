@@ -1,2 +1,2 @@
 App.to(MainListPage);
-console.log(xhr.responseJSON);
+//console.log(xhr.responseJSON);

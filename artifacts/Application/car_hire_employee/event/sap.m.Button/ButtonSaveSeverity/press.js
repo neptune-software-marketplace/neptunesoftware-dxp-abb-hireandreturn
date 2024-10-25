@@ -3,7 +3,7 @@ const typeClass = _oActivePath2.attr("class"); // get "part chip" as an example 
 const severity = Slider.getValue()/100;
 
 var typeClassFiltered = typeClass.split(' ');
-//console.log("VALUE: "+ typeClassFiltered[1]);
+console.log("pathid: "+ pathId);
 //console.log(modelSimpleForm.getData().parts[pathId].severity); // DELETE LATER
 
 var data = modelSimpleForm.getData();
@@ -14,8 +14,7 @@ data.parts[pathId].type = typeClassFiltered[typeClassFiltered.length - 1];
 
 modelSimpleForm.setData(data);
 
-
-//console.log(modelSimpleForm.getData().parts[pathId].severity);
+console.log(modelSimpleForm.getData().parts[pathId].severity);
 
 //modelSimpleForm.setData().parts.pathId.severity = 1;
 

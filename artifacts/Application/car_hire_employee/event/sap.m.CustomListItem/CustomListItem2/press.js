@@ -15,7 +15,7 @@ hideControls(data.booking_status);
 
 if (data.clearance_status == "CLEARED") {
      SubmitRentalButton.setVisible(false);
-        SaveChangesButton.setVisible(false);
+        // SaveChangesButton.setVisible(false);
 }
 //     PanelPictures.setVisible(true);
 //     VBoxSVGContainer.setVisible(true);

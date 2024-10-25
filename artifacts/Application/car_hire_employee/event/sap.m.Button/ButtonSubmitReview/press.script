@@ -68,7 +68,7 @@ var options = {
 
 console.log(currentEditData);
 
-apiUpdateCarDetails(options);
+apiUpdateCarBookingDetails(options);
 
 modelSimpleFormReview.setData({})
 DialogSubmitReview.close();
