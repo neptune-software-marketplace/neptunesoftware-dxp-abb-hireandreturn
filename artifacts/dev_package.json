@@ -7,7 +7,7 @@
 	},
 	"name": "Car Hire Demo",
 	"description": null,
-	"ver": "24.10.25.0825",
+	"ver": "24.10.25.0828",
 	"enableCICD": true,
 	"apps": [
 		{
@@ -160,7 +160,18 @@
 			"name": "Car Availability Chart"
 		}
 	],
-	"category": [],
+	"category": [
+		{
+			"id": "8cff7c49-0586-ef11-bdfd-000d3ab84645",
+			"description": null,
+			"name": "Car Hire Apps"
+		},
+		{
+			"id": "7baaac6e-7082-ef11-bdfd-000d3ab84645",
+			"description": null,
+			"name": "Car Hire Main"
+		}
+	],
 	"launchpad": [
 		{
 			"id": "7c15b151-7082-ef11-bdfd-000d3ab84645",
