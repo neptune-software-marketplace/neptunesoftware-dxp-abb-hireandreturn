@@ -249,7 +249,7 @@
 												{
 													"attribute": "width",
 													"grouping": "Properties",
-													"value": "99vw",
+													"value": "50vw",
 													"script": "",
 													"translation": []
 												},
@@ -6260,7 +6260,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.10.25.0825",
+	"ver": "24.10.25.1030",
 	"application": "car_hire_employee",
 	"title": "",
 	"description": "",

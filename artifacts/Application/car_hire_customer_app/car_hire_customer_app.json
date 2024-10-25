@@ -156,7 +156,7 @@
 										{
 											"attribute": "width",
 											"grouping": "Properties",
-											"value": "97.2vw",
+											"value": "97.2%",
 											"script": "",
 											"translation": []
 										},
@@ -811,9 +811,9 @@
 									"response": [],
 									"attributes": [
 										{
-											"attribute": "styleClassMargin",
+											"attribute": "styleClassPadding",
 											"grouping": "Properties",
-											"value": "sapUiMediumMarginTop",
+											"value": "sapUiContentPadding",
 											"script": "",
 											"translation": []
 										}
@@ -4974,14 +4974,6 @@
 									"value": "OK",
 									"script": "",
 									"translation": []
-								},
-								{
-									"attribute": "callback",
-									"grouping": "Events",
-									"value": "Anonymous Function",
-									"script": "file://event/sap.m.MessageBox/oMsgInfo/callback.js",
-									"language": "javascript",
-									"translation": []
 								}
 							],
 							"data": []
@@ -6501,7 +6493,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.10.25.0754",
+	"ver": "24.10.25.1029",
 	"application": "car_hire_customer_app",
 	"title": "",
 	"description": "",
