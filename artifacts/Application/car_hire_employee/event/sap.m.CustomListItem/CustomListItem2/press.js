@@ -34,7 +34,6 @@ if (data.clearance_status == "CLEARED") {
 
     ajaxReq = $.ajax({
         url: data.car_svg,
-        //url: 'https://gtmdemosystem.neptune-software.cloud/media/root/ME/CarDamageSelectorApp/car3.svg',
         async: false, //Async because I want to load the SVG first, before moving to the following page.
         success: (data) => {
             const content = new XMLSerializer().serializeToString(data);

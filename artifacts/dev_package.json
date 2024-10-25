@@ -7,7 +7,7 @@
 	},
 	"name": "Car Hire Demo",
 	"description": null,
-	"ver": "24.10.24.1413",
+	"ver": "24.10.25.0825",
 	"enableCICD": true,
 	"apps": [
 		{

@@ -12,11 +12,7 @@ modeloPageManageBookingDetails.setData(data);
 console.log("data")
 console.log(data)
 
-// if(data.clearance_status == "IN REVIEW"){
 
-//     ButtonDeleteBooking.setVisible(false);
-//     PanelPictures.setVisible(true);
-//     VBoxSVGContainer.setVisible(true);
 
     var options = {
     parameters: {
@@ -31,7 +27,7 @@ var ajaxReq;
 
 ajaxReq = $.ajax({
     url: data.car_svg,
-    //url: 'https://gtmdemosystem.neptune-software.cloud/media/root/ME/CarDamageSelectorApp/car3.svg',
+    
     async: false, //Async because I want to load the SVG first, before moving to the following page.
     success: (data) => {
         const content = new XMLSerializer().serializeToString(data);
@@ -112,22 +108,5 @@ const aPaths = $("path.part");
 $(aPaths[1]).addClass(data.parts.path1.type);
 rerender();
 
-
-
-
-
-//ButtonFeedback.setVisible(false)
-
-// }else if(data.clearance_status == "CLEARED"){
-//      ButtonDeleteBooking.setVisible(false);
-//     PanelPictures.setVisible(true);
-//     VBoxSVGContainer.setVisible(false);
-//     //ButtonFeedback.setVisible(true)
-// }else{
-//     //ButtonFeedback.setVisible(false)
-//     ButtonDeleteBooking.setVisible(true);
-//     PanelPictures.setVisible(false);
-//     VBoxSVGContainer.setVisible(false);
-// }
 
  oApp.to(oPageManageBookingDetails);

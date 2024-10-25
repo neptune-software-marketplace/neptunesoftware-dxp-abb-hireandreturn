@@ -36,7 +36,7 @@ var bookingDetails = {
     booking_no: getRandomBookingNumber(),
     car_details: selectedVechicle,
     //booking_sign: signaturePad.toDataURL(),
-    car_svg: "https://dxpdemo.neptune-software.cloud/media/root/CarDamageSelectorApp/carNew.svg",
+    car_svg: "/media/root/CarDamageSelectorApp/carNew.svg",
     car_image: selectedVechicle.imageSrc,
     total_cost: selectedVechicle.totalReservation,
     booked_days: selectedVechicle.rateDays,

@@ -1,10 +1,6 @@
 
 function saveRequest(questionaire, formData) {
-// console.log("questionaire")
-// console.log(questionaire)
 
-// console.log("Form data")
-// console.log(formData)
     var options = {
         data: {
             "username": AppCache.userInfo.username,
@@ -75,4 +71,38 @@ function uploadPicture(){
     };
 
 apiUpload_Picture_API(options);    
+}
+
+//Send PDF data
+function createPDF() {
+
+var PDFData = { pdfHeader: "Added tomorrow", pdfBookingData: modelSimpleForm.getData() };
+console.log(PDFData);
+
+
+$.ajax({
+    type: "POST",
+    url: "/pdf/CAR_HANDOVER_PROTOCOL",
+    data: PDFData,
+    success: function(data) {
+        //console.log("data:application/pdf;base64," + data)
+
+        var temp = data
+
+        pdfAttachement = temp;
+
+        oApp.setBusy(false);
+        //App.to(PDFViewerPage);
+
+        var pdfurl = createDataURL(temp);
+        console.log(pdfurl);
+        PDFViewer.setSource(pdfurl);
+
+    },
+    error: function(result,status) {
+        console.log("error!")
+    },
+
+});
+
 }

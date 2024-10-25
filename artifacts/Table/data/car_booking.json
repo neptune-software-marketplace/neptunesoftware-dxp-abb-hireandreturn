@@ -2,7 +2,7 @@
 	{
 		"id": "8c97feaf-f791-ef11-8473-000d3ab844b2",
 		"createdAt": "1729767847709",
-		"updatedAt": "1729767875572",
+		"updatedAt": "1729841777467",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"user_id": "F027A1B3-01BA-EE11-B661-000D3A667EAB",
@@ -47,8 +47,8 @@
 		"damage_images": null,
 		"booked_days": 1,
 		"total_cost": "225.2",
-		"car_image": "https://dxpdemo.neptune-software.cloud/media/root/CarDamageSelectorApp/jaguar-f-type-coupe-2d-gold-2021-JV.png",
-		"car_svg": "https://dxpdemo.neptune-software.cloud/media/root/CarDamageSelectorApp/carNew.svg",
+		"car_image": "/media/root/CarDamageSelectorApp/jaguar-f-type-coupe-2d-gold-2021-JV.png",
+		"car_svg": "/media/root/CarDamageSelectorApp/carNew.svg",
 		"booking_status": "RETURNED",
 		"return_date": null,
 		"parts": {
@@ -109,9 +109,118 @@
 		"car_id": "8BAB0891-5D85-EF11-BDFD-000D3AB84645"
 	},
 	{
+		"id": "6cb4cd72-a692-ef11-8473-000d3ab844b2",
+		"createdAt": "1729842906986",
+		"updatedAt": "1729842906986",
+		"createdBy": "emmanuella.ndukwe@neptune-software.com",
+		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
+		"user_id": "F027A1B3-01BA-EE11-B661-000D3A667EAB",
+		"booking_no": "BK704050",
+		"car_details": {
+			"id": "85AB0891-5D85-EF11-BDFD-000D3AB84645",
+			"brand": "a3-4d-grey-2021",
+			"pickupLocationAddrLine1": "Hall 2 Pasteur",
+			"pickupLocationAddrLine2": "5 Place Des Martyrs",
+			"pickupLocationCity": "Paris",
+			"pickupLocationCountry": "FR",
+			"pickupLocationPostCode": "75014",
+			"pickupLocationHours": "Sun 8:00 AM - 10:30 PM; Mon - Fri 7:00 AM - 9:30 PM; Sat 7:00 AM - 7:00 PM",
+			"pickupLocationName": "Paris Gare Montparnasse",
+			"pickupLocationTelephone": "(33) 8 20 00 61 00",
+			"dropoffLocationAddrLine1": "Hall 2 Pasteur",
+			"dropoffLocationAddrLine2": "5 Place Des Martyrs",
+			"dropoffLocationCity": "Paris",
+			"dropoffLocationCountry": "FR",
+			"dropoffLocationPostCode": "75014",
+			"dropoffLocationHours": "Sun 8:00 AM - 10:30 PM; Mon - Fri 7:00 AM - 9:30 PM; Sat 7:00 AM - 7:00 PM",
+			"dropoffLocationName": "Paris Gare Montparnasse",
+			"dropoffLocationTelephone": "(33) 8 20 00 61 00",
+			"rateAmount": "125",
+			"rateCurrency": "EUR",
+			"rateDays": 1,
+			"totalReservation": "145.2",
+			"totalTaxFees": "20.20",
+			"totalVehicleTotal": "125",
+			"objectType": "car",
+			"formattedPickup": "NaN undefined NaN, 12:NaN AM",
+			"formattedDropff": "NaN undefined NaN, 12:NaN AM",
+			"imageSrc": "/media/root/CarDamageSelectorApp/audi-a3-4d-grey-2021.png",
+			"name": "Audi A3"
+		},
+		"first_name": "Linda",
+		"last_name": "Marc",
+		"email": "marc.linda@email.com",
+		"booking_sign": null,
+		"return_sign": null,
+		"clearance_status": "NOT CLEARED",
+		"damage_images": null,
+		"booked_days": 1,
+		"total_cost": "145.2",
+		"car_image": "/media/root/CarDamageSelectorApp/audi-a3-4d-grey-2021.png",
+		"car_svg": "/media/root/CarDamageSelectorApp/carNew.svg",
+		"booking_status": "BOOKED",
+		"return_date": null,
+		"parts": {
+			"path1": {
+				"type": "",
+				"severity": 0
+			},
+			"path2": {
+				"type": "",
+				"severity": 0
+			},
+			"path3": {
+				"type": "",
+				"severity": 0
+			},
+			"path4": {
+				"type": "",
+				"severity": 0
+			},
+			"path5": {
+				"type": "",
+				"severity": 0
+			},
+			"path6": {
+				"type": "",
+				"severity": 0
+			},
+			"path7": {
+				"type": "",
+				"severity": 0
+			},
+			"path8": {
+				"type": "",
+				"severity": 0
+			},
+			"path9": {
+				"type": "",
+				"severity": 0
+			},
+			"path10": {
+				"type": "",
+				"severity": 0
+			},
+			"path11": {
+				"type": "",
+				"severity": 0
+			},
+			"path12": {
+				"type": "",
+				"severity": 0
+			},
+			"path13": {
+				"type": "",
+				"severity": 0
+			}
+		},
+		"comment": null,
+		"car_id": "85AB0891-5D85-EF11-BDFD-000D3AB84645"
+	},
+	{
 		"id": "19d9a8de-e591-ef11-8473-000d3ab844b2",
 		"createdAt": "1729760195065",
-		"updatedAt": "1729770649390",
+		"updatedAt": "1729841777467",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"user_id": "F027A1B3-01BA-EE11-B661-000D3A667EAB",
@@ -156,8 +265,8 @@
 		"damage_images": "[]",
 		"booked_days": 1,
 		"total_cost": "145.2",
-		"car_image": "https://dxpdemo.neptune-software.cloud/media/root/CarDamageSelectorApp/audi-a3-4d-grey-2021.png",
-		"car_svg": "https://dxpdemo.neptune-software.cloud/media/root/CarDamageSelectorApp/carNew.svg",
+		"car_image": "/media/root/CarDamageSelectorApp/audi-a3-4d-grey-2021.png",
+		"car_svg": "/media/root/CarDamageSelectorApp/carNew.svg",
 		"booking_status": "RETURNED",
 		"return_date": "2024-10-24T11:50:08.000Z",
 		"parts": {

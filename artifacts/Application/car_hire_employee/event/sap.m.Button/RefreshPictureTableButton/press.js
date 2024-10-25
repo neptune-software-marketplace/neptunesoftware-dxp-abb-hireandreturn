@@ -1,9 +1,9 @@
 var options = {
     parameters: {
-        "where": JSON.stringify({"carID": modelSimpleForm.getData().id})
+        "where": JSON.stringify({"carID": modelSimpleForm.getData().car_id})
     },
     data: {
-        "carID": modelSimpleForm.getData().id,
+        "carID": modelSimpleForm.getData().car_id,
     }
 };
 

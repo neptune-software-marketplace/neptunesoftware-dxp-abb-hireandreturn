@@ -5,9 +5,6 @@ function createPDF() {
 var PDFData = { pdfHeader: "Added tomorrow", pdfBookingData: modelSimpleForm.getData() };
 console.log(PDFData);
 
-// let PDFData = {field1: modelSimpleForm.getData(),
-// field2: inputField.getValue(),
-// field3: "testing string"}
 
 $.ajax({
     type: "POST",
