@@ -5,9 +5,5 @@ var options = {
     }
 };
 
-apiDelete_Booking(options);
+apiDelete_Booking(options)
 
-
-DialogDeleteBooking.close();
-
-oApp.to(oPageManageBookings);

@@ -9,7 +9,7 @@
 			"idTile": "2d7878ab-0486-ef11-bdfd-000d3ab84645"
 		}
 	},
-	"title": null,
+	"title": "Car Availability Chart",
 	"subTitle": null,
 	"description": null,
 	"categoryID": null,
@@ -60,7 +60,7 @@
 	"helpText": null,
 	"helpEnabled": false,
 	"openClickTile": false,
-	"ver": "24.10.09.0616",
+	"ver": "24.10.28.1535",
 	"actionWebApp": null,
 	"name": "Car Availability Chart",
 	"cardWidth": "Wide",

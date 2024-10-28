@@ -25,6 +25,15 @@ apiGet_Pictures_Car(options);
 //In the following ajax Request we do call the Car SVG file and set it as content of the HTMLObject
 var ajaxReq;
 
+// Get path details of the selected car
+var options = {
+    parameters: {
+       where: JSON.stringify({ id: data.car_id }),
+    }
+};
+
+apiGet_Vehicles(options).then((result)=>{
+
 ajaxReq = $.ajax({
     url: data.car_svg,
     
@@ -47,19 +56,19 @@ var aPathsOUT = $("path.part");
 //console.log(aPathsOUT);
 
 //Getting data from SimpleForm and adding the classes
-$(aPathsOUT[0]).addClass(modelSimpleForm.getData().parts.path1.type);
-$(aPathsOUT[1]).addClass(modelSimpleForm.getData().parts.path2.type);
-$(aPathsOUT[2]).addClass(modelSimpleForm.getData().parts.path3.type);
-$(aPathsOUT[3]).addClass(modelSimpleForm.getData().parts.path4.type);
-$(aPathsOUT[4]).addClass(modelSimpleForm.getData().parts.path5.type);
-$(aPathsOUT[5]).addClass(modelSimpleForm.getData().parts.path6.type);
-$(aPathsOUT[6]).addClass(modelSimpleForm.getData().parts.path7.type);
-$(aPathsOUT[7]).addClass(modelSimpleForm.getData().parts.path8.type);
-$(aPathsOUT[8]).addClass(modelSimpleForm.getData().parts.path9.type);
-$(aPathsOUT[9]).addClass(modelSimpleForm.getData().parts.path10.type);
-$(aPathsOUT[10]).addClass(modelSimpleForm.getData().parts.path11.type);
-$(aPathsOUT[11]).addClass(modelSimpleForm.getData().parts.path12.type);
-$(aPathsOUT[12]).addClass(modelSimpleForm.getData().parts.path13.type);
+$(aPathsOUT[0]).addClass(result[0].parts.path1.type);
+$(aPathsOUT[1]).addClass(result[0].parts.path2.type);
+$(aPathsOUT[2]).addClass(result[0].parts.path3.type);
+$(aPathsOUT[3]).addClass(result[0].parts.path4.type);
+$(aPathsOUT[4]).addClass(result[0].parts.path5.type);
+$(aPathsOUT[5]).addClass(result[0].parts.path6.type);
+$(aPathsOUT[6]).addClass(result[0].parts.path7.type);
+$(aPathsOUT[7]).addClass(result[0].parts.path8.type);
+$(aPathsOUT[8]).addClass(result[0].parts.path9.type);
+$(aPathsOUT[9]).addClass(result[0].parts.path10.type);
+$(aPathsOUT[10]).addClass(result[0].parts.path11.type);
+$(aPathsOUT[11]).addClass(result[0].parts.path12.type);
+$(aPathsOUT[12]).addClass(result[0].parts.path13.type);
 
 $(aPathsOUT[0]).addClass("part1");
 $(aPathsOUT[1]).addClass("part2");
@@ -89,19 +98,19 @@ const aPathsOUT11 = $("path.part11");
 const aPathsOUT12 = $("path.part12");
 const aPathsOUT13 = $("path.part13");
 
-aPathsOUT1.css({ "fill-opacity": modelSimpleForm.getData().parts.path1.severity });
-aPathsOUT2.css({ "fill-opacity": modelSimpleForm.getData().parts.path2.severity });
-aPathsOUT3.css({ "fill-opacity": modelSimpleForm.getData().parts.path3.severity });
-aPathsOUT4.css({ "fill-opacity": modelSimpleForm.getData().parts.path4.severity });
-aPathsOUT5.css({ "fill-opacity": modelSimpleForm.getData().parts.path5.severity });
-aPathsOUT6.css({ "fill-opacity": modelSimpleForm.getData().parts.path6.severity });
-aPathsOUT7.css({ "fill-opacity": modelSimpleForm.getData().parts.path7.severity });
-aPathsOUT8.css({ "fill-opacity": modelSimpleForm.getData().parts.path8.severity });
-aPathsOUT9.css({ "fill-opacity": modelSimpleForm.getData().parts.path9.severity });
-aPathsOUT10.css({ "fill-opacity": modelSimpleForm.getData().parts.path10.severity });
-aPathsOUT11.css({ "fill-opacity": modelSimpleForm.getData().parts.path11.severity });
-aPathsOUT12.css({ "fill-opacity": modelSimpleForm.getData().parts.path12.severity });
-aPathsOUT13.css({ "fill-opacity": modelSimpleForm.getData().parts.path13.severity });
+aPathsOUT1.css({ "fill-opacity": result[0].parts.path1.severity });
+aPathsOUT2.css({ "fill-opacity": result[0].parts.path2.severity });
+aPathsOUT3.css({ "fill-opacity": result[0].parts.path3.severity });
+aPathsOUT4.css({ "fill-opacity": result[0].parts.path4.severity });
+aPathsOUT5.css({ "fill-opacity": result[0].parts.path5.severity });
+aPathsOUT6.css({ "fill-opacity": result[0].parts.path6.severity });
+aPathsOUT7.css({ "fill-opacity": result[0].parts.path7.severity });
+aPathsOUT8.css({ "fill-opacity": result[0].parts.path8.severity });
+aPathsOUT9.css({ "fill-opacity": result[0].parts.path9.severity });
+aPathsOUT10.css({ "fill-opacity": result[0].parts.path10.severity });
+aPathsOUT11.css({ "fill-opacity": result[0].parts.path11.severity });
+aPathsOUT12.css({ "fill-opacity": result[0].parts.path12.severity });
+aPathsOUT13.css({ "fill-opacity": result[0].parts.path13.severity });
 
 const aPaths = $("path.part");
 //console.log(aPaths);
@@ -110,3 +119,5 @@ rerender();
 
 
  oApp.to(oPageManageBookingDetails);
+
+});

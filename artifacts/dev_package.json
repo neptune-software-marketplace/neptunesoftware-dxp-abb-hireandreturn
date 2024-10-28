@@ -5,9 +5,9 @@
 	"git": {
 		"remote": "https://github.com/neptune-software-marketplace/neptunesoftware-dxp-abb-hireandreturn"
 	},
-	"name": "Car Hire Demo",
+	"name": "neptunesoftware-dxp-abb-hireandreturn",
 	"description": null,
-	"ver": "24.10.25.1032",
+	"ver": "24.10.28.1438",
 	"enableCICD": true,
 	"apps": [
 		{

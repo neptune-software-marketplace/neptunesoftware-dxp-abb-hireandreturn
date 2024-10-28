@@ -2,7 +2,7 @@
 	{
 		"id": "92ab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248366",
-		"updatedAt": "1729841580101",
+		"updatedAt": "1730107639399",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Group B - Peugeot 208",
@@ -54,13 +54,66 @@
 				"country_code": "FR"
 			}
 		},
-		"status": "RENTED",
-		"parts": null
+		"status": "AVAILABLE",
+		"parts": {
+			"path1": {
+				"type": "",
+				"severity": 0
+			},
+			"path2": {
+				"type": "",
+				"severity": 0
+			},
+			"path3": {
+				"type": "",
+				"severity": 0
+			},
+			"path4": {
+				"type": "",
+				"severity": 0
+			},
+			"path5": {
+				"type": "",
+				"severity": 0
+			},
+			"path6": {
+				"type": "",
+				"severity": 0
+			},
+			"path7": {
+				"type": "",
+				"severity": 0
+			},
+			"path8": {
+				"type": "",
+				"severity": 0
+			},
+			"path9": {
+				"type": "chip",
+				"severity": 0.65
+			},
+			"path10": {
+				"type": "",
+				"severity": 0
+			},
+			"path11": {
+				"type": "",
+				"severity": 0
+			},
+			"path12": {
+				"type": "",
+				"severity": 0
+			},
+			"path13": {
+				"type": "scratch",
+				"severity": 0.62
+			}
+		}
 	},
 	{
 		"id": "91ab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248365",
-		"updatedAt": "1729841672991",
+		"updatedAt": "1730104533726",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Group O - Renault Grand Scenic",
@@ -113,12 +166,65 @@
 			}
 		},
 		"status": "AVAILABLE",
-		"parts": null
+		"parts": {
+			"path1": {
+				"type": "",
+				"severity": 0
+			},
+			"path2": {
+				"type": "",
+				"severity": 0
+			},
+			"path3": {
+				"type": "",
+				"severity": 0
+			},
+			"path4": {
+				"type": "",
+				"severity": 0
+			},
+			"path5": {
+				"type": "",
+				"severity": 0
+			},
+			"path6": {
+				"type": "",
+				"severity": 0
+			},
+			"path7": {
+				"type": "",
+				"severity": 0
+			},
+			"path8": {
+				"type": "",
+				"severity": 0
+			},
+			"path9": {
+				"type": "chip",
+				"severity": 0.65
+			},
+			"path10": {
+				"type": "",
+				"severity": 0
+			},
+			"path11": {
+				"type": "",
+				"severity": 0
+			},
+			"path12": {
+				"type": "",
+				"severity": 0
+			},
+			"path13": {
+				"type": "scratch",
+				"severity": 0.62
+			}
+		}
 	},
 	{
 		"id": "90ab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248365",
-		"updatedAt": "1729841580101",
+		"updatedAt": "1730104533726",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Group A - Fiat 500",
@@ -171,12 +277,65 @@
 			}
 		},
 		"status": "AVAILABLE",
-		"parts": null
+		"parts": {
+			"path1": {
+				"type": "",
+				"severity": 0
+			},
+			"path2": {
+				"type": "",
+				"severity": 0
+			},
+			"path3": {
+				"type": "",
+				"severity": 0
+			},
+			"path4": {
+				"type": "",
+				"severity": 0
+			},
+			"path5": {
+				"type": "",
+				"severity": 0
+			},
+			"path6": {
+				"type": "",
+				"severity": 0
+			},
+			"path7": {
+				"type": "",
+				"severity": 0
+			},
+			"path8": {
+				"type": "",
+				"severity": 0
+			},
+			"path9": {
+				"type": "chip",
+				"severity": 0.65
+			},
+			"path10": {
+				"type": "",
+				"severity": 0
+			},
+			"path11": {
+				"type": "",
+				"severity": 0
+			},
+			"path12": {
+				"type": "",
+				"severity": 0
+			},
+			"path13": {
+				"type": "scratch",
+				"severity": 0.62
+			}
+		}
 	},
 	{
 		"id": "8fab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248365",
-		"updatedAt": "1729841672991",
+		"updatedAt": "1730104533726",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Group K - Hyundai Kona Electric",
@@ -229,12 +388,65 @@
 			}
 		},
 		"status": "AVAILABLE",
-		"parts": null
+		"parts": {
+			"path1": {
+				"type": "",
+				"severity": 0
+			},
+			"path2": {
+				"type": "",
+				"severity": 0
+			},
+			"path3": {
+				"type": "",
+				"severity": 0
+			},
+			"path4": {
+				"type": "",
+				"severity": 0
+			},
+			"path5": {
+				"type": "",
+				"severity": 0
+			},
+			"path6": {
+				"type": "",
+				"severity": 0
+			},
+			"path7": {
+				"type": "",
+				"severity": 0
+			},
+			"path8": {
+				"type": "",
+				"severity": 0
+			},
+			"path9": {
+				"type": "chip",
+				"severity": 0.65
+			},
+			"path10": {
+				"type": "",
+				"severity": 0
+			},
+			"path11": {
+				"type": "",
+				"severity": 0
+			},
+			"path12": {
+				"type": "",
+				"severity": 0
+			},
+			"path13": {
+				"type": "scratch",
+				"severity": 0.62
+			}
+		}
 	},
 	{
 		"id": "8eab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248365",
-		"updatedAt": "1729841672991",
+		"updatedAt": "1730104533726",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Group I - Fiat 500 Electric",
@@ -287,12 +499,65 @@
 			}
 		},
 		"status": "AVAILABLE",
-		"parts": null
+		"parts": {
+			"path1": {
+				"type": "",
+				"severity": 0
+			},
+			"path2": {
+				"type": "",
+				"severity": 0
+			},
+			"path3": {
+				"type": "",
+				"severity": 0
+			},
+			"path4": {
+				"type": "",
+				"severity": 0
+			},
+			"path5": {
+				"type": "",
+				"severity": 0
+			},
+			"path6": {
+				"type": "",
+				"severity": 0
+			},
+			"path7": {
+				"type": "",
+				"severity": 0
+			},
+			"path8": {
+				"type": "",
+				"severity": 0
+			},
+			"path9": {
+				"type": "chip",
+				"severity": 0.65
+			},
+			"path10": {
+				"type": "",
+				"severity": 0
+			},
+			"path11": {
+				"type": "",
+				"severity": 0
+			},
+			"path12": {
+				"type": "",
+				"severity": 0
+			},
+			"path13": {
+				"type": "scratch",
+				"severity": 0.62
+			}
+		}
 	},
 	{
 		"id": "8dab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248364",
-		"updatedAt": "1729841672991",
+		"updatedAt": "1730107639399",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Group H - Ford Focus SW",
@@ -344,13 +609,66 @@
 				"country_code": "FR"
 			}
 		},
-		"status": "RENTED",
-		"parts": null
+		"status": "AVAILABLE",
+		"parts": {
+			"path1": {
+				"type": "",
+				"severity": 0
+			},
+			"path2": {
+				"type": "",
+				"severity": 0
+			},
+			"path3": {
+				"type": "",
+				"severity": 0
+			},
+			"path4": {
+				"type": "",
+				"severity": 0
+			},
+			"path5": {
+				"type": "",
+				"severity": 0
+			},
+			"path6": {
+				"type": "",
+				"severity": 0
+			},
+			"path7": {
+				"type": "",
+				"severity": 0
+			},
+			"path8": {
+				"type": "",
+				"severity": 0
+			},
+			"path9": {
+				"type": "chip",
+				"severity": 0.65
+			},
+			"path10": {
+				"type": "",
+				"severity": 0
+			},
+			"path11": {
+				"type": "",
+				"severity": 0
+			},
+			"path12": {
+				"type": "",
+				"severity": 0
+			},
+			"path13": {
+				"type": "scratch",
+				"severity": 0.62
+			}
+		}
 	},
 	{
 		"id": "8cab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248364",
-		"updatedAt": "1729841672991",
+		"updatedAt": "1730104533726",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Group F - Mercedes-Benz CLA",
@@ -403,12 +721,65 @@
 			}
 		},
 		"status": "AVAILABLE",
-		"parts": null
+		"parts": {
+			"path1": {
+				"type": "",
+				"severity": 0
+			},
+			"path2": {
+				"type": "",
+				"severity": 0
+			},
+			"path3": {
+				"type": "",
+				"severity": 0
+			},
+			"path4": {
+				"type": "",
+				"severity": 0
+			},
+			"path5": {
+				"type": "",
+				"severity": 0
+			},
+			"path6": {
+				"type": "",
+				"severity": 0
+			},
+			"path7": {
+				"type": "",
+				"severity": 0
+			},
+			"path8": {
+				"type": "",
+				"severity": 0
+			},
+			"path9": {
+				"type": "chip",
+				"severity": 0.65
+			},
+			"path10": {
+				"type": "",
+				"severity": 0
+			},
+			"path11": {
+				"type": "",
+				"severity": 0
+			},
+			"path12": {
+				"type": "",
+				"severity": 0
+			},
+			"path13": {
+				"type": "scratch",
+				"severity": 0.62
+			}
+		}
 	},
 	{
 		"id": "8bab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248363",
-		"updatedAt": "1729856311744",
+		"updatedAt": "1730105217449",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Jaguar-f-type-coupe-2d-gold",
@@ -471,8 +842,8 @@
 				"severity": 0
 			},
 			"path3": {
-				"type": "dent",
-				"severity": 0.88
+				"type": "",
+				"severity": 0
 			},
 			"path4": {
 				"type": "",
@@ -495,12 +866,12 @@
 				"severity": 0
 			},
 			"path9": {
-				"type": "",
-				"severity": 0
+				"type": "chip",
+				"severity": 0.65
 			},
 			"path10": {
 				"type": "scratch",
-				"severity": 0.22
+				"severity": 0.5
 			},
 			"path11": {
 				"type": "",
@@ -511,15 +882,15 @@
 				"severity": 0
 			},
 			"path13": {
-				"type": "",
-				"severity": 0
+				"type": "scratch",
+				"severity": 0.62
 			}
 		}
 	},
 	{
 		"id": "8aab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248364",
-		"updatedAt": "1729841672991",
+		"updatedAt": "1730107639399",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Hyundai Tucson",
@@ -571,13 +942,66 @@
 				"country_code": "FR"
 			}
 		},
-		"status": "RENTED",
-		"parts": null
+		"status": "AVAILABLE",
+		"parts": {
+			"path1": {
+				"type": "",
+				"severity": 0
+			},
+			"path2": {
+				"type": "",
+				"severity": 0
+			},
+			"path3": {
+				"type": "",
+				"severity": 0
+			},
+			"path4": {
+				"type": "",
+				"severity": 0
+			},
+			"path5": {
+				"type": "",
+				"severity": 0
+			},
+			"path6": {
+				"type": "",
+				"severity": 0
+			},
+			"path7": {
+				"type": "",
+				"severity": 0
+			},
+			"path8": {
+				"type": "",
+				"severity": 0
+			},
+			"path9": {
+				"type": "chip",
+				"severity": 0.65
+			},
+			"path10": {
+				"type": "",
+				"severity": 0
+			},
+			"path11": {
+				"type": "",
+				"severity": 0
+			},
+			"path12": {
+				"type": "",
+				"severity": 0
+			},
+			"path13": {
+				"type": "scratch",
+				"severity": 0.62
+			}
+		}
 	},
 	{
 		"id": "89ab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248363",
-		"updatedAt": "1729841672991",
+		"updatedAt": "1730104533726",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Group D - Nissan Qashqai",
@@ -630,12 +1054,65 @@
 			}
 		},
 		"status": "AVAILABLE",
-		"parts": null
+		"parts": {
+			"path1": {
+				"type": "",
+				"severity": 0
+			},
+			"path2": {
+				"type": "",
+				"severity": 0
+			},
+			"path3": {
+				"type": "",
+				"severity": 0
+			},
+			"path4": {
+				"type": "",
+				"severity": 0
+			},
+			"path5": {
+				"type": "",
+				"severity": 0
+			},
+			"path6": {
+				"type": "",
+				"severity": 0
+			},
+			"path7": {
+				"type": "",
+				"severity": 0
+			},
+			"path8": {
+				"type": "",
+				"severity": 0
+			},
+			"path9": {
+				"type": "chip",
+				"severity": 0.65
+			},
+			"path10": {
+				"type": "",
+				"severity": 0
+			},
+			"path11": {
+				"type": "",
+				"severity": 0
+			},
+			"path12": {
+				"type": "",
+				"severity": 0
+			},
+			"path13": {
+				"type": "scratch",
+				"severity": 0.62
+			}
+		}
 	},
 	{
 		"id": "88ab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248363",
-		"updatedAt": "1729841580101",
+		"updatedAt": "1730131182568",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Group C - Peugeot 2008",
@@ -688,12 +1165,65 @@
 			}
 		},
 		"status": "AVAILABLE",
-		"parts": null
+		"parts": {
+			"path1": {
+				"type": "",
+				"severity": 0
+			},
+			"path2": {
+				"type": "",
+				"severity": 0
+			},
+			"path3": {
+				"type": "",
+				"severity": 0
+			},
+			"path4": {
+				"type": "",
+				"severity": 0
+			},
+			"path5": {
+				"type": "",
+				"severity": 0
+			},
+			"path6": {
+				"type": "",
+				"severity": 0
+			},
+			"path7": {
+				"type": "",
+				"severity": 0
+			},
+			"path8": {
+				"type": "",
+				"severity": 0
+			},
+			"path9": {
+				"type": "chip",
+				"severity": 0.65
+			},
+			"path10": {
+				"type": "",
+				"severity": 0
+			},
+			"path11": {
+				"type": "",
+				"severity": 0
+			},
+			"path12": {
+				"type": "",
+				"severity": 0
+			},
+			"path13": {
+				"type": "scratch",
+				"severity": 0.62
+			}
+		}
 	},
 	{
 		"id": "87ab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248363",
-		"updatedAt": "1729841672991",
+		"updatedAt": "1730108303755",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Mercedes-bmw-ix-suv-white",
@@ -745,13 +1275,66 @@
 				"country_code": "FR"
 			}
 		},
-		"status": "AVIALABLE",
-		"parts": null
+		"status": "AVAILABLE",
+		"parts": {
+			"path1": {
+				"type": "",
+				"severity": 0
+			},
+			"path2": {
+				"type": "",
+				"severity": 0
+			},
+			"path3": {
+				"type": "",
+				"severity": 0
+			},
+			"path4": {
+				"type": "",
+				"severity": 0
+			},
+			"path5": {
+				"type": "",
+				"severity": 0
+			},
+			"path6": {
+				"type": "",
+				"severity": 0
+			},
+			"path7": {
+				"type": "",
+				"severity": 0
+			},
+			"path8": {
+				"type": "",
+				"severity": 0
+			},
+			"path9": {
+				"type": "chip",
+				"severity": 0.65
+			},
+			"path10": {
+				"type": "",
+				"severity": 0
+			},
+			"path11": {
+				"type": "",
+				"severity": 0
+			},
+			"path12": {
+				"type": "",
+				"severity": 0
+			},
+			"path13": {
+				"type": "scratch",
+				"severity": 0.62
+			}
+		}
 	},
 	{
 		"id": "86ab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248362",
-		"updatedAt": "1729841672991",
+		"updatedAt": "1730107639399",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Vito Tourer Van",
@@ -803,13 +1386,66 @@
 				"country_code": "FR"
 			}
 		},
-		"status": "RENTED",
-		"parts": null
+		"status": "AVAILABLE",
+		"parts": {
+			"path1": {
+				"type": "",
+				"severity": 0
+			},
+			"path2": {
+				"type": "",
+				"severity": 0
+			},
+			"path3": {
+				"type": "",
+				"severity": 0
+			},
+			"path4": {
+				"type": "",
+				"severity": 0
+			},
+			"path5": {
+				"type": "",
+				"severity": 0
+			},
+			"path6": {
+				"type": "",
+				"severity": 0
+			},
+			"path7": {
+				"type": "",
+				"severity": 0
+			},
+			"path8": {
+				"type": "",
+				"severity": 0
+			},
+			"path9": {
+				"type": "chip",
+				"severity": 0.65
+			},
+			"path10": {
+				"type": "",
+				"severity": 0
+			},
+			"path11": {
+				"type": "",
+				"severity": 0
+			},
+			"path12": {
+				"type": "",
+				"severity": 0
+			},
+			"path13": {
+				"type": "scratch",
+				"severity": 0.62
+			}
+		}
 	},
 	{
 		"id": "85ab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248362",
-		"updatedAt": "1729841513186",
+		"updatedAt": "1730106408456",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Audi A3",
@@ -861,13 +1497,66 @@
 				"country_code": "FR"
 			}
 		},
-		"status": "RENTED",
-		"parts": null
+		"status": "AVAILABLE",
+		"parts": {
+			"path1": {
+				"type": "",
+				"severity": 0
+			},
+			"path2": {
+				"type": "",
+				"severity": 0
+			},
+			"path3": {
+				"type": "",
+				"severity": 0
+			},
+			"path4": {
+				"type": "",
+				"severity": 0
+			},
+			"path5": {
+				"type": "",
+				"severity": 0
+			},
+			"path6": {
+				"type": "",
+				"severity": 0
+			},
+			"path7": {
+				"type": "",
+				"severity": 0
+			},
+			"path8": {
+				"type": "",
+				"severity": 0
+			},
+			"path9": {
+				"type": "scratch",
+				"severity": 0.69
+			},
+			"path10": {
+				"type": "scratch",
+				"severity": 0.56
+			},
+			"path11": {
+				"type": "",
+				"severity": 0
+			},
+			"path12": {
+				"type": "",
+				"severity": 0
+			},
+			"path13": {
+				"type": "scratch",
+				"severity": 0.56
+			}
+		}
 	},
 	{
 		"id": "84ab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248361",
-		"updatedAt": "1729841672991",
+		"updatedAt": "1730107639399",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Mercedes-Benz",
@@ -919,7 +1608,60 @@
 				"country_code": "FR"
 			}
 		},
-		"status": "RENTED",
-		"parts": null
+		"status": "AVAILABLE",
+		"parts": {
+			"path1": {
+				"type": "",
+				"severity": 0
+			},
+			"path2": {
+				"type": "",
+				"severity": 0
+			},
+			"path3": {
+				"type": "",
+				"severity": 0
+			},
+			"path4": {
+				"type": "",
+				"severity": 0
+			},
+			"path5": {
+				"type": "",
+				"severity": 0
+			},
+			"path6": {
+				"type": "",
+				"severity": 0
+			},
+			"path7": {
+				"type": "",
+				"severity": 0
+			},
+			"path8": {
+				"type": "",
+				"severity": 0
+			},
+			"path9": {
+				"type": "chip",
+				"severity": 0.65
+			},
+			"path10": {
+				"type": "",
+				"severity": 0
+			},
+			"path11": {
+				"type": "",
+				"severity": 0
+			},
+			"path12": {
+				"type": "",
+				"severity": 0
+			},
+			"path13": {
+				"type": "scratch",
+				"severity": 0.62
+			}
+		}
 	}
 ]

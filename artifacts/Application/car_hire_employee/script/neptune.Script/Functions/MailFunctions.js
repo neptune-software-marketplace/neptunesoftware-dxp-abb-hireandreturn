@@ -11,6 +11,6 @@ function sendEmailRentalHandover() {
         },
     };
 
-    console.log(options.data.email);
+  //  console.log(options.data.email);
     apiSendMailRentalHandover(options);
 }

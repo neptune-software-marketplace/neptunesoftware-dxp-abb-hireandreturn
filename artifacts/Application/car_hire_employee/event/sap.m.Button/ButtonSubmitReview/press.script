@@ -1,6 +1,6 @@
 
 var currentEditData = modelSimpleForm.getData();
-console.log(currentEditData)
+//console.log(currentEditData)
 var options = { 
     parameters: {
         "where": JSON.stringify({id: currentEditData.id}) // Optional 
@@ -66,7 +66,7 @@ var options = {
     }
 };
 
-console.log(currentEditData);
+//console.log(currentEditData);
 
 apiUpdateCarBookingDetails(options);
 

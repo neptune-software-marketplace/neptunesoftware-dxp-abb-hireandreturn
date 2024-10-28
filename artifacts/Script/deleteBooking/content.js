@@ -12,7 +12,7 @@ await entities.cardetails
     .createQueryBuilder()
     .update()
     .set({
-        status: "AVIALABLE",
+        status: "AVAILABLE",
     })
     .where("id = :id", { id: reqBody.car_id })
     .execute();

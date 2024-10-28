@@ -1,0 +1,10 @@
+if (typeof status === "undefined" || status === null || status === "") { return; }  
+
+var formattedText;
+
+if(status === "AVAILABLE"){
+    formattedText = false
+}else{
+    formattedText = true
+}
+return formattedText;

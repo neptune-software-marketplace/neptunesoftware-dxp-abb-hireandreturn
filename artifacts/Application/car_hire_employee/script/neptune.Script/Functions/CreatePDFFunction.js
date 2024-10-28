@@ -3,7 +3,7 @@
 function createPDF() {
 
 var PDFData = { pdfHeader: "Added tomorrow", pdfBookingData: modelSimpleForm.getData() };
-console.log(PDFData);
+//console.log(PDFData);
 
 
 $.ajax({
@@ -21,7 +21,7 @@ $.ajax({
         //App.to(PDFViewerPage);
 
         var pdfurl = createDataURL(temp);
-        console.log(pdfurl);
+        //console.log(pdfurl);
         PDFViewer.setSource(pdfurl);
 
     },
@@ -36,7 +36,7 @@ $.ajax({
 function createPDFAndSendMail() {
 
 var PDFData = { pdfHeader: "Added tomorrow", pdfBookingData: modelSimpleForm.getData() };
-console.log(PDFData);
+//console.log(PDFData);
 
 // let PDFData = {field1: modelSimpleForm.getData(),
 // field2: inputField.getValue(),
@@ -57,7 +57,7 @@ $.ajax({
         //App.to(PDFViewerPage);
 
         var pdfurl = createDataURL(temp);
-        console.log(pdfurl);
+        //console.log(pdfurl);
         PDFViewer.setSource(pdfurl);
 
         //IF sending mail should be active uncomment next row!

@@ -186,8 +186,9 @@
 														{
 															"attribute": "press",
 															"grouping": "Events",
-															"value": "apiGet_Cars_API();",
-															"script": "apiGet_Cars_API();",
+															"value": "Anonymous Function",
+															"script": "file://event/sap.m.Button/CarsAvailable/press.js",
+															"language": "javascript",
 															"translation": []
 														}
 													],
@@ -2067,18 +2068,6 @@
 		{
 			"fieldNo": 99999,
 			"data": [
-				{
-					"fieldNo": "d37a328f-0bec-4406-c28f-e8dfee655fd9",
-					"fieldName": "IMPROVEMENTS",
-					"fieldParent": 99999,
-					"fieldType": "neptune.Script",
-					"script": "file://script/neptune.Script/IMPROVEMENTS.js",
-					"customComponent": false,
-					"request": [],
-					"response": [],
-					"attributes": [],
-					"data": []
-				},
 				{
 					"fieldNo": "d67c5d34-f0b6-4226-8779-bf552acbc2eb",
 					"fieldName": "Dialogs",
@@ -5289,34 +5278,6 @@
 					]
 				},
 				{
-					"fieldNo": "93b2dec9-87fe-4777-d0cc-156ad467fbef",
-					"fieldName": "Get_Cars_API",
-					"fieldParent": 99999,
-					"fieldType": "neptune.restapi",
-					"script": "",
-					"customComponent": false,
-					"restSource": "226a03bf-5d85-ef11-bdfd-000d3ab84645",
-					"restOperation": "32077e05-82e1-4c16-861d-8d5e76b4dde1",
-					"request": [],
-					"response": [
-						{
-							"status": 200,
-							"dataId": "5a368f00-2259-4522-aa5a-2d0152180712",
-							"modelFieldNo": "26161cbf-8e37-4210-8d8a-49d377419983"
-						}
-					],
-					"attributes": [
-						{
-							"attribute": "ajaxSuccess",
-							"grouping": "Events",
-							"value": "AvailableCarsDialog.open();",
-							"script": "AvailableCarsDialog.open();",
-							"translation": []
-						}
-					],
-					"data": []
-				},
-				{
 					"fieldNo": "d6dd9d70-427e-45e2-9008-10a14b8f93c5",
 					"fieldName": "API",
 					"fieldParent": 99999,
@@ -5327,6 +5288,26 @@
 					"response": [],
 					"attributes": [],
 					"data": [
+						{
+							"fieldNo": "93b2dec9-87fe-4777-d0cc-156ad467fbef",
+							"fieldName": "Get_CarDetails_API",
+							"fieldParent": "d6dd9d70-427e-45e2-9008-10a14b8f93c5",
+							"fieldType": "neptune.restapi",
+							"script": "",
+							"customComponent": false,
+							"restSource": "226a03bf-5d85-ef11-bdfd-000d3ab84645",
+							"restOperation": "32077e05-82e1-4c16-861d-8d5e76b4dde1",
+							"request": [],
+							"response": [
+								{
+									"status": 200,
+									"dataId": "5a368f00-2259-4522-aa5a-2d0152180712",
+									"modelFieldNo": "26161cbf-8e37-4210-8d8a-49d377419983"
+								}
+							],
+							"attributes": [],
+							"data": []
+						},
 						{
 							"fieldNo": "1bdfe31a-d390-4d31-8ada-5eceaa63ae2c",
 							"fieldName": "SendMailRentalHandover",
@@ -5419,6 +5400,7 @@
 							"fieldType": "neptune.restapi",
 							"script": "",
 							"customComponent": false,
+							"disabled": true,
 							"restSource": "d07f05ca-adc8-ee11-85f9-0022489e2e3e",
 							"restOperation": "c159b73f-951b-4fc7-bbf7-d16c663a03d6",
 							"request": [],
@@ -5442,6 +5424,7 @@
 							"fieldType": "neptune.restapi",
 							"script": "",
 							"customComponent": false,
+							"disabled": true,
 							"restSource": "d07f05ca-adc8-ee11-85f9-0022489e2e3e",
 							"restOperation": "06b529b5-995d-477f-8a09-e24268e52fbb",
 							"request": [],
@@ -5459,11 +5442,12 @@
 						},
 						{
 							"fieldNo": "ac6c6c1f-10d2-41c0-f525-294b57a92262",
-							"fieldName": "Set_Car_Damage_Parts",
+							"fieldName": "Get_Car_Damage_Parts",
 							"fieldParent": "d6dd9d70-427e-45e2-9008-10a14b8f93c5",
 							"fieldType": "neptune.restapi",
 							"script": "",
 							"customComponent": false,
+							"disabled": true,
 							"restSource": "d07f05ca-adc8-ee11-85f9-0022489e2e3e",
 							"restOperation": "8b01ff56-5175-40da-9aa7-ad1aae04ba43",
 							"request": [],
@@ -5473,7 +5457,7 @@
 									"attribute": "ajaxSuccess",
 									"grouping": "Events",
 									"value": "Anonymous Function",
-									"script": "file://event/neptune.restapi/Set_Car_Damage_Parts/ajaxSuccess.js",
+									"script": "file://event/neptune.restapi/Get_Car_Damage_Parts/ajaxSuccess.js",
 									"language": "javascript",
 									"translation": []
 								}
@@ -5501,6 +5485,7 @@
 							"fieldType": "neptune.restapi",
 							"script": "",
 							"customComponent": false,
+							"disabled": true,
 							"restSource": "d07f05ca-adc8-ee11-85f9-0022489e2e3e",
 							"restOperation": "1eba2dd2-0850-4ba7-9fa2-b5ba743f7a3c",
 							"request": [],
@@ -5536,6 +5521,7 @@
 							"fieldType": "neptune.restapi",
 							"script": "",
 							"customComponent": false,
+							"disabled": true,
 							"restSource": "7ee86c4f-bad3-ee11-85f9-0022489e2e2b",
 							"restOperation": "90d1787d-ea92-46f2-8892-ba79cc0baf9d",
 							"request": [],
@@ -6275,7 +6261,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.10.25.1200",
+	"ver": "24.10.28.0938",
 	"application": "car_hire_employee",
 	"title": "",
 	"description": "",
@@ -6318,11 +6304,6 @@
 	"activationHistoryCount": 0,
 	"apis": [
 		{
-			"id": "d07f05ca-adc8-ee11-85f9-0022489e2e3e",
-			"name": "car_damage_selector_cars",
-			"ver": "24.2.26.847"
-		},
-		{
 			"id": "ba532f85-4aca-ee11-85f9-0022489e2e3e",
 			"name": "car_damage_parts_pictures",
 			"ver": "24.10.24.1411"
@@ -6331,11 +6312,6 @@
 			"id": "88cdd496-4982-ef11-bdfd-000d3ab84645",
 			"name": "car_booking",
 			"ver": "24.10.24.1410"
-		},
-		{
-			"id": "7ee86c4f-bad3-ee11-85f9-0022489e2e2b",
-			"name": "car_booking_signatures",
-			"ver": "24.2.25.846"
 		},
 		{
 			"id": "410a2f7e-9980-ef11-bdfd-000d3ab84645",

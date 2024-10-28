@@ -19,7 +19,7 @@
 				"enableSorting": false,
 				"enableMonochrome": false,
 				"pieInnerSize": 0,
-				"enable3D": false,
+				"enable3D": true,
 				"alpha3D": 0,
 				"beta3D": 0,
 				"depth3D": 100,
@@ -35,7 +35,7 @@
 				"yAxisReversed": false,
 				"yAxisStartOnTick": true,
 				"yAxisGridLineWidth": 1,
-				"title": "Car Availability Chart"
+				"title": ""
 			}
 		},
 		"fieldCatalog": [
@@ -124,6 +124,12 @@
 				"usage": "BOTH"
 			},
 			{
+				"name": "parts",
+				"label": "parts",
+				"type": "json",
+				"usage": "BOTH"
+			},
+			{
 				"name": "updatedAt",
 				"label": "Updated At",
 				"type": "timestamp",
@@ -176,7 +182,7 @@
 	"scriptSel": null,
 	"scriptRun": null,
 	"tableid": null,
-	"ver": "24.10.09.0608",
+	"ver": "24.10.28.1535",
 	"disabled": false,
 	"appType": "A",
 	"application": "planet9_adaptive_tile_chart",

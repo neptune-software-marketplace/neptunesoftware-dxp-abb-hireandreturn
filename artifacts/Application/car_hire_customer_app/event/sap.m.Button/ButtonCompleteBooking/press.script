@@ -36,7 +36,7 @@ var bookingDetails = {
     booking_no: getRandomBookingNumber(),
     car_details: selectedVechicle,
     //booking_sign: signaturePad.toDataURL(),
-    car_svg: "/media/root/CarDamageSelectorApp/carNew.svg",
+    car_svg: "/media/root/CarDamageSelectorApp/car.svg",
     car_image: selectedVechicle.imageSrc,
     total_cost: selectedVechicle.totalReservation,
     booked_days: selectedVechicle.rateDays,
@@ -67,6 +67,9 @@ sap.m.MessageToast.show("Booking Completed! Visit the pickup location for formal
     animationTimingFunction: "ease", // default
     animationDuration: 1000          // default
 });
-apiGet_User_Bookings();
-oApp.to(oPageManageBookings);
+apiGet_User_Bookings().then((result) => { 
+    modeloListCarsBooked.setData(result)
+      oApp.to(oPageSearch);
+})
+
 modelSimpleFormBookingDetails.setData({});

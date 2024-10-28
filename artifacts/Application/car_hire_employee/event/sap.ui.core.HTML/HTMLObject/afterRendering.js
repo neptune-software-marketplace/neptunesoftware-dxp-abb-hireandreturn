@@ -12,13 +12,13 @@ if (!aPaths.length) return;
 aPaths.bind("click", _handlePathClick.bind(this));
 
 function _handlePathClick(oEvent) {
-    console.log(oEvent);
+    // console.log(oEvent);
 
     _oActivePath2 = $(oEvent.target);
     //this._oActivePath = $(oEvent.target);
     const oSource = oEvent.target;
-    console.log($(oEvent.target).attr("id"));
-    console.log(_oActivePath2);
+    // console.log($(oEvent.target).attr("id"));
+    // console.log(_oActivePath2);
 
     Slider.setValue(50);
     //const fValue = Slider.getValue() / 100
@@ -59,9 +59,9 @@ function _handlePathClick(oEvent) {
 
 }
 
-console.log("RENDER:");
-console.log(modelSimpleForm.getData());
-console.log(modelSimpleForm.getData().parts.path1.type);
+// console.log("RENDER:");
+// console.log(modelSimpleForm.getData());
+// console.log(modelSimpleForm.getData().parts.path1.type);
 
 
 

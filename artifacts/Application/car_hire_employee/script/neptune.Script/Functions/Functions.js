@@ -138,7 +138,6 @@ var options = {
     }
 };
 
-console.log(currentEditData);
 
 apiUpdateCarBookingDetails(options);
 
@@ -148,7 +147,7 @@ var carDetailsOptions = {
     },
     data: {"parts": updateData}
 };
-
+console.log(currentEditData);
 apiUpdateCarDetails(carDetailsOptions);
 
 }

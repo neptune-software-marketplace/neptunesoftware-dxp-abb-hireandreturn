@@ -60,7 +60,7 @@ function resize(x) {
     if (x.matches) { // If media query matches
         oImageVehicleResults.setWidth((window.innerWidth - 20) + "px");
         oImageVehicleRate.setWidth((window.innerWidth - 20) + "px");
-        oButtonBackVehicleResults.setVisible(true);
+      
     }
     else {
         oImageVehicleResults.setWidth("25rem");
