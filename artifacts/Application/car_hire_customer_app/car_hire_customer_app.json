@@ -46,7 +46,7 @@
 								{
 									"attribute": "title",
 									"grouping": "Properties",
-									"value": "Hire a car",
+									"value": "Hire a Car",
 									"script": "",
 									"translation": []
 								},
@@ -63,50 +63,16 @@
 									"value": "Transparent",
 									"script": "",
 									"translation": []
+								},
+								{
+									"attribute": "titleAlignment",
+									"grouping": "Properties",
+									"value": "Center",
+									"script": "",
+									"translation": []
 								}
 							],
 							"data": [
-								{
-									"fieldNo": "c6f65de3-5b41-4bad-f073-bfec761bc3aa",
-									"fieldName": "oBarCustomHeader",
-									"fieldParent": "8e4e465a-42c3-4a20-d35f-683c0c9fb49d",
-									"fieldType": "sap.m.Bar",
-									"script": "",
-									"customComponent": false,
-									"request": [],
-									"response": [],
-									"attributes": [
-										{
-											"attribute": "position",
-											"grouping": "Parent",
-											"value": "setCustomHeader",
-											"script": "",
-											"translation": []
-										}
-									],
-									"data": [
-										{
-											"fieldNo": "30b40cf9-ffb6-4db9-b70c-62626a8dec6a",
-											"fieldName": "Right1",
-											"fieldParent": "c6f65de3-5b41-4bad-f073-bfec761bc3aa",
-											"fieldType": "neptune.BarContent",
-											"script": "",
-											"customComponent": false,
-											"request": [],
-											"response": [],
-											"attributes": [
-												{
-													"attribute": "position",
-													"grouping": "Parent",
-													"value": "ContentRight",
-													"script": "",
-													"translation": []
-												}
-											],
-											"data": []
-										}
-									]
-								},
 								{
 									"fieldNo": "dcbce84e-6eb0-4c34-bce6-fd30794ac558",
 									"fieldName": "HBoxSearch",
@@ -3264,7 +3230,64 @@
 													"translation": []
 												}
 											],
-											"data": []
+											"data": [
+												{
+													"fieldNo": "eac71341-d541-4d52-99db-3309d1da03ad",
+													"fieldName": "SaveChangesButton",
+													"fieldParent": "831c6633-5e12-4dd8-8148-1b31093c9a4a",
+													"fieldType": "sap.m.Button",
+													"script": "",
+													"customComponent": false,
+													"bindingType": "h",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "visible",
+															"grouping": "Properties",
+															"value": "{/booking_status}",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "type",
+															"grouping": "Properties",
+															"value": "Accept",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Save Changes",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "icon",
+															"grouping": "Properties",
+															"value": "sap-icon://save",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "saveDamageDetails(modelSelectedCar.getData());",
+															"script": "saveDamageDetails(modelSelectedCar.getData());",
+															"translation": []
+														},
+														{
+															"attribute": "visible",
+															"grouping": "Formatter",
+															"value": "Anonymous Function",
+															"script": "file://event/sap.m.Button/SaveChangesButton/visible.script",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
 										},
 										{
 											"fieldNo": "a859faad-6b1d-4045-aaab-148ef60b92cf",
@@ -3526,20 +3549,100 @@
 									]
 								},
 								{
+									"fieldNo": "8915bb5e-ec53-4089-c474-7f931d68c4de",
+									"fieldName": "VBoxSVGContainerEditable",
+									"fieldParent": "738e6312-42cd-4e6a-f5bf-4701c96b024f",
+									"fieldType": "sap.m.VBox",
+									"script": "",
+									"customComponent": false,
+									"bindingType": "h",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "visible",
+											"grouping": "Properties",
+											"value": "{/booking_status}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "styleClass",
+											"grouping": "Properties",
+											"value": "svgContainer",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "visible",
+											"grouping": "Formatter",
+											"value": "Anonymous Function",
+											"script": "file://event/sap.m.VBox/VBoxSVGContainerEditable/visible.script",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "df9635b6-2956-4fdd-87bd-2dc57cdddca5",
+											"fieldName": "HTMLObjectEditable",
+											"fieldParent": "8915bb5e-ec53-4089-c474-7f931d68c4de",
+											"fieldType": "sap.ui.core.HTML",
+											"script": "",
+											"customComponent": false,
+											"bindingType": "h",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "afterRendering",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.ui.core.HTML/HTMLObjectEditable/afterRendering.js",
+													"language": "javascript",
+													"translation": []
+												},
+												{
+													"attribute": "fieldGroupIds",
+													"grouping": "Properties",
+													"value": "idSvgContainer",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
 									"fieldNo": "37b04be6-afcf-4ad2-a447-da78b67e2f6b",
 									"fieldName": "VBoxSVGContainer",
 									"fieldParent": "738e6312-42cd-4e6a-f5bf-4701c96b024f",
 									"fieldType": "sap.m.VBox",
 									"script": "",
 									"customComponent": false,
+									"bindingType": "h",
 									"request": [],
 									"response": [],
 									"attributes": [
+										{
+											"attribute": "visible",
+											"grouping": "Properties",
+											"value": "{/booking_status}",
+											"script": "",
+											"translation": []
+										},
 										{
 											"attribute": "styleClass",
 											"grouping": "Properties",
 											"value": "svgContainer",
 											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "visible",
+											"grouping": "Formatter",
+											"value": "Anonymous Function",
+											"script": "file://event/sap.m.VBox/VBoxSVGContainer/visible.script",
 											"translation": []
 										}
 									],
@@ -3561,13 +3664,6 @@
 													"value": "Anonymous Function",
 													"script": "file://event/sap.ui.core.HTML/HTMLObject/afterRendering.js",
 													"language": "javascript",
-													"translation": []
-												},
-												{
-													"attribute": "fieldGroupIds",
-													"grouping": "Properties",
-													"value": "idSvgContainer",
-													"script": "",
 													"translation": []
 												}
 											],
@@ -4283,6 +4379,7 @@
 											"fieldType": "sap.m.Button",
 											"script": "",
 											"customComponent": false,
+											"disabled": true,
 											"bindingType": "h",
 											"request": [],
 											"response": [],
@@ -4327,10 +4424,10 @@
 											"data": []
 										},
 										{
-											"fieldNo": "8a1417e7-5af9-482a-a060-21a27ca201fc",
-											"fieldName": "GridListCarPictures",
+											"fieldNo": "8af46438-f8e5-46e1-e6f1-50f6354e1054",
+											"fieldName": "ListCarDamagePictures",
 											"fieldParent": "2fd5db1d-7000-4d96-9465-7e8836195d2b",
-											"fieldType": "sap.f.GridList",
+											"fieldType": "sap.m.List",
 											"script": "",
 											"customComponent": false,
 											"bindingValue": "car_damage_parts_pictures>car_damage_parts_pictures",
@@ -4340,21 +4437,13 @@
 											"bindingPathID": "db3061e4-7fe6-4ab1-8a30-5a90f2e67877",
 											"request": [],
 											"response": [],
-											"attributes": [
-												{
-													"attribute": "width",
-													"grouping": "Properties",
-													"value": "10%",
-													"script": "",
-													"translation": []
-												}
-											],
+											"attributes": [],
 											"data": [
 												{
-													"fieldNo": "cfa8e6d5-74b0-41eb-9923-fb8206194576",
-													"fieldName": "GridListItemCarPictures",
-													"fieldParent": "8a1417e7-5af9-482a-a060-21a27ca201fc",
-													"fieldType": "sap.f.GridListItem",
+													"fieldNo": "c833eb42-ce26-4e8e-adc6-991428b3ca21",
+													"fieldName": "CustomListItemCarDamagePictures",
+													"fieldParent": "8af46438-f8e5-46e1-e6f1-50f6354e1054",
+													"fieldType": "sap.m.CustomListItem",
 													"script": "",
 													"customComponent": false,
 													"request": [],
@@ -4364,7 +4453,7 @@
 														{
 															"fieldNo": "a3255e73-d1aa-4079-ad22-c79522ed3c10",
 															"fieldName": "ImageCarDamage",
-															"fieldParent": "cfa8e6d5-74b0-41eb-9923-fb8206194576",
+															"fieldParent": "c833eb42-ce26-4e8e-adc6-991428b3ca21",
 															"fieldType": "sap.m.Image",
 															"script": "",
 															"customComponent": false,
@@ -6293,16 +6382,44 @@
 									]
 								},
 								{
-									"fieldNo": "af2b9110-5b0b-43bc-fe84-ae75fa80d4ad",
-									"fieldName": "PreviewPictureImage",
+									"fieldNo": "12404625-f732-4d23-d470-dd0a0fb841cd",
+									"fieldName": "HBoxPreviewImage",
 									"fieldParent": "217fa8bb-0be8-49de-a8ba-2faed265100e",
-									"fieldType": "sap.m.Image",
+									"fieldType": "sap.m.HBox",
 									"script": "",
 									"customComponent": false,
 									"request": [],
 									"response": [],
-									"attributes": [],
-									"data": []
+									"attributes": [
+										{
+											"attribute": "justifyContent",
+											"grouping": "Properties",
+											"value": "Center",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "alignItems",
+											"grouping": "Properties",
+											"value": "Center",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "af2b9110-5b0b-43bc-fe84-ae75fa80d4ad",
+											"fieldName": "PreviewPictureImage",
+											"fieldParent": "12404625-f732-4d23-d470-dd0a0fb841cd",
+											"fieldType": "sap.m.Image",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": []
+										}
+									]
 								}
 							]
 						},
@@ -6530,7 +6647,7 @@
 						},
 						{
 							"fieldNo": "be0c5e77-ae56-488d-8bba-c31655ef506e",
-							"fieldName": "Get_Pictures_Car",
+							"fieldName": "Get_damage_parts_pictures",
 							"fieldParent": "0ddf2e19-abd5-48a4-f533-c02d1abb7148",
 							"fieldType": "neptune.restapi",
 							"script": "",
@@ -6542,9 +6659,37 @@
 								{
 									"status": 200,
 									"dataId": "db3061e4-7fe6-4ab1-8a30-5a90f2e67877",
-									"modelFieldNo": "8a1417e7-5af9-482a-a060-21a27ca201fc"
+									"modelFieldNo": "8af46438-f8e5-46e1-e6f1-50f6354e1054"
 								}
 							],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "c183dc05-8d39-431d-ec3a-ec30700d6536",
+							"fieldName": "UpdateCarDetails",
+							"fieldParent": "0ddf2e19-abd5-48a4-f533-c02d1abb7148",
+							"fieldType": "neptune.restapi",
+							"script": "",
+							"customComponent": false,
+							"restSource": "226a03bf-5d85-ef11-bdfd-000d3ab84645",
+							"restOperation": "9f990696-8382-471d-bced-756916d15d29",
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "a42697e4-5873-47b0-8b1f-90210464e7f5",
+							"fieldName": "UpdateCarBookingDetails",
+							"fieldParent": "0ddf2e19-abd5-48a4-f533-c02d1abb7148",
+							"fieldType": "neptune.restapi",
+							"script": "",
+							"customComponent": false,
+							"restSource": "88cdd496-4982-ef11-bdfd-000d3ab84645",
+							"restOperation": "0e554c69-0389-4c5b-8ff8-59e85a23ff18",
+							"request": [],
+							"response": [],
 							"attributes": [],
 							"data": []
 						},
@@ -6706,6 +6851,510 @@
 							"data": []
 						}
 					]
+				},
+				{
+					"fieldNo": "76612a06-a31d-4fbf-9e4d-5888769a2a54",
+					"fieldName": "ResponsivePopover",
+					"fieldParent": 99999,
+					"fieldType": "sap.m.ResponsivePopover",
+					"script": "",
+					"customComponent": false,
+					"bindingValue": "Generic Object",
+					"bindingType": "u",
+					"bindingSource": "P9",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "showHeader",
+							"grouping": "Properties",
+							"value": "false",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "afterClose",
+							"grouping": "Events",
+							"value": "idNavContainer.to(type);  ",
+							"script": "idNavContainer.to(type);  ",
+							"translation": []
+						},
+						{
+							"attribute": "blocked",
+							"grouping": "Properties",
+							"value": "{/booking_status}",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "blocked",
+							"grouping": "Formatter",
+							"value": "Anonymous Function",
+							"script": "file://event/sap.m.ResponsivePopover/ResponsivePopover/blocked.script",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "34d12ac9-6c5e-42bf-d933-30683dd139cc",
+							"fieldName": "idNavContainer",
+							"fieldParent": "76612a06-a31d-4fbf-9e4d-5888769a2a54",
+							"fieldType": "sap.m.NavContainer",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "width",
+									"grouping": "Properties",
+									"value": "9rem",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "height",
+									"grouping": "Properties",
+									"value": "12rem",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "f384474e-51cc-42bc-eee1-7f8746a82c34",
+									"fieldName": "type",
+									"fieldParent": "34d12ac9-6c5e-42bf-d933-30683dd139cc",
+									"fieldType": "sap.m.Page",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "enableScrolling",
+											"grouping": "Properties",
+											"value": "false",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "207976d1-9bb0-4641-9a98-00210702a5ff",
+											"fieldName": "Toolbar",
+											"fieldParent": "f384474e-51cc-42bc-eee1-7f8746a82c34",
+											"fieldType": "sap.m.Toolbar",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "position",
+													"grouping": "Parent",
+													"value": "CustomHeader",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "4c8f2b83-9142-4f0c-9dbe-2dd3af7dab8f",
+													"fieldName": "ResetPartButton",
+													"fieldParent": "207976d1-9bb0-4641-9a98-00210702a5ff",
+													"fieldType": "sap.m.Button",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Reset",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "Anonymous Function",
+															"script": "file://event/sap.m.Button/ResetPartButton/press.js",
+															"language": "javascript",
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "53e0bf39-b859-4028-e05a-be160d45d65f",
+													"fieldName": "TakePictureButton",
+													"fieldParent": "207976d1-9bb0-4641-9a98-00210702a5ff",
+													"fieldType": "sap.m.Button",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "type",
+															"grouping": "Properties",
+															"value": "Critical",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "icon",
+															"grouping": "Properties",
+															"value": "sap-icon://add-photo",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "Anonymous Function",
+															"script": "file://event/sap.m.Button/TakePictureButton/press.js",
+															"language": "javascript",
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "92d40b3d-596f-4381-effd-143d26a79df5",
+													"fieldName": "ToolbarSpacer",
+													"fieldParent": "207976d1-9bb0-4641-9a98-00210702a5ff",
+													"fieldType": "sap.m.ToolbarSpacer",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "5c665f7b-5280-455f-83a8-0470aaf8f389",
+											"fieldName": "List1",
+											"fieldParent": "f384474e-51cc-42bc-eee1-7f8746a82c34",
+											"fieldType": "sap.m.List",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "styleClass",
+													"grouping": "Properties",
+													"value": "idNavContainer",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "c6ac5c87-62b5-4ae6-fb8f-e8a556e84d50",
+													"fieldName": "Scratch",
+													"fieldParent": "5c665f7b-5280-455f-83a8-0470aaf8f389",
+													"fieldType": "sap.m.StandardListItem",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "type",
+															"grouping": "Properties",
+															"value": "Navigation",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "title",
+															"grouping": "Properties",
+															"value": "Scratch",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "Anonymous Function",
+															"script": "file://event/sap.m.StandardListItem/Scratch/press.js",
+															"language": "javascript",
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "8ba02b44-9a71-44a9-fde3-0c0d4db99c98",
+													"fieldName": "Dent",
+													"fieldParent": "5c665f7b-5280-455f-83a8-0470aaf8f389",
+													"fieldType": "sap.m.StandardListItem",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "type",
+															"grouping": "Properties",
+															"value": "Navigation",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "title",
+															"grouping": "Properties",
+															"value": "Dent",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "Anonymous Function",
+															"script": "file://event/sap.m.StandardListItem/Dent/press.js",
+															"language": "javascript",
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "932e73e0-d470-4bbb-e4c7-e86de5bc6547",
+													"fieldName": "PaintChip",
+													"fieldParent": "5c665f7b-5280-455f-83a8-0470aaf8f389",
+													"fieldType": "sap.m.StandardListItem",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "type",
+															"grouping": "Properties",
+															"value": "Navigation",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "title",
+															"grouping": "Properties",
+															"value": "Paint chip",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "Anonymous Function",
+															"script": "file://event/sap.m.StandardListItem/PaintChip/press.js",
+															"language": "javascript",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										}
+									]
+								},
+								{
+									"fieldNo": "2807772c-2611-45c1-a48a-057787f564db",
+									"fieldName": "severity",
+									"fieldParent": "34d12ac9-6c5e-42bf-d933-30683dd139cc",
+									"fieldType": "sap.m.Page",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "styleClassPadding",
+											"grouping": "Properties",
+											"value": "sapUiResponsiveContentPadding",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "showNavButton",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "enableScrolling",
+											"grouping": "Properties",
+											"value": "false",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "navButtonPress",
+											"grouping": "Events",
+											"value": "idNavContainer.back();",
+											"script": "idNavContainer.back();",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "ca373d0d-776f-46ee-d2f9-4a1721c8c24b",
+											"fieldName": "Slider",
+											"fieldParent": "2807772c-2611-45c1-a48a-057787f564db",
+											"fieldType": "sap.m.Slider",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "liveChange",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.m.Slider/Slider/liveChange.script",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "74974c7a-e077-4e2c-93bd-c873db9d2894",
+											"fieldName": "HBoxSeveritySlider",
+											"fieldParent": "2807772c-2611-45c1-a48a-057787f564db",
+											"fieldType": "sap.m.HBox",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "justifyContent",
+													"grouping": "Properties",
+													"value": "Center",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "abc433aa-effb-4eee-e001-68da83e27ae5",
+													"fieldName": "SeverityValue",
+													"fieldParent": "74974c7a-e077-4e2c-93bd-c873db9d2894",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "textAlign",
+															"grouping": "Properties",
+															"value": "Center",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "100",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "3cddbc81-1969-4964-c6e1-aa14182d4d54",
+											"fieldName": "Toolbar1",
+											"fieldParent": "2807772c-2611-45c1-a48a-057787f564db",
+											"fieldType": "sap.m.Toolbar",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "position",
+													"grouping": "Parent",
+													"value": "Footer",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "c1871ec0-6955-4b77-d317-1338225fe9c6",
+													"fieldName": "ToolbarSpacer1",
+													"fieldParent": "3cddbc81-1969-4964-c6e1-aa14182d4d54",
+													"fieldType": "sap.m.ToolbarSpacer",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": []
+												},
+												{
+													"fieldNo": "f8231ff2-08cf-460a-bb48-c675a823004a",
+													"fieldName": "ButtonSaveSeverity",
+													"fieldParent": "3cddbc81-1969-4964-c6e1-aa14182d4d54",
+													"fieldType": "sap.m.Button",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Save",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "Anonymous Function",
+															"script": "file://event/sap.m.Button/ButtonSaveSeverity/press.js",
+															"language": "javascript",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"fieldNo": "56391777-ece8-4947-ac99-92ae6aa93930",
+					"fieldName": "SelectedCar",
+					"fieldParent": 99999,
+					"fieldType": "neptune.model.object",
+					"script": "",
+					"customComponent": false,
+					"bindingValue": "car_booking>car_booking",
+					"bindingType": "u",
+					"bindingSource": "API",
+					"bindingParentID": "88CDD496-4982-EF11-BDFD-000D3AB84645",
+					"bindingPathID": "56c5d312-2117-48ef-b3e4-a15d59ab8a30",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
 				}
 			]
 		},
@@ -6715,7 +7364,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.10.28.1601",
+	"ver": "24.11.07.1533",
 	"application": "car_hire_customer_app",
 	"title": "",
 	"description": "",
@@ -6766,6 +7415,11 @@
 			"id": "ba532f85-4aca-ee11-85f9-0022489e2e3e",
 			"name": "car_damage_parts_pictures",
 			"ver": "24.10.24.1411"
+		},
+		{
+			"id": "88cdd496-4982-ef11-bdfd-000d3ab84645",
+			"name": "car_booking",
+			"ver": "24.10.24.1410"
 		},
 		{
 			"id": "410a2f7e-9980-ef11-bdfd-000d3ab84645",

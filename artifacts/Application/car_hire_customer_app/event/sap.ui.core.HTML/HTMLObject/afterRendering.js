@@ -1,9 +1,9 @@
-const aPaths = $("path.part");
+// const aPaths = $("path.part");
 
-//console.log($(aPaths[1]));
-//$(aPaths[1]).addClass("scratch"); // WORKING
+// //console.log($(aPaths[1]));
+// //$(aPaths[1]).addClass("scratch"); // WORKING
 
 
 
-if (!aPaths.length) return;
+// if (!aPaths.length) return;
 

@@ -1,5 +1,5 @@
 
-var currentEditData = modelSimpleForm.getData();
+var currentEditData = modelSelectedCar.getData();
 //console.log(currentEditData)
 var options = { 
     parameters: {
@@ -8,7 +8,7 @@ var options = {
     data: {
         "comment": TextAreaReviewComment.getValue(),
         "clearance_status": SelectClearance.getSelectedKey(),
-        "damage_images": JSON.stringify(modelTableCarPictures.getData()),
+        "damage_images": JSON.stringify(modelListCarDamagePictures.getData()),
         "parts": {
             "path1": {
                 "type": currentEditData.parts.path1.type,

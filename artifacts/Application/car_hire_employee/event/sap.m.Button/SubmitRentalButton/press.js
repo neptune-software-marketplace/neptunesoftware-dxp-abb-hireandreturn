@@ -11,9 +11,9 @@
 
 
 
-//modelSimpleForm1.setData(modelSimpleForm.getData());
+//modelSimpleForm1.setData(modelSelectedCar.getData());
 
-//console.log(modelSimpleForm.getData());
+//console.log(modelSelectedCar.getData());
 
 //createPDF();
 

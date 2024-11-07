@@ -1,9 +1,9 @@
 var options = {
     parameters: {
-        "where": JSON.stringify({"id": modelSimpleForm.getData().id})
+        "where": JSON.stringify({"id": modelSelectedCar.getData().id})
     },
     data: {
-        "id": modelSimpleForm.getData().id
+        "id": modelSelectedCar.getData().id
     }
 };
 
@@ -12,10 +12,10 @@ apiDelete_Car_API(options);
 
 var options2 = {
     parameters: {
-        "where": JSON.stringify({"bookingId": modelSimpleForm.getData().id})
+        "where": JSON.stringify({"bookingId": modelSelectedCar.getData().id})
     },
     data: {
-        "id": modelSimpleForm.getData().id
+        "id": modelSelectedCar.getData().id
     }
 };
 

@@ -13,5 +13,15 @@ var options = {
 
 
 
-apiDelete_Single_Picture_Car(options);
+apiDelete_single_damage_parts_picture(options);
 DeleteSinglePictureDialog.close();
+var options = {
+    parameters: {
+        "where": JSON.stringify({"carID": modelSelectedCar.getData().car_id})
+    },
+    data: {
+        "carID": modelSelectedCar.getData().car_id,
+    }
+};
+
+apiGet_damage_parts_pictures(options);

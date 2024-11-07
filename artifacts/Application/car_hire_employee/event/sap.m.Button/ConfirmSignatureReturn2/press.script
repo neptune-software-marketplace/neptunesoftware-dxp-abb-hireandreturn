@@ -10,13 +10,13 @@ if (signaturePad.isEmpty()) {
 // var options = {
 //     data: {
 //         "customerSignatureRental": imgSign.getSrc(),
-//         "bookingId": modelSimpleForm.getData().id
+//         "bookingId": modelSelectedCar.getData().id
 //     }
 // };
 
 // apiCreateBookingSignatureRentStart(options);
 
-// modelSimpleForm.getData().bookingStatus = "Rented";
+// modelSelectedCar.getData().bookingStatus = "Rented";
 
 
 //waiting here to send the mail so the signature has time to be added to the table. Else the signature will be empty in the PDF

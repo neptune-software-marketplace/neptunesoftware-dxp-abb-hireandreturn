@@ -1,13 +1,13 @@
 
 var options = {
     parameters: {
-        "where": JSON.stringify({"carID": modelSimpleForm.getData().id})
+        "where": JSON.stringify({"carID": modelSelectedCar.getData().car_id})
     },
     data: {
-        "carID": modelSimpleForm.getData().id,
+        "carID": modelSelectedCar.getData().car_id,
     }
 };
 
-apiGet_Pictures_Car(options);
+apiGet_damage_parts_pictures(options);
 
 TakePictureDialog.close();

@@ -1,0 +1,11 @@
+if (typeof booking_status === "undefined" || booking_status === null || booking_status === "") { return; }  
+
+var formattedText;
+
+if(booking_status === "BOOKED"){
+    formattedText = false;
+}else{
+    formattedText = true;
+}
+
+return formattedText;

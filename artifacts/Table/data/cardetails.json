@@ -2,7 +2,7 @@
 	{
 		"id": "92ab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248366",
-		"updatedAt": "1730107639399",
+		"updatedAt": "1730986178445",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Group B - Peugeot 208",
@@ -107,13 +107,21 @@
 			"path13": {
 				"type": "scratch",
 				"severity": 0.62
+			},
+			"path14": {
+				"type": "",
+				"severity": 0
+			},
+			"path15": {
+				"type": "",
+				"severity": 0
 			}
 		}
 	},
 	{
 		"id": "91ab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248365",
-		"updatedAt": "1730104533726",
+		"updatedAt": "1730986178445",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Group O - Renault Grand Scenic",
@@ -218,13 +226,21 @@
 			"path13": {
 				"type": "scratch",
 				"severity": 0.62
+			},
+			"path14": {
+				"type": "",
+				"severity": 0
+			},
+			"path15": {
+				"type": "",
+				"severity": 0
 			}
 		}
 	},
 	{
 		"id": "90ab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248365",
-		"updatedAt": "1730104533726",
+		"updatedAt": "1730986178445",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Group A - Fiat 500",
@@ -329,13 +345,21 @@
 			"path13": {
 				"type": "scratch",
 				"severity": 0.62
+			},
+			"path14": {
+				"type": "",
+				"severity": 0
+			},
+			"path15": {
+				"type": "",
+				"severity": 0
 			}
 		}
 	},
 	{
 		"id": "8fab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248365",
-		"updatedAt": "1730104533726",
+		"updatedAt": "1730986178445",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Group K - Hyundai Kona Electric",
@@ -440,13 +464,21 @@
 			"path13": {
 				"type": "scratch",
 				"severity": 0.62
+			},
+			"path14": {
+				"type": "",
+				"severity": 0
+			},
+			"path15": {
+				"type": "",
+				"severity": 0
 			}
 		}
 	},
 	{
 		"id": "8eab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248365",
-		"updatedAt": "1730104533726",
+		"updatedAt": "1730986178445",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Group I - Fiat 500 Electric",
@@ -551,13 +583,21 @@
 			"path13": {
 				"type": "scratch",
 				"severity": 0.62
+			},
+			"path14": {
+				"type": "",
+				"severity": 0
+			},
+			"path15": {
+				"type": "",
+				"severity": 0
 			}
 		}
 	},
 	{
 		"id": "8dab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248364",
-		"updatedAt": "1730107639399",
+		"updatedAt": "1730986178445",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Group H - Ford Focus SW",
@@ -662,13 +702,21 @@
 			"path13": {
 				"type": "scratch",
 				"severity": 0.62
+			},
+			"path14": {
+				"type": "",
+				"severity": 0
+			},
+			"path15": {
+				"type": "",
+				"severity": 0
 			}
 		}
 	},
 	{
 		"id": "8cab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248364",
-		"updatedAt": "1730104533726",
+		"updatedAt": "1730986178445",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Group F - Mercedes-Benz CLA",
@@ -773,13 +821,21 @@
 			"path13": {
 				"type": "scratch",
 				"severity": 0.62
+			},
+			"path14": {
+				"type": "",
+				"severity": 0
+			},
+			"path15": {
+				"type": "",
+				"severity": 0
 			}
 		}
 	},
 	{
 		"id": "8bab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248363",
-		"updatedAt": "1730105217449",
+		"updatedAt": "1730988547796",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Jaguar-f-type-coupe-2d-gold",
@@ -867,30 +923,38 @@
 			},
 			"path9": {
 				"type": "chip",
-				"severity": 0.65
+				"severity": 0.79
 			},
 			"path10": {
-				"type": "scratch",
-				"severity": 0.5
+				"type": "chip",
+				"severity": 0.27
 			},
 			"path11": {
 				"type": "",
 				"severity": 0
 			},
 			"path12": {
+				"type": "dent",
+				"severity": 0.89
+			},
+			"path13": {
 				"type": "",
 				"severity": 0
 			},
-			"path13": {
-				"type": "scratch",
-				"severity": 0.62
+			"path14": {
+				"type": "dent",
+				"severity": 0.89
+			},
+			"path15": {
+				"type": "",
+				"severity": 0
 			}
 		}
 	},
 	{
 		"id": "8aab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248364",
-		"updatedAt": "1730107639399",
+		"updatedAt": "1730986178445",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Hyundai Tucson",
@@ -995,13 +1059,21 @@
 			"path13": {
 				"type": "scratch",
 				"severity": 0.62
+			},
+			"path14": {
+				"type": "",
+				"severity": 0
+			},
+			"path15": {
+				"type": "",
+				"severity": 0
 			}
 		}
 	},
 	{
 		"id": "89ab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248363",
-		"updatedAt": "1730104533726",
+		"updatedAt": "1730986178445",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Group D - Nissan Qashqai",
@@ -1106,13 +1178,21 @@
 			"path13": {
 				"type": "scratch",
 				"severity": 0.62
+			},
+			"path14": {
+				"type": "",
+				"severity": 0
+			},
+			"path15": {
+				"type": "",
+				"severity": 0
 			}
 		}
 	},
 	{
 		"id": "88ab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248363",
-		"updatedAt": "1730131182568",
+		"updatedAt": "1730986178445",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Group C - Peugeot 2008",
@@ -1217,13 +1297,21 @@
 			"path13": {
 				"type": "scratch",
 				"severity": 0.62
+			},
+			"path14": {
+				"type": "",
+				"severity": 0
+			},
+			"path15": {
+				"type": "",
+				"severity": 0
 			}
 		}
 	},
 	{
 		"id": "87ab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248363",
-		"updatedAt": "1730108303755",
+		"updatedAt": "1730986178445",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Mercedes-bmw-ix-suv-white",
@@ -1328,13 +1416,21 @@
 			"path13": {
 				"type": "scratch",
 				"severity": 0.62
+			},
+			"path14": {
+				"type": "",
+				"severity": 0
+			},
+			"path15": {
+				"type": "",
+				"severity": 0
 			}
 		}
 	},
 	{
 		"id": "86ab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248362",
-		"updatedAt": "1730107639399",
+		"updatedAt": "1730986178445",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Vito Tourer Van",
@@ -1386,7 +1482,7 @@
 				"country_code": "FR"
 			}
 		},
-		"status": "AVAILABLE",
+		"status": "RENTED",
 		"parts": {
 			"path1": {
 				"type": "",
@@ -1439,13 +1535,21 @@
 			"path13": {
 				"type": "scratch",
 				"severity": 0.62
+			},
+			"path14": {
+				"type": "",
+				"severity": 0
+			},
+			"path15": {
+				"type": "",
+				"severity": 0
 			}
 		}
 	},
 	{
 		"id": "85ab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248362",
-		"updatedAt": "1730106408456",
+		"updatedAt": "1730992419749",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Audi A3",
@@ -1533,11 +1637,11 @@
 			},
 			"path9": {
 				"type": "scratch",
-				"severity": 0.69
+				"severity": 0.63
 			},
 			"path10": {
-				"type": "scratch",
-				"severity": 0.56
+				"type": "",
+				"severity": 0
 			},
 			"path11": {
 				"type": "",
@@ -1548,15 +1652,23 @@
 				"severity": 0
 			},
 			"path13": {
-				"type": "scratch",
-				"severity": 0.56
+				"type": "",
+				"severity": 0
+			},
+			"path14": {
+				"type": "",
+				"severity": 0
+			},
+			"path15": {
+				"type": "",
+				"severity": 0
 			}
 		}
 	},
 	{
 		"id": "84ab0891-5d85-ef11-bdfd-000d3ab84645",
 		"createdAt": "1728382248361",
-		"updatedAt": "1730107639399",
+		"updatedAt": "1730986178445",
 		"createdBy": "emmanuella.ndukwe@neptune-software.com",
 		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
 		"name": "Mercedes-Benz",
@@ -1661,6 +1773,14 @@
 			"path13": {
 				"type": "scratch",
 				"severity": 0.62
+			},
+			"path14": {
+				"type": "",
+				"severity": 0
+			},
+			"path15": {
+				"type": "",
+				"severity": 0
 			}
 		}
 	}

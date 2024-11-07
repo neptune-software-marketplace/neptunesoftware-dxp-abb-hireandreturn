@@ -1,10 +1,10 @@
 var options = {
     parameters: {
-        "where": JSON.stringify({"carID": modelSimpleForm.getData().car_id})
+        "where": JSON.stringify({"carID": modelSelectedCar.getData().car_id})
     },
     data: {
-        "carID": modelSimpleForm.getData().car_id,
+        "carID": modelSelectedCar.getData().car_id,
     }
 };
 
-apiGet_Pictures_Car(options);
+apiGet_damage_parts_pictures(options);

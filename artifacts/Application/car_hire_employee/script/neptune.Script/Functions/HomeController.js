@@ -10,19 +10,26 @@
                 _oActivePath2.removeClass("dent")
                 _oActivePath2.removeClass("chip")
 
-                switch (sType) {
-                    case "Scratch":
-                        _oActivePath2.addClass("scratch")
-                        break;
-                    case "Dent":
-                        _oActivePath2.addClass("dent")
-                        break;
-                    case "PaintChip":
-                        _oActivePath2.addClass("chip")
-                        break;
-                    default:
-                        break;
+                if(sType.includes("Scratch")){
+                    _oActivePath2.addClass("scratch")
+                }else if(sType.includes("Dent")){
+                    _oActivePath2.addClass("dent")
+                } else if(sType.includes("PaintChip")){
+                    _oActivePath2.addClass("chip")
                 }
+                // switch (sType) {
+                //     case "Scratch":
+                //         _oActivePath2.addClass("scratch")
+                //         break;
+                //     case "Dent":
+                //         _oActivePath2.addClass("dent")
+                //         break;
+                //     case "PaintChip":
+                //         _oActivePath2.addClass("chip")
+                //         break;
+                //     default:
+                //         break;
+                // }
 
                 // Navigate to the next page
                 //const oTarget = this.getView().byId("severity")

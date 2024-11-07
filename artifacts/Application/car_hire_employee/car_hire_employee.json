@@ -958,8 +958,9 @@
 														{
 															"attribute": "press",
 															"grouping": "Events",
-															"value": "saveDamageDetails();",
-															"script": "saveDamageDetails();",
+															"value": "saveDamageDetails(modelSelectedCar.getData());",
+															"script": "saveDamageDetails(modelSelectedCar.getData());",
+															"language": "javascript",
 															"translation": []
 														}
 													],
@@ -1834,12 +1835,171 @@
 											"data": []
 										},
 										{
+											"fieldNo": "6109b396-5e9c-4d38-919e-43e4c5d8ba9e",
+											"fieldName": "ListCarDamagePictures",
+											"fieldParent": "bba120c3-7023-4370-af4f-9451828ef92c",
+											"fieldType": "sap.m.List",
+											"script": "",
+											"customComponent": false,
+											"bindingValue": "car_damage_parts_pictures>car_damage_parts_pictures",
+											"bindingType": "h",
+											"bindingSource": "API",
+											"bindingParentID": "BA532F85-4ACA-EE11-85F9-0022489E2E3E",
+											"bindingPathID": "db3061e4-7fe6-4ab1-8a30-5a90f2e67877",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "width",
+													"grouping": "Properties",
+													"value": "50%",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "noDataText",
+													"grouping": "Properties",
+													"value": "No damage part images ",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "keyboardMode",
+													"grouping": "Properties",
+													"value": "Edit",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "cbfdb0de-7db4-431e-8810-a8a6810291af",
+													"fieldName": "CustomListItemCarDamagePictures",
+													"fieldParent": "6109b396-5e9c-4d38-919e-43e4c5d8ba9e",
+													"fieldType": "sap.m.CustomListItem",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": [
+														{
+															"fieldNo": "8a6a4726-9c3e-442f-c8bf-defe265ac046",
+															"fieldName": "HBox1",
+															"fieldParent": "cbfdb0de-7db4-431e-8810-a8a6810291af",
+															"fieldType": "sap.m.HBox",
+															"script": "",
+															"customComponent": false,
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "width",
+																	"grouping": "Properties",
+																	"value": "50%",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "justifyContent",
+																	"grouping": "Properties",
+																	"value": "SpaceBetween",
+																	"script": "",
+																	"translation": []
+																}
+															],
+															"data": [
+																{
+																	"fieldNo": "a5b265f9-85fb-43ee-b722-60b1798cda55",
+																	"fieldName": "ImageCarDamage1",
+																	"fieldParent": "8a6a4726-9c3e-442f-c8bf-defe265ac046",
+																	"fieldType": "sap.m.Image",
+																	"script": "",
+																	"customComponent": false,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "width",
+																			"grouping": "Properties",
+																			"value": "100px",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "src",
+																			"grouping": "Properties",
+																			"value": "{picture}",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "height",
+																			"grouping": "Properties",
+																			"value": "100px",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "press",
+																			"grouping": "Events",
+																			"value": "Anonymous Function",
+																			"script": "file://event/sap.m.Image/ImageCarDamage1/press.js",
+																			"language": "javascript",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																},
+																{
+																	"fieldNo": "b62737b7-932f-4714-e01b-423d041eb81e",
+																	"fieldName": "ButtonDeleteImage",
+																	"fieldParent": "8a6a4726-9c3e-442f-c8bf-defe265ac046",
+																	"fieldType": "sap.m.Button",
+																	"script": "",
+																	"customComponent": false,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "type",
+																			"grouping": "Properties",
+																			"value": "Reject",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "icon",
+																			"grouping": "Properties",
+																			"value": "sap-icon://delete",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "press",
+																			"grouping": "Events",
+																			"value": "Anonymous Function",
+																			"script": "file://event/sap.m.Button/ButtonDeleteImage/press.js",
+																			"language": "javascript",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
 											"fieldNo": "907b9f6c-2025-4872-878f-15b5fe922ffb",
 											"fieldName": "TableCarPictures",
 											"fieldParent": "bba120c3-7023-4370-af4f-9451828ef92c",
 											"fieldType": "sap.m.Table",
 											"script": "",
 											"customComponent": false,
+											"disabled": true,
 											"bindingValue": "car_damage_parts_pictures>car_damage_parts_pictures",
 											"bindingType": "h",
 											"bindingSource": "API",
@@ -1879,6 +2039,7 @@
 													"fieldType": "sap.m.Column",
 													"script": "",
 													"customComponent": false,
+													"disabled": true,
 													"request": [],
 													"response": [],
 													"attributes": [],
@@ -1890,6 +2051,7 @@
 															"fieldType": "sap.m.Text",
 															"script": "",
 															"customComponent": false,
+															"disabled": true,
 															"request": [],
 															"response": [],
 															"attributes": [
@@ -1912,6 +2074,7 @@
 													"fieldType": "sap.m.Column",
 													"script": "",
 													"customComponent": false,
+													"disabled": true,
 													"request": [],
 													"response": [],
 													"attributes": [],
@@ -1923,6 +2086,7 @@
 															"fieldType": "sap.m.Text",
 															"script": "",
 															"customComponent": false,
+															"disabled": true,
 															"request": [],
 															"response": [],
 															"attributes": [
@@ -1945,6 +2109,7 @@
 													"fieldType": "sap.m.ColumnListItem",
 													"script": "",
 													"customComponent": false,
+													"disabled": true,
 													"request": [],
 													"response": [],
 													"attributes": [],
@@ -1956,6 +2121,7 @@
 															"fieldType": "sap.m.Text",
 															"script": "",
 															"customComponent": false,
+															"disabled": true,
 															"bindingType": "h",
 															"request": [],
 															"response": [],
@@ -1977,6 +2143,7 @@
 															"fieldType": "sap.m.Image",
 															"script": "",
 															"customComponent": false,
+															"disabled": true,
 															"request": [],
 															"response": [],
 															"attributes": [
@@ -5214,8 +5381,9 @@
 														{
 															"attribute": "press",
 															"grouping": "Events",
-															"value": "DeleteSinglePictureDialog.close();",
+															"value": "Anonymous Function",
 															"script": "DeleteSinglePictureDialog.close();",
+															"language": "javascript",
 															"translation": []
 														}
 													],
@@ -5309,23 +5477,8 @@
 							"data": []
 						},
 						{
-							"fieldNo": "1bdfe31a-d390-4d31-8ada-5eceaa63ae2c",
-							"fieldName": "SendMailRentalHandover",
-							"fieldParent": "d6dd9d70-427e-45e2-9008-10a14b8f93c5",
-							"fieldType": "neptune.restapi",
-							"script": "",
-							"customComponent": false,
-							"disabled": true,
-							"restSource": "b29abc4d-43f3-ee11-aaf0-000d3ab82dc5",
-							"restOperation": "e80070ef-d432-48d5-8285-41f0510d8727",
-							"request": [],
-							"response": [],
-							"attributes": [],
-							"data": []
-						},
-						{
 							"fieldNo": "c963b16c-3dfc-4e9b-de3f-13ee4d2c8f37",
-							"fieldName": "Delete_Single_Picture_Car",
+							"fieldName": "Delete_single_damage_parts_picture",
 							"fieldParent": "d6dd9d70-427e-45e2-9008-10a14b8f93c5",
 							"fieldType": "neptune.restapi",
 							"script": "",
@@ -5338,8 +5491,8 @@
 								{
 									"attribute": "ajaxSuccess",
 									"grouping": "Events",
-									"value": "TableCarPictures.removeItem(_PictureTableItem);",
-									"script": "TableCarPictures.removeItem(_PictureTableItem);",
+									"value": "ListCarDamagePictures.removeItem(_PictureTableItem);",
+									"script": "ListCarDamagePictures.removeItem(_PictureTableItem);",
 									"translation": []
 								}
 							],
@@ -5347,7 +5500,7 @@
 						},
 						{
 							"fieldNo": "866e3c62-c879-4e61-ed97-c9dfa921ad1f",
-							"fieldName": "Get_Pictures_Car",
+							"fieldName": "Get_damage_parts_pictures",
 							"fieldParent": "d6dd9d70-427e-45e2-9008-10a14b8f93c5",
 							"fieldType": "neptune.restapi",
 							"script": "",
@@ -5359,7 +5512,7 @@
 								{
 									"status": 200,
 									"dataId": "db3061e4-7fe6-4ab1-8a30-5a90f2e67877",
-									"modelFieldNo": "907b9f6c-2025-4872-878f-15b5fe922ffb"
+									"modelFieldNo": "6109b396-5e9c-4d38-919e-43e4c5d8ba9e"
 								}
 							],
 							"attributes": [],
@@ -5394,77 +5547,6 @@
 							"data": []
 						},
 						{
-							"fieldNo": "4f9aba8d-7954-434a-d95e-ab8c503fa19d",
-							"fieldName": "Delete_Car_API",
-							"fieldParent": "d6dd9d70-427e-45e2-9008-10a14b8f93c5",
-							"fieldType": "neptune.restapi",
-							"script": "",
-							"customComponent": false,
-							"disabled": true,
-							"restSource": "d07f05ca-adc8-ee11-85f9-0022489e2e3e",
-							"restOperation": "c159b73f-951b-4fc7-bbf7-d16c663a03d6",
-							"request": [],
-							"response": [],
-							"attributes": [
-								{
-									"attribute": "ajaxSuccess",
-									"grouping": "Events",
-									"value": "Anonymous Function",
-									"script": "file://event/neptune.restapi/Delete_Car_API/ajaxSuccess.js",
-									"language": "javascript",
-									"translation": []
-								}
-							],
-							"data": []
-						},
-						{
-							"fieldNo": "315d0330-f759-4cda-b7f8-c5fbb3659e12",
-							"fieldName": "Create_New_Car_API",
-							"fieldParent": "d6dd9d70-427e-45e2-9008-10a14b8f93c5",
-							"fieldType": "neptune.restapi",
-							"script": "",
-							"customComponent": false,
-							"disabled": true,
-							"restSource": "d07f05ca-adc8-ee11-85f9-0022489e2e3e",
-							"restOperation": "06b529b5-995d-477f-8a09-e24268e52fbb",
-							"request": [],
-							"response": [],
-							"attributes": [
-								{
-									"attribute": "ajaxSuccess",
-									"grouping": "Events",
-									"value": "apiGetcar_damage_parts();",
-									"script": "apiGetcar_damage_parts();",
-									"translation": []
-								}
-							],
-							"data": []
-						},
-						{
-							"fieldNo": "ac6c6c1f-10d2-41c0-f525-294b57a92262",
-							"fieldName": "Get_Car_Damage_Parts",
-							"fieldParent": "d6dd9d70-427e-45e2-9008-10a14b8f93c5",
-							"fieldType": "neptune.restapi",
-							"script": "",
-							"customComponent": false,
-							"disabled": true,
-							"restSource": "d07f05ca-adc8-ee11-85f9-0022489e2e3e",
-							"restOperation": "8b01ff56-5175-40da-9aa7-ad1aae04ba43",
-							"request": [],
-							"response": [],
-							"attributes": [
-								{
-									"attribute": "ajaxSuccess",
-									"grouping": "Events",
-									"value": "Anonymous Function",
-									"script": "file://event/neptune.restapi/Get_Car_Damage_Parts/ajaxSuccess.js",
-									"language": "javascript",
-									"translation": []
-								}
-							],
-							"data": []
-						},
-						{
 							"fieldNo": "1f368a14-2a92-4ed5-9ba7-6a1db63d3c17",
 							"fieldName": "Return_car_API",
 							"fieldParent": "d6dd9d70-427e-45e2-9008-10a14b8f93c5",
@@ -5473,57 +5555,6 @@
 							"customComponent": false,
 							"restSource": "410a2f7e-9980-ef11-bdfd-000d3ab84645",
 							"restOperation": "3c2fedc8-6ca3-4469-e15b-557308dd5b1f",
-							"request": [],
-							"response": [],
-							"attributes": [],
-							"data": []
-						},
-						{
-							"fieldNo": "1c8340dc-08cc-4464-9809-eda1d308e316",
-							"fieldName": "Getcar_damage_parts",
-							"fieldParent": "d6dd9d70-427e-45e2-9008-10a14b8f93c5",
-							"fieldType": "neptune.restapi",
-							"script": "",
-							"customComponent": false,
-							"disabled": true,
-							"restSource": "d07f05ca-adc8-ee11-85f9-0022489e2e3e",
-							"restOperation": "1eba2dd2-0850-4ba7-9fa2-b5ba743f7a3c",
-							"request": [],
-							"response": [
-								{
-									"status": 200,
-									"dataId": "03461b8b-59b3-4e7e-8dbb-2229f7240c76",
-									"modelFieldNo": "21b982a5-1ca1-4bc7-8c1a-3439fecd0fd0"
-								}
-							],
-							"attributes": [
-								{
-									"attribute": "setInitLoad",
-									"grouping": "Model",
-									"value": "online",
-									"script": "",
-									"translation": []
-								},
-								{
-									"attribute": "ajaxSuccess",
-									"grouping": "Events",
-									"value": "Anonymous Function",
-									"script": "file://event/neptune.restapi/Getcar_damage_parts/ajaxSuccess.script",
-									"translation": []
-								}
-							],
-							"data": []
-						},
-						{
-							"fieldNo": "0633467e-bfaf-4ef1-a26a-ebffb2ead7b1",
-							"fieldName": "DeleteBookingSignatureRent",
-							"fieldParent": "d6dd9d70-427e-45e2-9008-10a14b8f93c5",
-							"fieldType": "neptune.restapi",
-							"script": "",
-							"customComponent": false,
-							"disabled": true,
-							"restSource": "7ee86c4f-bad3-ee11-85f9-0022489e2e2b",
-							"restOperation": "90d1787d-ea92-46f2-8892-ba79cc0baf9d",
 							"request": [],
 							"response": [],
 							"attributes": [],
@@ -5700,6 +5731,23 @@
 							"bindingSource": "API",
 							"bindingParentID": "BA532F85-4ACA-EE11-85F9-0022489E2E3E",
 							"bindingPathID": "db3061e4-7fe6-4ab1-8a30-5a90f2e67877",
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "30a1af08-723b-4b00-e52b-13339cf41514",
+							"fieldName": "SelectedCar",
+							"fieldParent": "3b147061-59e9-478b-9c7a-2d1c2dcf63a5",
+							"fieldType": "neptune.model.object",
+							"script": "",
+							"customComponent": false,
+							"bindingValue": "car_booking>car_booking",
+							"bindingType": "u",
+							"bindingSource": "API",
+							"bindingParentID": "88CDD496-4982-EF11-BDFD-000D3AB84645",
+							"bindingPathID": "56c5d312-2117-48ef-b3e4-a15d59ab8a30",
 							"request": [],
 							"response": [],
 							"attributes": [],
@@ -6261,7 +6309,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.10.28.0938",
+	"ver": "24.11.07.1532",
 	"application": "car_hire_employee",
 	"title": "",
 	"description": "",

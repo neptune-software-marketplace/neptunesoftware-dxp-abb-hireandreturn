@@ -4,8 +4,9 @@ const context = oEvent.oSource.getBindingContext();
 
 // Get Entire Model
 const data = context.getObject();
-console.log("data")
-    console.log(data)
+// console.log("data")
+//     console.log(data)
+modelSelectedCar.setData(data);
 modelSimpleForm.setData(data);
 modelPageRentalDetails.setData(data);
 
@@ -26,7 +27,7 @@ if (data.clearance_status == "CLEARED") {
         },
     };
 
-    apiGet_Pictures_Car(options);
+    apiGet_damage_parts_pictures(options);
 
 // Get path details of the selected car
 var options = {
@@ -36,8 +37,8 @@ var options = {
 };
 
 apiGet_CarDetails_API(options).then((result)=>{
-console.log("result[0]")
-    console.log(result[0])
+console.log("modelSelectedCar.getData()")
+    console.log(modelSelectedCar.getData())
 
     //In the following ajax Request we do call the Car SVG file and set it as content of the HTMLObject
     var ajaxReq;
@@ -48,7 +49,7 @@ console.log("result[0]")
         success: (data) => {
             const content = new XMLSerializer().serializeToString(data);
             HTMLObject.setContent(content);
-            VBoxSVGContainer.rerender();
+            //VBoxSVGContainer.rerender();
             App.to(PageRentalDetails);
         },
     });
@@ -62,19 +63,21 @@ console.log("result[0]")
     //console.log(aPathsOUT);
 
     //Getting data from SimpleForm and adding the classes
-    $(aPathsOUT[0]).addClass(result[0].parts.path1.type);
-    $(aPathsOUT[1]).addClass(result[0].parts.path2.type);
-    $(aPathsOUT[2]).addClass(result[0].parts.path3.type);
-    $(aPathsOUT[3]).addClass(result[0].parts.path4.type);
-    $(aPathsOUT[4]).addClass(result[0].parts.path5.type);
-    $(aPathsOUT[5]).addClass(result[0].parts.path6.type);
-    $(aPathsOUT[6]).addClass(result[0].parts.path7.type);
-    $(aPathsOUT[7]).addClass(result[0].parts.path8.type);
-    $(aPathsOUT[8]).addClass(result[0].parts.path9.type);
-    $(aPathsOUT[9]).addClass(result[0].parts.path10.type);
-    $(aPathsOUT[10]).addClass(result[0].parts.path11.type);
-    $(aPathsOUT[11]).addClass(result[0].parts.path12.type);
-    $(aPathsOUT[12]).addClass(result[0].parts.path13.type);
+    $(aPathsOUT[0]).addClass(modelSelectedCar.getData().parts.path1.type);
+    $(aPathsOUT[1]).addClass(modelSelectedCar.getData().parts.path2.type);
+    $(aPathsOUT[2]).addClass(modelSelectedCar.getData().parts.path3.type);
+    $(aPathsOUT[3]).addClass(modelSelectedCar.getData().parts.path4.type);
+    $(aPathsOUT[4]).addClass(modelSelectedCar.getData().parts.path5.type);
+    $(aPathsOUT[5]).addClass(modelSelectedCar.getData().parts.path6.type);
+    $(aPathsOUT[6]).addClass(modelSelectedCar.getData().parts.path7.type);
+    $(aPathsOUT[7]).addClass(modelSelectedCar.getData().parts.path8.type);
+    $(aPathsOUT[8]).addClass(modelSelectedCar.getData().parts.path9.type);
+    $(aPathsOUT[9]).addClass(modelSelectedCar.getData().parts.path10.type);
+    $(aPathsOUT[10]).addClass(modelSelectedCar.getData().parts.path11.type);
+    $(aPathsOUT[11]).addClass(modelSelectedCar.getData().parts.path12.type);
+    $(aPathsOUT[12]).addClass(modelSelectedCar.getData().parts.path13.type);
+    $(aPathsOUT[13]).addClass(modelSelectedCar.getData().parts.path14.type);
+    $(aPathsOUT[14]).addClass(modelSelectedCar.getData().parts.path15.type);
 
     $(aPathsOUT[0]).addClass("part1");
     $(aPathsOUT[1]).addClass("part2");
@@ -89,6 +92,8 @@ console.log("result[0]")
     $(aPathsOUT[10]).addClass("part11");
     $(aPathsOUT[11]).addClass("part12");
     $(aPathsOUT[12]).addClass("part13");
+    $(aPathsOUT[13]).addClass("part14");
+    $(aPathsOUT[14]).addClass("part15");
 
     const aPathsOUT1 = $("path.part1");
     const aPathsOUT2 = $("path.part2");
@@ -103,29 +108,33 @@ console.log("result[0]")
     const aPathsOUT11 = $("path.part11");
     const aPathsOUT12 = $("path.part12");
     const aPathsOUT13 = $("path.part13");
+    const aPathsOUT14 = $("path.part14");
+    const aPathsOUT15 = $("path.part15");
 
-    aPathsOUT1.css({ "fill-opacity": result[0].parts.path1.severity });
-    aPathsOUT2.css({ "fill-opacity": result[0].parts.path2.severity });
-    aPathsOUT3.css({ "fill-opacity": result[0].parts.path3.severity });
-    aPathsOUT4.css({ "fill-opacity": result[0].parts.path4.severity });
-    aPathsOUT5.css({ "fill-opacity": result[0].parts.path5.severity });
-    aPathsOUT6.css({ "fill-opacity": result[0].parts.path6.severity });
-    aPathsOUT7.css({ "fill-opacity": result[0].parts.path7.severity });
-    aPathsOUT8.css({ "fill-opacity": result[0].parts.path8.severity });
-    aPathsOUT9.css({ "fill-opacity": result[0].parts.path9.severity });
-    aPathsOUT10.css({ "fill-opacity": result[0].parts.path10.severity });
-    aPathsOUT11.css({ "fill-opacity": result[0].parts.path11.severity });
-    aPathsOUT12.css({ "fill-opacity": result[0].parts.path12.severity });
-    aPathsOUT13.css({ "fill-opacity": result[0].parts.path13.severity });
+    aPathsOUT1.css({ "fill-opacity": modelSelectedCar.getData().parts.path1.severity });
+    aPathsOUT2.css({ "fill-opacity": modelSelectedCar.getData().parts.path2.severity });
+    aPathsOUT3.css({ "fill-opacity": modelSelectedCar.getData().parts.path3.severity });
+    aPathsOUT4.css({ "fill-opacity": modelSelectedCar.getData().parts.path4.severity });
+    aPathsOUT5.css({ "fill-opacity": modelSelectedCar.getData().parts.path5.severity });
+    aPathsOUT6.css({ "fill-opacity": modelSelectedCar.getData().parts.path6.severity });
+    aPathsOUT7.css({ "fill-opacity": modelSelectedCar.getData().parts.path7.severity });
+    aPathsOUT8.css({ "fill-opacity": modelSelectedCar.getData().parts.path8.severity });
+    aPathsOUT9.css({ "fill-opacity": modelSelectedCar.getData().parts.path9.severity });
+    aPathsOUT10.css({ "fill-opacity": modelSelectedCar.getData().parts.path10.severity });
+    aPathsOUT11.css({ "fill-opacity": modelSelectedCar.getData().parts.path11.severity });
+    aPathsOUT12.css({ "fill-opacity": modelSelectedCar.getData().parts.path12.severity });
+    aPathsOUT13.css({ "fill-opacity": modelSelectedCar.getData().parts.path13.severity });
+    aPathsOUT14.css({ "fill-opacity": modelSelectedCar.getData().parts.path14.severity });
+    aPathsOUT15.css({ "fill-opacity": modelSelectedCar.getData().parts.path15.severity });
 
     const aPaths = $("path.part");
     //console.log(aPaths);
-    $(aPaths[1]).addClass(result[0].parts.path1.type);
-    rerender();
+    $(aPaths[1]).addClass(modelSelectedCar.getData().parts.path1.type);
+    //rerender();
 
     // var options2 = {
     //     parameters: {
-    //         "where" : JSON.stringify({"bookingId": result[0].id})// Optional
+    //         "where" : JSON.stringify({"bookingId": modelSelectedCar.getData().id})// Optional
     //     }
     // };
 

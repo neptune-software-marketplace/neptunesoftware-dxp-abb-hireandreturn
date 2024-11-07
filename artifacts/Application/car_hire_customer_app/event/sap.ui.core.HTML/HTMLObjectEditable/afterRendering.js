@@ -42,6 +42,7 @@ function _handlePathClick(oEvent) {
     // BEGIN
     // Here we do check if a type is already set. if yes we do add a StyleClass so the ListItem will be marked bold via CSS
     // In the beginning we remove all Styleclasses so we have resettet any selection we did before.
+    
     Dent.removeStyleClass("selectedProblem");
     PaintChip.removeStyleClass("selectedProblem");
     Scratch.removeStyleClass("selectedProblem");

@@ -1,8 +1,8 @@
-//let PDFData = modelSimpleForm.getData();
+//let PDFData = modelSelectedCar.getData();
 
 function createPDF() {
 
-var PDFData = { pdfHeader: "Added tomorrow", pdfBookingData: modelSimpleForm.getData() };
+var PDFData = { pdfHeader: "Added tomorrow", pdfBookingData: modelSelectedCar.getData() };
 //console.log(PDFData);
 
 
@@ -35,10 +35,10 @@ $.ajax({
 
 function createPDFAndSendMail() {
 
-var PDFData = { pdfHeader: "Added tomorrow", pdfBookingData: modelSimpleForm.getData() };
+var PDFData = { pdfHeader: "Added tomorrow", pdfBookingData: modelSelectedCar.getData() };
 //console.log(PDFData);
 
-// let PDFData = {field1: modelSimpleForm.getData(),
+// let PDFData = {field1: modelSelectedCar.getData(),
 // field2: inputField.getValue(),
 // field3: "testing string"}
 

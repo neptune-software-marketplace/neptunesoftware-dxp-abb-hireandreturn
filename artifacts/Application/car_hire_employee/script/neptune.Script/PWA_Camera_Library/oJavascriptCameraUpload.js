@@ -38,7 +38,7 @@ function uploadPicture(){
 
     var options = {
         data: {
-            "carID": modelSimpleForm.getData().id, // set from multimodel
+            "carID": modelSelectedCar.getData().id, // set from multimodel
             "picture": pictureToUpload,
             "part" :  _oActivePath2.attr("id"),
         }

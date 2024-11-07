@@ -7,4 +7,4 @@ var options = {
     }
 };
 
-apiGet_Pictures_Car(options);
+apiGet_damage_parts_pictures(options);

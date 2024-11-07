@@ -6,7 +6,7 @@ function sendEmailRentalHandover() {
     var options = {
         data: {
             
-            email: modelSimpleForm.getData().customerMail,
+            email: modelSelectedCar.getData().customerMail,
             attachments: { filename: filename, pdf: pdfAttachement },
         },
     };
