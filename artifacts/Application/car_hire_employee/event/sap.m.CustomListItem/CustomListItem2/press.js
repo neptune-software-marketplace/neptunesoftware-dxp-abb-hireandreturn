@@ -49,7 +49,7 @@ console.log("modelSelectedCar.getData()")
         success: (data) => {
             const content = new XMLSerializer().serializeToString(data);
             HTMLObject.setContent(content);
-            //VBoxSVGContainer.rerender();
+            VBoxSVGContainer.rerender();
             App.to(PageRentalDetails);
         },
     });
@@ -130,7 +130,7 @@ console.log("modelSelectedCar.getData()")
     const aPaths = $("path.part");
     //console.log(aPaths);
     $(aPaths[1]).addClass(modelSelectedCar.getData().parts.path1.type);
-    //rerender();
+    rerender();
 
     // var options2 = {
     //     parameters: {

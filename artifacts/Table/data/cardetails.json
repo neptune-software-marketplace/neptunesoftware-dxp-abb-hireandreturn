@@ -649,7 +649,7 @@
 				"country_code": "FR"
 			}
 		},
-		"status": "AVAILABLE",
+		"status": "RENTED",
 		"parts": {
 			"path1": {
 				"type": "",

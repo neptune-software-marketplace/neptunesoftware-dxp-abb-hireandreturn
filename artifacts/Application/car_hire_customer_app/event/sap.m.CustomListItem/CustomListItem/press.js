@@ -44,7 +44,8 @@ apiGet_Vehicles(options).then((result)=>{
         const content = new XMLSerializer().serializeToString(data);
         HTMLObject.setContent(content);
         HTMLObjectEditable.setContent(content);
-        //VBox.rerender();
+        VBoxSVGContainer.rerender();
+        VBoxSVGContainerEditable.rerender();
         oApp.to(oPageManageBookingDetails);
         modelResponsivePopover.setData(modeloPageManageBookingDetails.getData())
     },
@@ -125,7 +126,7 @@ var aPathsOUT = $("path.part");
     const aPaths = $("path.part");
     //console.log(aPaths);
     $(aPaths[1]).addClass(modelSelectedCar.getData().parts.path1.type);
-    //rerender();
+    rerender();
 
 
 
