@@ -6432,19 +6432,404 @@
 							"customComponent": false,
 							"request": [],
 							"response": [],
-							"attributes": [],
+							"attributes": [
+								{
+									"attribute": "title",
+									"grouping": "Properties",
+									"value": "Rate your Experience with  our Services",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "titleAlignment",
+									"grouping": "Properties",
+									"value": "Center",
+									"script": "",
+									"translation": []
+								}
+							],
 							"data": [
 								{
-									"fieldNo": "6db0fe35-f942-4e30-a00c-efe978e3ad8c",
-									"fieldName": "forms",
+									"fieldNo": "3b63dc45-246b-413a-a8ea-776c65b60233",
+									"fieldName": "SimpleFormFeedback",
 									"fieldParent": "fd72b04b-facc-4476-e42d-badbd2994ba8",
-									"fieldType": "neptune_forms",
+									"fieldType": "sap.ui.layout.form.SimpleForm",
 									"script": "",
-									"customComponent": true,
+									"customComponent": false,
+									"bindingValue": "CarHireFeedback>CarHireFeedback",
+									"bindingType": "u",
+									"bindingSource": "API",
+									"bindingParentID": "1156086A-E19D-EF11-8474-000D3AB84EEA",
+									"bindingPathID": "1ba1c256-e9be-41e5-83d3-cd8420015d02",
 									"request": [],
 									"response": [],
 									"attributes": [],
-									"data": []
+									"data": [
+										{
+											"fieldNo": "866a1b02-35f8-4c76-fe9e-8d40ffd4fa68",
+											"fieldName": "lblSimpleFormFeedbackbooking",
+											"fieldParent": "3b63dc45-246b-413a-a8ea-776c65b60233",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "How easy was it to book your rental car online or in-person?",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "8ed56816-d3e0-43b3-ab87-bf296f904138",
+											"fieldName": "RatingIndicatorBooking",
+											"fieldParent": "3b63dc45-246b-413a-a8ea-776c65b60233",
+											"fieldType": "sap.m.RatingIndicator",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{/booking}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "maxValue",
+													"grouping": "Properties",
+													"value": "10",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "iconSize",
+													"grouping": "Properties",
+													"value": "20px",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "128957fc-f7b2-4237-a605-9ed029c71a86",
+											"fieldName": "lblSimpleFormFeedbackrental_location",
+											"fieldParent": "3b63dc45-246b-413a-a8ea-776c65b60233",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "How would you rate the pick-up and drop-off process at the rental location?",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "85c98fee-4a88-489f-a156-a9966f392b58",
+											"fieldName": "RatingIndicatorRentalLocation",
+											"fieldParent": "3b63dc45-246b-413a-a8ea-776c65b60233",
+											"fieldType": "sap.m.RatingIndicator",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{/rental_location}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "maxValue",
+													"grouping": "Properties",
+													"value": "10",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "iconSize",
+													"grouping": "Properties",
+													"value": "20px",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "e25a8d2e-6ac0-4c9a-f5a2-d0952e575f3f",
+											"fieldName": "lblSimpleFormFeedbackcomfort",
+											"fieldParent": "3b63dc45-246b-413a-a8ea-776c65b60233",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Did the car meet your expectations in terms of performance and comfort?",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "ea37c26e-a5a8-40e8-ac3a-6627fd3e400d",
+											"fieldName": "RatingIndicatorComfort",
+											"fieldParent": "3b63dc45-246b-413a-a8ea-776c65b60233",
+											"fieldType": "sap.m.RatingIndicator",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{/comfort}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "maxValue",
+													"grouping": "Properties",
+													"value": "10",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "iconSize",
+													"grouping": "Properties",
+													"value": "20px",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "e6e46d9b-a95a-41ec-f0c6-d9fb43c76154",
+											"fieldName": "lblSimpleFormFeedbackoverall_satisfaction",
+											"fieldParent": "3b63dc45-246b-413a-a8ea-776c65b60233",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "How satisfied are you with the value for money of the car rental service?",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "33fc9c45-526a-44d7-c7e0-9ed92156801d",
+											"fieldName": "RatingIndicatorOverall_satisfaction",
+											"fieldParent": "3b63dc45-246b-413a-a8ea-776c65b60233",
+											"fieldType": "sap.m.RatingIndicator",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{/overall_satisfaction}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "maxValue",
+													"grouping": "Properties",
+													"value": "10",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "iconSize",
+													"grouping": "Properties",
+													"value": "20px",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "af5e4ce8-0d3d-49a3-faee-5b3b7deb6786",
+											"fieldName": "lblSimpleFormFeedbackfeature_satisfaction",
+											"fieldParent": "3b63dc45-246b-413a-a8ea-776c65b60233",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "How satisfied are you with the additional features of the cars?",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "5e8c09d4-35b9-458f-b1d3-128eb60ad411",
+											"fieldName": "RatingIndicatorFeature_satisfaction",
+											"fieldParent": "3b63dc45-246b-413a-a8ea-776c65b60233",
+											"fieldType": "sap.m.RatingIndicator",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{/feature_satisfaction}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "maxValue",
+													"grouping": "Properties",
+													"value": "10",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "iconSize",
+													"grouping": "Properties",
+													"value": "20px",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "2b216343-412b-4dfb-a188-0e02424c19ef",
+											"fieldName": "lblSimpleFormFeedbackimprovements",
+											"fieldParent": "3b63dc45-246b-413a-a8ea-776c65b60233",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "What could we improve to make your experience better in the future?",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "ab56c977-b342-42aa-85ec-00b103e4f26a",
+											"fieldName": "TextAreaImprovements",
+											"fieldParent": "3b63dc45-246b-413a-a8ea-776c65b60233",
+											"fieldType": "sap.m.TextArea",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{/improvements}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "rows",
+													"grouping": "Properties",
+													"value": "3",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "eb8aca85-751a-4edb-9358-ff93aa3c4a2e",
+											"fieldName": "lblSimpleFormFeedbackcomment",
+											"fieldParent": "3b63dc45-246b-413a-a8ea-776c65b60233",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "General comment",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "2cc0f88f-c588-4893-d160-90e5b7c8309a",
+											"fieldName": "TextAreaComment",
+											"fieldParent": "3b63dc45-246b-413a-a8ea-776c65b60233",
+											"fieldType": "sap.m.TextArea",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{/comment}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "rows",
+													"grouping": "Properties",
+													"value": "3",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
 								},
 								{
 									"fieldNo": "235b43e1-b651-4a5d-8787-3149b2dc370b",
@@ -6575,8 +6960,8 @@
 							"fieldType": "neptune.restapi",
 							"script": "",
 							"customComponent": false,
-							"restSource": "dc11215d-7f85-ef11-bdfd-000d3ab84645",
-							"restOperation": "ef27e49b-e9b1-4b5b-b383-2e68d9f642e2",
+							"restSource": "1156086a-e19d-ef11-8474-000d3ab84eea",
+							"restOperation": "ba4a024d-409b-451a-92df-eff65b7531e5",
 							"request": [],
 							"response": [],
 							"attributes": [],
@@ -7364,7 +7749,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.11.08.1124",
+	"ver": "24.11.08.1521",
 	"application": "car_hire_customer_app",
 	"title": "",
 	"description": "",
@@ -7407,11 +7792,6 @@
 	"activationHistoryCount": 0,
 	"apis": [
 		{
-			"id": "dc11215d-7f85-ef11-bdfd-000d3ab84645",
-			"name": "carhire_feedback",
-			"ver": "24.10.08.1412"
-		},
-		{
 			"id": "ba532f85-4aca-ee11-85f9-0022489e2e3e",
 			"name": "car_damage_parts_pictures",
 			"ver": "24.10.24.1411"
@@ -7430,6 +7810,11 @@
 			"id": "226a03bf-5d85-ef11-bdfd-000d3ab84645",
 			"name": "cardetails",
 			"ver": "24.10.08.1011"
+		},
+		{
+			"id": "1156086a-e19d-ef11-8474-000d3ab84eea",
+			"name": "CarHireFeedback",
+			"ver": "24.11.08.1454"
 		}
 	],
 	"package": "eb775512-7082-ef11-bdfd-000d3ab84645"

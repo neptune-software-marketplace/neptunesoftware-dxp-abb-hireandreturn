@@ -1,13 +1,13 @@
 {
-	"id": "dc11215d-7f85-ef11-bdfd-000d3ab84645",
-	"createdAt": "2024-10-08T14:12:42.660Z",
+	"id": "1156086a-e19d-ef11-8474-000d3ab84eea",
+	"createdAt": "2024-11-08T14:54:55.413Z",
 	"createdBy": "emmanuella.ndukwe@neptune-software.com",
 	"auth": [],
 	"endpoints": [],
 	"paths": [
 		{
-			"id": "076e1563-296d-488b-b267-3ef6e2149a38",
-			"path": "/carhire_feedback",
+			"id": "403c6941-8160-4d33-b2fb-7d9a1df15972",
+			"path": "/CarHireFeedback",
 			"method": "GET",
 			"headers": [],
 			"parameters": [
@@ -45,7 +45,7 @@
 					"content": [
 						{
 							"objectType": "array",
-							"name": "carhire_feedback"
+							"name": "CarHireFeedback"
 						}
 					]
 				},
@@ -62,15 +62,15 @@
 			]
 		},
 		{
-			"id": "ef27e49b-e9b1-4b5b-b383-2e68d9f642e2",
-			"path": "/carhire_feedback",
+			"id": "ba4a024d-409b-451a-92df-eff65b7531e5",
+			"path": "/CarHireFeedback",
 			"method": "PUT",
 			"headers": [],
 			"parameters": [],
 			"content": [
 				{
 					"objectTyoe": "array",
-					"name": "carhire_feedback"
+					"name": "CarHireFeedback"
 				}
 			],
 			"responses": [
@@ -80,7 +80,7 @@
 					"content": [
 						{
 							"objectType": "array",
-							"name": "carhire_feedback"
+							"name": "CarHireFeedback"
 						}
 					]
 				},
@@ -97,8 +97,8 @@
 			]
 		},
 		{
-			"id": "7a6fc658-6ecf-4890-b455-bbd836916045",
-			"path": "/carhire_feedback",
+			"id": "62e6b17c-999e-4dfe-8d9f-005fef8fb6d0",
+			"path": "/CarHireFeedback",
 			"method": "POST",
 			"headers": [],
 			"parameters": [
@@ -115,7 +115,7 @@
 			"content": [
 				{
 					"objectTyoe": "array",
-					"name": "carhire_feedback"
+					"name": "CarHireFeedback"
 				}
 			],
 			"responses": [
@@ -125,7 +125,7 @@
 					"content": [
 						{
 							"objectType": "array",
-							"name": "carhire_feedback"
+							"name": "CarHireFeedback"
 						}
 					]
 				},
@@ -142,8 +142,8 @@
 			]
 		},
 		{
-			"id": "f19f5b59-ad8c-4379-9e33-e02726597788",
-			"path": "/carhire_feedback",
+			"id": "76ac7865-f6ed-4171-9f87-ce4c01052577",
+			"path": "/CarHireFeedback",
 			"method": "DELETE",
 			"headers": [],
 			"parameters": [
@@ -165,7 +165,7 @@
 					"content": [
 						{
 							"objectType": "array",
-							"name": "carhire_feedback"
+							"name": "CarHireFeedback"
 						}
 					]
 				},
@@ -182,8 +182,8 @@
 			]
 		},
 		{
-			"id": "151ceaf8-02f0-4357-96d6-dddbb1a66138",
-			"path": "/carhire_feedback/count",
+			"id": "e6f8ff25-8771-440e-a61e-429c3401c855",
+			"path": "/CarHireFeedback/count",
 			"method": "GET",
 			"headers": [],
 			"parameters": [
@@ -224,57 +224,88 @@
 	],
 	"definitions": [
 		{
-			"id": "01200112-afba-450b-a0fb-595fcccdcd97",
-			"name": "carhire_feedback",
+			"id": "1ba1c256-e9be-41e5-83d3-cd8420015d02",
+			"name": "CarHireFeedback",
 			"properties": [
 				{
-					"id": "4fb7525e-e4a2-4ae4-bf0b-e85a4ffe5f3c",
+					"id": "8efddc46-72eb-4d37-84eb-e8a2243b4fcd",
 					"parent": "",
 					"name": "id",
 					"description": "Unique record ID",
 					"objectType": "string"
 				},
 				{
-					"id": "ffb499d3-e367-41d4-a11f-86ccb2ed5ef4",
+					"id": "c01110a7-8f5e-4d64-b2ab-9010a42ef94a",
 					"parent": "",
-					"name": "username",
+					"name": "booking",
+					"description": "How easy was it to book your rental car online or in-person?",
+					"objectType": "integer"
+				},
+				{
+					"id": "1ecb313c-89ed-4b3d-8b06-80bd16bfa7c2",
+					"parent": "",
+					"name": "rental_location",
+					"description": "How would you rate the pick-up and drop-off process at the rental location?",
+					"objectType": "integer"
+				},
+				{
+					"id": "2a43ba70-e412-4117-b214-0f3ef6a44f9c",
+					"parent": "",
+					"name": "comfort",
+					"description": "Did the car meet your expectations in terms of performance and comfort?",
+					"objectType": "integer"
+				},
+				{
+					"id": "99d3eeea-d6e8-44a5-8fac-a33a26912e51",
+					"parent": "",
+					"name": "overall_satisfaction",
+					"description": "How satisfied are you with the value for money of the car rental service?",
+					"objectType": "integer"
+				},
+				{
+					"id": "e3293092-6536-460f-b8e6-e0f1b8f8aeaa",
+					"parent": "",
+					"name": "feature_satisfaction",
+					"description": "How satisfied are you with the additional features of the cars?",
+					"objectType": "integer"
+				},
+				{
+					"id": "9194d340-f210-48df-a098-f0f73324c2b9",
+					"parent": "",
+					"name": "improvements",
+					"description": "What could we improve to make your experience better in the future?",
 					"objectType": "string"
 				},
 				{
-					"id": "1921f9e7-5570-4c5f-aa73-bf5f73bb86b6",
+					"id": "75889d78-65b8-4d2f-bea8-755c93aea8b6",
 					"parent": "",
-					"name": "formData",
-					"objectType": "object"
+					"name": "comment",
+					"description": "General comment",
+					"objectType": "string"
 				},
 				{
-					"id": "149faa61-d122-4801-b269-4be89b561973",
-					"parent": "",
-					"name": "feedbackDetails",
-					"objectType": "object"
-				},
-				{
-					"id": "7737f652-3fbc-45d8-b60f-1c5994dd4742",
+					"id": "7a74fdde-bc8d-4a2d-8d2c-81ca61698974",
 					"parent": "",
 					"name": "createdAt",
 					"description": "Date when record was created",
 					"objectType": "number"
 				},
 				{
-					"id": "5381f15e-8a62-4da3-a8a6-154cee3348b8",
+					"id": "cbb0dbaa-fbe7-40cd-af94-6a076324ec94",
 					"parent": "",
 					"name": "createdBy",
 					"description": "Created by",
 					"objectType": "string"
 				},
 				{
-					"id": "83b6a75e-f421-4993-9f20-8953bdfcb86d",
+					"id": "e7b6981d-4bab-4669-9178-19163ad6ff4b",
 					"parent": "",
 					"name": "updatedAt",
 					"description": "Date when record was updated",
 					"objectType": "number"
 				},
 				{
-					"id": "e44604ed-c09d-4384-b2b5-ecfb3da9a8bf",
+					"id": "353a0d5d-7974-42ad-8b83-38ecfc257324",
 					"parent": "",
 					"name": "updatedBy",
 					"description": "Updated by",
@@ -283,17 +314,17 @@
 			]
 		},
 		{
-			"id": "2e0c8487-3058-4da1-9b31-b8b0a4865718",
+			"id": "67e99fa4-e388-4625-a9fb-fa82dc78253e",
 			"name": "Error",
 			"properties": [
 				{
-					"id": "79ef0622-89fe-4b3c-b9ae-b22879301103",
+					"id": "886f390e-81ad-4c4d-a1b4-9f67b43242c0",
 					"parent": "",
 					"name": "status",
 					"objectType": "string"
 				},
 				{
-					"id": "c94d4be9-6f57-42b6-adfc-cef3320e36d6",
+					"id": "f5e476c8-ef97-4356-bb82-3022228f4f48",
 					"parent": "",
 					"name": "message",
 					"objectType": "string"
@@ -301,11 +332,11 @@
 			]
 		},
 		{
-			"id": "85536a5e-2d9b-4bfe-ab63-0abcb3428669",
+			"id": "7773cd41-87d5-4c30-a70a-29bc5e74dcf7",
 			"name": "count",
 			"properties": [
 				{
-					"id": "95745909-3416-4805-9420-42e31a24d39c",
+					"id": "e48d80fb-de24-4885-8904-4770131bf126",
 					"parent": "",
 					"name": "count",
 					"objectType": "number"
@@ -314,9 +345,9 @@
 		}
 	],
 	"documentation": [],
-	"name": "carhire_feedback",
+	"name": "CarHireFeedback",
 	"endpoint": "/api/entity",
-	"ver": "24.10.08.1412",
+	"ver": "24.11.08.1454",
 	"version": null,
 	"description": null,
 	"mediaType": "application/json",

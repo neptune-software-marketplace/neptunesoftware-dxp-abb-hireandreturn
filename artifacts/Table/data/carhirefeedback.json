@@ -1,0 +1,30 @@
+[
+	{
+		"id": "ee0b9099-bffd-4fa6-a5f7-c01ddbef919a",
+		"createdAt": "1731079082366",
+		"updatedAt": "1731079543763",
+		"createdBy": "emmanuella.ndukwe@neptune-software.com",
+		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
+		"booking": 4,
+		"rental_location": 4,
+		"comfort": 4,
+		"overall_satisfaction": 4,
+		"feature_satisfaction": 4,
+		"improvements": "None",
+		"comment": "Excellent Service"
+	},
+	{
+		"id": "c36900c6-c5cd-48bc-b98e-107c9d4833c5",
+		"createdAt": "1731079248107",
+		"updatedAt": "1731079248107",
+		"createdBy": "emmanuella.ndukwe@neptune-software.com",
+		"updatedBy": "emmanuella.ndukwe@neptune-software.com",
+		"booking": 8,
+		"rental_location": 8,
+		"comfort": 8,
+		"overall_satisfaction": 8,
+		"feature_satisfaction": 8,
+		"improvements": "test",
+		"comment": "test"
+	}
+]

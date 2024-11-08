@@ -7,7 +7,7 @@
 	},
 	"name": "neptunesoftware-dxp-abb-hireandreturn",
 	"description": null,
-	"ver": "24.11.07.1535",
+	"ver": "24.11.08.1125",
 	"enableCICD": true,
 	"apps": [
 		{
@@ -31,12 +31,6 @@
 	],
 	"api": [
 		{
-			"id": "dc11215d-7f85-ef11-bdfd-000d3ab84645",
-			"name": "carhire_feedback",
-			"description": null,
-			"apiGroup": null
-		},
-		{
 			"id": "ba532f85-4aca-ee11-85f9-0022489e2e3e",
 			"name": "car_damage_parts_pictures",
 			"description": null,
@@ -59,6 +53,12 @@
 			"name": "cardetails",
 			"description": null,
 			"apiGroup": null
+		},
+		{
+			"id": "1156086a-e19d-ef11-8474-000d3ab84eea",
+			"name": "CarHireFeedback",
+			"description": null,
+			"apiGroup": null
 		}
 	],
 	"odataSource": [],
@@ -70,13 +70,13 @@
 			"description": null
 		},
 		{
-			"id": "b9d35976-5585-ef11-bdfd-000d3ab84645",
-			"name": "carhire_feedback",
+			"id": "91c15b0f-42ca-ee11-85f9-0022489e2e3e",
+			"name": "car_damage_parts_pictures",
 			"description": null
 		},
 		{
-			"id": "91c15b0f-42ca-ee11-85f9-0022489e2e3e",
-			"name": "car_damage_parts_pictures",
+			"id": "2676a154-e19d-ef11-8474-000d3ab84eea",
+			"name": "carhirefeedback",
 			"description": null
 		},
 		{

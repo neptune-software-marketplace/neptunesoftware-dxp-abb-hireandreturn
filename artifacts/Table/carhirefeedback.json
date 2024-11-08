@@ -1,0 +1,72 @@
+{
+	"id": "2676a154-e19d-ef11-8474-000d3ab84eea",
+	"createdAt": "2024-11-08T14:54:25.400Z",
+	"createdBy": "emmanuella.ndukwe@neptune-software.com",
+	"fields": [
+		{
+			"id": "02d2db1e-8a89-4b7d-9836-89c0efae4332",
+			"fieldName": "booking",
+			"fieldType": "integer",
+			"isUnique": false,
+			"description": "How easy was it to book your rental car online or in-person?"
+		},
+		{
+			"id": "9bb5002b-27d4-46f1-d521-49c3d617067e",
+			"fieldName": "rental_location",
+			"fieldType": "integer",
+			"isUnique": false,
+			"description": "How would you rate the pick-up and drop-off process at the rental location?",
+			"isNullable": true
+		},
+		{
+			"id": "97d42b57-d79a-466b-ae0b-b89c77e88ccc",
+			"fieldName": "comfort",
+			"fieldType": "integer",
+			"isUnique": false,
+			"description": "Did the car meet your expectations in terms of performance and comfort?",
+			"isNullable": true
+		},
+		{
+			"id": "4510e4cc-3f14-43a2-d236-77de3b85a6cb",
+			"fieldName": "overall_satisfaction",
+			"fieldType": "integer",
+			"isUnique": false,
+			"description": "How satisfied are you with the value for money of the car rental service?",
+			"isNullable": true
+		},
+		{
+			"id": "de9bcc57-a30a-4890-c1a4-c079fad2bccc",
+			"fieldName": "feature_satisfaction",
+			"fieldType": "integer",
+			"isUnique": false,
+			"description": "How satisfied are you with the additional features of the cars?",
+			"isNullable": true
+		},
+		{
+			"id": "3cee53dc-e841-43d2-d89b-80f73ced85e3",
+			"fieldName": "improvements",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "What could we improve to make your experience better in the future?",
+			"isNullable": true
+		},
+		{
+			"id": "6bc7fc51-0c89-490c-980a-4720a42379d5",
+			"fieldName": "comment",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "General comment",
+			"isNullable": false
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "carhirefeedback",
+	"description": null,
+	"ver": "24.11.08.1454",
+	"enableAudit": false,
+	"includeDataInPackage": true,
+	"package": "eb775512-7082-ef11-bdfd-000d3ab84645",
+	"rolesRead": [],
+	"rolesWrite": []
+}

@@ -1,10 +1,6 @@
-let formData = FORMS.getData(true);
-if (formData.valid === true) {
-let questionaire = parseFormsResponse(formData);
-saveRequest(questionaire, formData);
+var options = {
+    data: modelSimpleFormFeedback.getData()
+};
+
+apiSave_Feedback(options);
 DialogFeedback.close()
-}
-else{
-// Use MessageToast
-sap.m.MessageToast.show("Please fill out all mandatory fields!");    
-}
