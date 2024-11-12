@@ -1,8 +1,11 @@
 const reqBody = req.body;
 const user = req.user;
 
+//Get details of the car so as to add exisitng damage parts
 const selectedCar = await entities.cardetails.findOne(reqBody.car_id);
 log.info(selectedCar)
+
+//Save booking details
 const entity = await entities.car_booking.insert({
     user_id: user.id,
     first_name: reqBody.first_name,
@@ -23,6 +26,7 @@ const entity = await entities.car_booking.insert({
 
 });
 
+//Update car details 
 await entities.cardetails
     .createQueryBuilder()
     .update()

@@ -20,25 +20,10 @@ if (data.clearance_status == "CLEARED") {
         // SaveChangesButton.setVisible(false);
 }
 
-// Fetch damage pictures of the selcted car
-    var options = {
-        parameters: {
-            where: JSON.stringify({ carID: data.car_id }),
-        },
-    };
 
-    apiGet_damage_parts_pictures(options);
-
-// Get path details of the selected car
-var options = {
-    parameters: {
-       where: JSON.stringify({ id: data.car_id }),
-    }
-};
-
-apiGet_CarDetails_API(options).then((result)=>{
-console.log("modelSelectedCar.getData()")
-    console.log(modelSelectedCar.getData())
+//.then((result)=>{
+// console.log("modelSelectedCar.getData()")
+// console.log(modelSelectedCar.getData())
 
     //In the following ajax Request we do call the Car SVG file and set it as content of the HTMLObject
     var ajaxReq;
@@ -130,8 +115,8 @@ console.log("modelSelectedCar.getData()")
     const aPaths = $("path.part");
     //console.log(aPaths);
     $(aPaths[1]).addClass(modelSelectedCar.getData().parts.path1.type);
-    rerender();
-
+    //rerender();
+    
     // var options2 = {
     //     parameters: {
     //         "where" : JSON.stringify({"bookingId": modelSelectedCar.getData().id})// Optional
@@ -145,4 +130,22 @@ console.log("modelSelectedCar.getData()")
 //     //oBarFooterDetails.setVisible(false);
 //     App.to(PageRentalDetails);
 // }
-})
+//})
+
+// Fetch damage pictures of the selcted car
+    var options = {
+        parameters: {
+            where: JSON.stringify({ carID: data.car_id }),
+        },
+    };
+
+    apiGet_damage_parts_pictures(options);
+
+// Get path details of the selected car
+var options = {
+    parameters: {
+       where: JSON.stringify({ id: data.car_id }),
+    }
+};
+
+apiGet_CarDetails_API(options)

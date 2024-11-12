@@ -1,5 +1,6 @@
 const reqBody = req.body;
 
+// Update booking details
 await entities.car_booking
     .createQueryBuilder()
     .update()
@@ -8,7 +9,7 @@ await entities.car_booking
     .execute();
 
  
-
+//Update Car details
 await entities.cardetails
     .createQueryBuilder()
     .update()

@@ -3275,6 +3275,7 @@
 															"grouping": "Events",
 															"value": "saveDamageDetails(modelSelectedCar.getData());",
 															"script": "saveDamageDetails(modelSelectedCar.getData());",
+															"language": "javascript",
 															"translation": []
 														},
 														{
@@ -3560,24 +3561,10 @@
 									"response": [],
 									"attributes": [
 										{
-											"attribute": "visible",
-											"grouping": "Properties",
-											"value": "{/booking_status}",
-											"script": "",
-											"translation": []
-										},
-										{
 											"attribute": "styleClass",
 											"grouping": "Properties",
 											"value": "svgContainer",
 											"script": "",
-											"translation": []
-										},
-										{
-											"attribute": "visible",
-											"grouping": "Formatter",
-											"value": "Anonymous Function",
-											"script": "file://event/sap.m.VBox/VBoxSVGContainerEditable/visible.script",
 											"translation": []
 										}
 									],
@@ -3620,6 +3607,7 @@
 									"fieldType": "sap.m.VBox",
 									"script": "",
 									"customComponent": false,
+									"disabled": true,
 									"bindingType": "h",
 									"request": [],
 									"response": [],
@@ -3654,6 +3642,7 @@
 											"fieldType": "sap.ui.core.HTML",
 											"script": "",
 											"customComponent": false,
+											"disabled": true,
 											"bindingType": "h",
 											"request": [],
 											"response": [],
@@ -7749,7 +7738,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.11.08.1521",
+	"ver": "24.11.12.0928",
 	"application": "car_hire_customer_app",
 	"title": "",
 	"description": "",

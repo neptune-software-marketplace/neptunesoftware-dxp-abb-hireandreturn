@@ -11,7 +11,7 @@ modeloPageManageBookingDetails.setData(data);
 
 
 console.log("data")
-console.log(data.booking_status)
+console.log(data)
 
 
 
@@ -33,7 +33,8 @@ var options = {
     }
 };
 
-apiGet_Vehicles(options).then((result)=>{
+apiGet_Vehicles(options)
+//.then((result)=>{
 
 
     ajaxReq = $.ajax({
@@ -42,9 +43,9 @@ apiGet_Vehicles(options).then((result)=>{
     async: false, //Async because I want to load the SVG first, before moving to the following page.
     success: (data) => {
         const content = new XMLSerializer().serializeToString(data);
-        HTMLObject.setContent(content);
+        //HTMLObject.setContent(content);
         HTMLObjectEditable.setContent(content);
-        VBoxSVGContainer.rerender();
+        //VBoxSVGContainer.rerender();
         VBoxSVGContainerEditable.rerender();
         oApp.to(oPageManageBookingDetails);
         modelResponsivePopover.setData(modeloPageManageBookingDetails.getData())
@@ -126,10 +127,10 @@ var aPathsOUT = $("path.part");
     const aPaths = $("path.part");
     //console.log(aPaths);
     $(aPaths[1]).addClass(modelSelectedCar.getData().parts.path1.type);
-    rerender();
+   // rerender();
 
 
 
  oApp.to(oPageManageBookingDetails);
 
-});
+//});

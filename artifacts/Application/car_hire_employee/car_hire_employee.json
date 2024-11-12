@@ -960,6 +960,7 @@
 															"grouping": "Events",
 															"value": "saveDamageDetails(modelSelectedCar.getData());",
 															"script": "saveDamageDetails(modelSelectedCar.getData());",
+															"language": "javascript",
 															"translation": []
 														}
 													],
@@ -6308,7 +6309,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.11.08.1125",
+	"ver": "24.11.12.0943",
 	"application": "car_hire_employee",
 	"title": "",
 	"description": "",

@@ -82,7 +82,8 @@ function onSelectDamageType(oEvent) {
 }
 
 function saveDamageDetails(currentEditData) {
-    
+    console.log("currentEditData");
+    console.log(currentEditData)
      var updateData = {
         path1: {
             type: currentEditData.parts.path1.type,
@@ -156,14 +157,16 @@ function saveDamageDetails(currentEditData) {
         },
     };
 
-    apiUpdateCarBookingDetails(options);
-
-    var carDetailsOptions = {
+    apiUpdateCarBookingDetails(options).then((res)=>{
+        var carDetailsOptions = {
         parameters: {
             where: JSON.stringify({ id: currentEditData.car_id }),
         },
         data: { parts: updateData },
     };
-    console.log(currentEditData);
-    apiUpdateCarDetails(carDetailsOptions).then((res)=> console.log("I go"))
+    
+    apiUpdateCarDetails(carDetailsOptions)
+    })
+
+    
 }

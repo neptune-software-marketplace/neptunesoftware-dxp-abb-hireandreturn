@@ -7,7 +7,7 @@
 	},
 	"name": "neptunesoftware-dxp-abb-hireandreturn",
 	"description": null,
-	"ver": "24.11.08.1125",
+	"ver": "24.11.08.1526",
 	"enableCICD": true,
 	"apps": [
 		{
